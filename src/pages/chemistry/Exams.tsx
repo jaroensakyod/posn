@@ -1,6 +1,9 @@
 import { useState } from 'react'
-import { ExternalLink, FileText, Calendar, X } from 'lucide-react'
+import { ExternalLink, FileText, Calendar, X, PencilLine, RotateCcw, Trophy } from 'lucide-react'
 import SubjectLayout from '../../components/layout/SubjectLayout'
+import QuizView from '../../components/chemistry/QuizView'
+import { Question } from '../../data/chemistry/questions'
+import { getExamPracticeByYear, getAnswerableCountByYear } from '../../data/chemistry/examPractice'
 
 interface ExamEntry {
   year: number
@@ -69,8 +72,27 @@ const exams: ExamEntry[] = [
   },
 ]
 
+interface QuizState {
+  exam: ExamEntry
+  questions: Question[]
+  phase: 'quiz' | 'result'
+  score: number
+}
+
 export default function Exams() {
   const [viewing, setViewing] = useState<ExamEntry | null>(null)
+  const [quiz, setQuiz] = useState<QuizState | null>(null)
+  const answerableCount = getAnswerableCountByYear()
+
+  function startQuiz(exam: ExamEntry) {
+    const questions = getExamPracticeByYear(exam.thYear)
+    if (questions.length === 0) return
+    setQuiz({ exam, questions, phase: 'quiz', score: 0 })
+  }
+
+  function finishQuiz(score: number) {
+    setQuiz((q) => (q ? { ...q, phase: 'result', score } : q))
+  }
 
   return (
     <SubjectLayout
@@ -83,7 +105,7 @@ export default function Exams() {
       <div className="max-w-3xl mx-auto px-4 py-6 space-y-5">
         <div>
           <h1 className="text-2xl font-bold text-slate-800 mb-1">ข้อสอบเก่า สอวน เคมี ค่าย 1</h1>
-          <p className="text-slate-500 text-sm">รวมข้อสอบคัดเลือกค่าย 1 ย้อนหลังตั้งแต่ปี 2560–2568</p>
+          <p className="text-slate-500 text-sm">รวมข้อสอบคัดเลือกค่าย 1 ย้อนหลังตั้งแต่ปี 2560–2568 — เปิดดู PDF หรือทำข้อสอบออนไลน์พร้อมเฉลย</p>
         </div>
 
         {/* Tip box */}
@@ -127,7 +149,17 @@ export default function Exams() {
                   </div>
                 </div>
 
-                <div className="flex gap-2 mt-3">
+                {answerableCount[exam.thYear] > 0 && (
+                  <button
+                    onClick={() => startQuiz(exam)}
+                    className="w-full flex items-center justify-center gap-1.5 py-2 mt-3 text-sm font-medium bg-gradient-to-r from-emerald-500 to-teal-500 text-white rounded-lg hover:from-emerald-600 hover:to-teal-600 transition-colors"
+                  >
+                    <PencilLine size={14} />
+                    ทำข้อสอบออนไลน์ ({answerableCount[exam.thYear]} ข้อ)
+                  </button>
+                )}
+
+                <div className="flex gap-2 mt-2">
                   <button
                     onClick={() => setViewing(exam)}
                     className="flex-1 flex items-center justify-center gap-1.5 py-2 text-sm font-medium bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
@@ -180,6 +212,74 @@ export default function Exams() {
               className="w-full h-full border-0"
               title={viewing.label}
             />
+          </div>
+        </div>
+      )}
+
+      {/* Online quiz modal */}
+      {quiz && (
+        <div className="fixed inset-0 z-50 bg-black/60 flex flex-col">
+          <div className="flex items-center justify-between bg-slate-900 text-white px-4 py-3">
+            <div className="flex items-center gap-3">
+              <PencilLine size={18} />
+              <span className="font-medium text-sm truncate">{quiz.exam.label}</span>
+            </div>
+            <button
+              onClick={() => setQuiz(null)}
+              className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-700 transition-colors"
+            >
+              <X size={18} />
+            </button>
+          </div>
+          <div className="flex-1 overflow-y-auto bg-slate-50">
+            <div className="max-w-2xl mx-auto px-4 py-6">
+              {quiz.phase === 'quiz' && (
+                <QuizView questions={quiz.questions} onFinish={finishQuiz} />
+              )}
+              {quiz.phase === 'result' && (
+                <div className="flex flex-col items-center text-center space-y-5 py-6">
+                  {(() => {
+                    const pct = Math.round((quiz.score / quiz.questions.length) * 100)
+                    const level =
+                      pct >= 80 ? { label: 'ยอดเยี่ยม! 🎉', color: 'text-green-600', bg: 'bg-green-50', ring: 'ring-green-300' }
+                      : pct >= 60 ? { label: 'ดี! 👍', color: 'text-blue-600', bg: 'bg-blue-50', ring: 'ring-blue-300' }
+                      : { label: 'ลองอีกครั้ง 💪', color: 'text-orange-600', bg: 'bg-orange-50', ring: 'ring-orange-300' }
+                    return (
+                      <>
+                        <div className={`w-32 h-32 rounded-full ${level.bg} ring-4 ${level.ring} flex flex-col items-center justify-center`}>
+                          <div className={`text-4xl font-bold ${level.color}`}>{pct}%</div>
+                          <div className="text-xs text-slate-500">{quiz.score}/{quiz.questions.length} ข้อ</div>
+                        </div>
+                        <div>
+                          <div className="flex items-center justify-center gap-2 text-xl font-bold">
+                            <Trophy size={20} className={level.color} />
+                            <span className={level.color}>{level.label}</span>
+                          </div>
+                          <p className="text-slate-500 text-sm mt-1">{quiz.exam.label}</p>
+                          <p className="text-xs text-slate-400 mt-1">
+                            (เฉพาะข้อที่ตอบในเว็บได้ ไม่รวมข้อที่ต้องดูรูปประกอบ)
+                          </p>
+                        </div>
+                        <div className="flex flex-col sm:flex-row gap-3 w-full max-w-xs">
+                          <button
+                            onClick={() => startQuiz(quiz.exam)}
+                            className="flex-1 flex items-center justify-center gap-2 py-3 border-2 border-slate-200 bg-white rounded-xl font-medium text-slate-600 hover:border-blue-300 transition-colors"
+                          >
+                            <RotateCcw size={16} /> ทำใหม่
+                          </button>
+                          <button
+                            onClick={() => setQuiz(null)}
+                            className="flex-1 flex items-center justify-center gap-2 py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 transition-colors"
+                          >
+                            ปิด
+                          </button>
+                        </div>
+                      </>
+                    )
+                  })()}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}
