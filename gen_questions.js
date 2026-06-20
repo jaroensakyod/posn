@@ -1,5 +1,10 @@
 const fs = require('fs');
 
+const y61 = require('./gen_y61.js');
+const y62 = require('./gen_y62.js');
+const y64 = require('./gen_y64.js');
+const y65 = require('./gen_y65.js');
+
 const questions = [
   // ===== YEAR 60 (2017) =====
   {
@@ -475,6 +480,14 @@ export function getTopicYearMap(): Record<string, number[]> {
 }
 `;
 
-const output = header + JSON.stringify(questions, null, 2) + footer;
+// Merge authored year files; new authored entries take precedence over inline stubs (dedupe by id).
+const byId = new Map();
+for (const q of questions) byId.set(q.id, q);
+for (const q of [...y61, ...y62, ...y64, ...y65]) byId.set(q.id, q);
+const allQuestions = [...byId.values()].sort((a, b) => a.year - b.year || a.questionNum - b.questionNum);
+
+const output = header + JSON.stringify(allQuestions, null, 2) + footer;
 fs.writeFileSync('C:/Users/ASUS/Desktop/posn/src/data/chemistry/pastExamQuestions.ts', output, 'utf8');
-console.log('Done! Total questions:', questions.length);
+const byYear = {};
+allQuestions.forEach(q => byYear[q.year] = (byYear[q.year] || 0) + 1);
+console.log('Done! Total questions:', allQuestions.length, '| by year:', byYear);
