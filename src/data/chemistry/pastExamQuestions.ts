@@ -8,9 +8,26 @@ export interface PastExamQuestion {
   correctIndex: number
   explanation?: string
   requiresImage?: boolean
+  imageUrl?: string
 }
 
 export const pastExamQuestions: PastExamQuestion[] = [
+  {
+    "id": "y60-q1",
+    "year": 60,
+    "questionNum": 1,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y60-p3.png",
+    "text": "หลอดรังสีแคโทดที่เจาะรูตรงกลางขั้วแคโทดและแอโนด หลังขั้วแคโทดและแอโนดมีฉากเรืองแสง ก และ ข ตามล าดับ ภายในหลอดบรรจุแก๊ส 1 ชนิด และมีความดันต ่า เมื่อผ่านกระแสไฟฟ้า เข้าไปในหลอด จะเกิดจุดบนฉากเรืองแสงหลังขั้วทั้งสอง ดังรูป ข้อความใดถูกต้อง",
+    "choices": [
+      "อนุภาค X มีอ านาจในการทะลุทะลวงสูง สามารถทะลุผ่านแผ่นตะกั่วบาง ๆ ได้",
+      "อนุภาค X และ Y มีค่าประจุต่อมวล (e/m) คงที่ ไม่ขึ้นกับชนิดของแก๊สในหลอด",
+      "อนุภาค X และ Y เป็นไอออนบวกและไอออนลบของธาตุที่เป็นองค์ประกอบของแก๊ส ที่บรรจุในหลอด",
+      "แต่ละอนุภาค X ในหลอดที่บรรจุแก๊ส H2 มีมวลมากกว่ามวลของแต่ละอนุภาค Y ใน หลอดที่บรรจุแก๊ส He"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 60"
+  },
   {
     "id": "y60-q2",
     "year": 60,
@@ -40,6 +57,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 3,
     "explanation": "97 nm ตรงกับ n=1 ไป n=4 เส้นสเปกตรัมที่เกิดได้ = C(4,2) = 6 เส้น"
+  },
+  {
+    "id": "y60-q4",
+    "year": 60,
+    "questionNum": 4,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y60-p3.png",
+    "text": "ธาตุ A และ B เป็นไอโซโทปกัน A มีจ านวนนิวตรอนน้อยกว่า B 5 นิวตรอน เมื่อกลายเป็น B2 จะมีจ านวนอิเล็กตรอนและนิวตรอนเท่ากับ 10 และ 15 ตามล าดับ ข้อใดเป็นสัญลักษณ์นิวเคลียร์ของธาตุ A",
+    "choices": [
+      "A 18 8",
+      "A 22 12",
+      "A 25 10",
+      "A 25 15"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 60"
   },
   {
     "id": "y60-q5",
@@ -72,6 +105,86 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "Co3+ (เสีย 3e-) มีการจัดเรียงอิเล็กตรอน [Ar]3d6 = 1s2 2s2 2p6 3s2 3p6 3d6"
   },
   {
+    "id": "y60-q7",
+    "year": 60,
+    "questionNum": 7,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y60-p4.png",
+    "text": "ข้อใดเป็นอะตอมหรือไอออนที่มีจ านวนอิเล็กตรอนเดี่ยวในสถานะพื้นเท่ากัน",
+    "choices": [
+      "Cr+ และ Mn2+",
+      "As และ Mn2+",
+      "Cu2+ และ Cr3+",
+      "As3+ และ Cu"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q8",
+    "year": 60,
+    "questionNum": 8,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y60-p4.png",
+    "text": "ก าหนดให้ สารประกอบคลอไรด์ของธาตุ A มีสูตรเป็น ACl2 มีลักษณะเป็นของแข็งสีขาว ไม่น าไฟฟ้า ละลายน ้าได้สารละลายที่เป็นกลางและน าไฟฟ้าได้ สมบัติของธาตุ A ข้อใดถูกต้อง",
+    "choices": [
+      "A เป็นธาตุอโลหะ",
+      "A เป็นธาตุที่อยู่ในคาบที่ 2 ของตารางธาตุ",
+      "A เป็นธาตุที่อยู่หมู่เดียวกับธาตุที่มีเลขอะตอมเท่ากับ 26",
+      "ไอออน A2+ มีการจัดเรียงอิเล็กตรอนเหมือนแก๊สมีตระกูล"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q9",
+    "year": 60,
+    "questionNum": 9,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y60-p4.png",
+    "text": "พิจารณาสูตรเคมีของสารประกอบ ต่อไปนี้ [Co(NH3)4SO4]Cl HClO4 และ Na[Au(CN)2] เลขออกซิเดชันของธาตุที่ขีดเส้นใต้ในสารประกอบ ข้อใดถูกต้อง เลขออกซิเดชันของธาตุที่ขีดเส้นใต้ [Co(NH3)4SO4]Cl HClO4 Na[Au(CN)2]",
+    "choices": [
+      "+2 +6 +3",
+      "+2 +7 +3",
+      "+6 +6 +1",
+      "+6 +7 +1"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q10",
+    "year": 60,
+    "questionNum": 10,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y60-p4.png",
+    "text": "พิจารณา การบรรจุอิเล็กตรอน แบบ A, B, C และ D ต่อไปนี้ ข้อความใดถูกต้อง",
+    "choices": [
+      "แบบ A เป็นของอะตอมที่มีค่าอิเล็กโทรเนกาติวิตีมากที่สุด",
+      "แบบ B เป็นการบรรจุอิเล็กตรอนที่ไม่เป็นไปตามกฎของฮุนด์",
+      "แบบ C เป็นการบรรจุอิเล็กตรอนที่ไม่เป็นไปตามหลักการกีดกันของเพาลี",
+      "แบบ D เป็นของอะตอมที่เสถียรและมีค่าพลังงานไอออไนเซชันล าดับที่ 1 มากที่สุด"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q11",
+    "year": 60,
+    "questionNum": 11,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y60-p4.png",
+    "text": "ก าหนดให้ ธาตุ A, D, E และ G มีการจัดเรียงอิเล็กตรอนที่สถานะพื้น ดังนี้ A : [He] 2s2 2p4 D : [Ne] 3s2 3p3 E : [Ar] 3d10 4s2 4p1 G : [Ar] 3d10 4s2 4p3 การเปรียบเทียบขนาดอะตอมและพลังงานไอออไนเซชันล าดับที่ 1 ข้อใดถูกต้อง ขนาดอะตอม พลังงานไอออไนเซชันล าดับที่ 1",
+    "choices": [
+      "G > E > D A > D > E",
+      "D > G > A E > G > A",
+      "A > E > G D > G > A",
+      "E > G > A G > A > E"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60"
+  },
+  {
     "id": "y60-q12",
     "year": 60,
     "questionNum": 12,
@@ -85,6 +198,86 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "X2+ มี 18e- → X มี 20e- = Ca(หมู่2,คาบ4); Y- มี 18e- → Y มี 17e- = Cl(หมู่7,คาบ3)"
+  },
+  {
+    "id": "y60-q13",
+    "year": 60,
+    "questionNum": 13,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p5.png",
+    "text": "ข้อใดเป็นสารประกอบออกไซด์ที่ท าปฏิกิริยากับน ้าแล้วได้สารละลายที่เปลี่ยนสีกระดาษ ลิตมัสจากน ้าเงินเป็นแดง",
+    "choices": [
+      "P4O10 และ Cr2O3",
+      "Cl2O7 และ P4O10",
+      "Cr2O3 และ Na2O",
+      "Cl2O7 และ Na2O"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q14",
+    "year": 60,
+    "questionNum": 14,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p5.png",
+    "text": "เมื่อผสมสารละลายที่ประกอบด้วยไอออน Ba2+, Mg2+, Na+, Cl–, SO4 2– และ HPO4 2– เข้าด้วยกัน พบว่ามีตะกอน เกิดขึ้น สูตรเคมีของสารประกอบแต่ละชนิดที่เป็นตะกอนซึ่งเกิดจากการผสมสารละลายของไอออนดังกล่าว ข้อใดถูกต้อง",
+    "choices": [
+      "Na2SO4, MgCl2, BaCl2",
+      "Na2HPO4, Na2SO4, MgCl2",
+      "BaSO4, MgSO4, MgHPO4",
+      "MgHPO4, BaSO4, BaHPO4"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q15",
+    "year": 60,
+    "questionNum": 15,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p5.png",
+    "text": "ข้อที่ 15 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q16",
+    "year": 60,
+    "questionNum": 16,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p5.png",
+    "text": "พิจารณาสมการของปฏิกิริยานิวเคลียร์ต่อไปนี้ Co 5927 + A  Mn 56 25 + รังสีแอลฟา Te 130 52 + B  I 130 53 + 2 นิวตรอน Rn 222 86 + รังสีแอลฟา  C + รังสีแกมมา ข้อใดเป็น A, B และ C ตามล าดับ",
+    "choices": [
+      "นิวตรอน ดิวทีรอน และ Ra 226 88",
+      "นิวตรอน โปรตอน และ Ac 226 89",
+      "โปรตอน ดิวทีรอน และ Rn 225 86",
+      "รังสีบีตา รังสีแอลฟา และ Fr 224 87"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q17",
+    "year": 60,
+    "questionNum": 17,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p5.png",
+    "text": "ข้อใดเป็นสมบัติของธาตุไฮโดรเจนที่ต่างจากธาตุหมู่ VIIA",
+    "choices": [
+      "มีเลขออกซิเดชันได้มากกว่า 1 ค่า",
+      "มีค่าอิเล็กโทรเนกาติวิตีมากกว่า 2",
+      "มีจ านวนเวเลนซ์อิเล็กตรอนเท่ากับ 1",
+      "ในธรรมชาติอยู่ในรูปโมเลกุลอะตอมคู่"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60"
   },
   {
     "id": "y60-q18",
@@ -115,6 +308,262 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "PbSO4 ไม่ละลายน้ำ สมการไอออนิกสุทธิ: Pb2+ + SO42- → PbSO4(s)"
+  },
+  {
+    "id": "y60-q20",
+    "year": 60,
+    "questionNum": 20,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p6.png",
+    "text": "ข้อที่ 20 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q21",
+    "year": 60,
+    "questionNum": 21,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p6.png",
+    "text": "ข้อที่ 21 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q22",
+    "year": 60,
+    "questionNum": 22,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p6.png",
+    "text": "ข้อใดเป็นสารที่มีรูปร่างโมเลกุลเหมือนกัน",
+    "choices": [
+      "BF4  และ ICl4 ",
+      "TeCl4 และ POCl3",
+      "ICl4  และ TeCl4",
+      "BF4  และ POCl3"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q23",
+    "year": 60,
+    "questionNum": 23,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p6.png",
+    "text": "ข้อใดเป็นสารประกอบที่มีมุมระหว่างพันธะแคบที่สุด",
+    "choices": [
+      "ClF3",
+      "SiF4",
+      "NCl3",
+      "OCl2"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q24",
+    "year": 60,
+    "questionNum": 24,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p6.png",
+    "text": "ข้อที่ 24 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q25",
+    "year": 60,
+    "questionNum": 25,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p7.png",
+    "text": "ข้อที่ 25 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q26",
+    "year": 60,
+    "questionNum": 26,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p7.png",
+    "text": "ข้อที่ 26 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q27",
+    "year": 60,
+    "questionNum": 27,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p7.png",
+    "text": "ข้อที่ 27 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q28",
+    "year": 60,
+    "questionNum": 28,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p7.png",
+    "text": "ข้อที่ 28 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q29",
+    "year": 60,
+    "questionNum": 29,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p7.png",
+    "text": "ข้อที่ 29 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q30",
+    "year": 60,
+    "questionNum": 30,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p7.png",
+    "text": "ข้อที่ 30 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q31",
+    "year": 60,
+    "questionNum": 31,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p8.png",
+    "text": "ข้อที่ 31 (ดูรูปในหน้า 8)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q32",
+    "year": 60,
+    "questionNum": 32,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p8.png",
+    "text": "ข้อใดทั้ง 2 โมเลกุลเป็นโมเลกุลที่มีขั้ว",
+    "choices": [
+      "HCN และ KrF4",
+      "AsI5 และ SBr2",
+      "ClH3 และ TeF4",
+      "SO3 และ PBr3"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q33",
+    "year": 60,
+    "questionNum": 33,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p8.png",
+    "text": "ข้อที่ 33 (ดูรูปในหน้า 8)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q34",
+    "year": 60,
+    "questionNum": 34,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p8.png",
+    "text": "ข้อที่ 34 (ดูรูปในหน้า 8)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q35",
+    "year": 60,
+    "questionNum": 35,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y60-p8.png",
+    "text": "ข้อที่ 35 (ดูรูปในหน้า 8)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 60"
   },
   {
     "id": "y60-q36",
@@ -207,6 +656,38 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "กฎเกรแฮม: t(O2)/t(H2) = sqrt(32/2) = 4 → t(O2) = 12×4 = 48 วินาที"
   },
   {
+    "id": "y60-q42",
+    "year": 60,
+    "questionNum": 42,
+    "topicId": "states-of-matter",
+    "imageUrl": "/exam-images/y60-p9.png",
+    "text": "ข้อที่ 42 (ดูรูปในหน้า 9)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q43",
+    "year": 60,
+    "questionNum": 43,
+    "topicId": "states-of-matter",
+    "imageUrl": "/exam-images/y60-p10.png",
+    "text": "ข้อที่ 43 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 60"
+  },
+  {
     "id": "y60-q44",
     "year": 60,
     "questionNum": 44,
@@ -252,6 +733,86 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "CO=12.5mol, H2=32.5mol → CO จำกัด (ต้อง H2 25mol แต่มี 32.5), CH3OH = 12.5×32 = 400 g"
   },
   {
+    "id": "y60-q47",
+    "year": 60,
+    "questionNum": 47,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y60-p10.png",
+    "text": "ข้อที่ 47 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q48",
+    "year": 60,
+    "questionNum": 48,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y60-p10.png",
+    "text": "ข้อที่ 48 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q49",
+    "year": 60,
+    "questionNum": 49,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y60-p11.png",
+    "text": "ข้อที่ 49 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q50",
+    "year": 60,
+    "questionNum": 50,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y60-p11.png",
+    "text": "ข้อที่ 50 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q51",
+    "year": 60,
+    "questionNum": 51,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y60-p11.png",
+    "text": "ข้อที่ 51 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 60"
+  },
+  {
     "id": "y60-q52",
     "year": 60,
     "questionNum": 52,
@@ -265,6 +826,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "A=0.4mol, B=2.516mol → A จำกัด, C=4×0.4=1.6mol, MW(C)=70.4/1.6=44"
+  },
+  {
+    "id": "y60-q53",
+    "year": 60,
+    "questionNum": 53,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y60-p11.png",
+    "text": "ข้อที่ 53 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 60"
   },
   {
     "id": "y60-q54",
@@ -297,6 +874,70 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "H2SO4=3.50×98=343g ใน 1L, มวลน้ำ=1200-343=857g, m=3.50/0.857=4.08 mol/kg"
   },
   {
+    "id": "y60-q56",
+    "year": 60,
+    "questionNum": 56,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y60-p12.png",
+    "text": "ข้อที่ 56 (ดูรูปในหน้า 12)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q57",
+    "year": 60,
+    "questionNum": 57,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y60-p12.png",
+    "text": "ข้อที่ 57 (ดูรูปในหน้า 12)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q58",
+    "year": 60,
+    "questionNum": 58,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y60-p12.png",
+    "text": "ข้อที่ 58 (ดูรูปในหน้า 12)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 60"
+  },
+  {
+    "id": "y60-q59",
+    "year": 60,
+    "questionNum": 59,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y60-p12.png",
+    "text": "เมื่อผสมสารละลาย CaCl2 เข้มข้น 1.00 mol/dm3 ปริมาตร 20.0 cm3 กับสารละลาย CaCl2 เข้มข้น 0.200 mol/dm3 ปริมาตร 60.0 cm3 แล้วเติมน ้าปรับปริมาตรสารละลายเป็น 100 cm3 ความเข้มข้นของสารในสารละลายผสมนี้ ข้อใดถูกต้อง สาร ความเข้มข้น",
+    "choices": [
+      "Ca2+ 0.032 mol/dm3",
+      "Cl– 0.800 mol/dm3",
+      "Ca2+ Cl– 2.42 % (w/v)",
+      "CaCl2 35.5 g/dm3"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 60"
+  },
+  {
     "id": "y60-q60",
     "year": 60,
     "questionNum": 60,
@@ -312,6 +953,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "dTf(A)=5.50-5.01=0.49°C, m(A)=0.1mol/kg, ใน A+B(0.1kg): m(B)=0.05m, dTf(B)=0.245°C → B ต่ำกว่า A อีก 0.245°C"
   },
   {
+    "id": "y61-q1",
+    "year": 61,
+    "questionNum": 1,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y61-p3.png",
+    "text": "อะตอมหรือไอออนในข้อใดมีการจัดอิเล็กตรอนเหมือนกัน",
+    "choices": [
+      " A 3919  A 4119  D 4020",
+      "E 35 17 E 3617 G 40 18",
+      "E 35 17  A 4119  D 4020",
+      "E 35 17 G 40 18  A 3919"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 61"
+  },
+  {
     "id": "y61-q2",
     "year": 61,
     "questionNum": 2,
@@ -325,6 +982,38 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 2,
     "explanation": "X³⁺ มี 10 e⁻ → อะตอมกลางมี 13 e⁻ = เลขอะตอม 13 (Al). เลขมวล = โปรตอน+นิวตรอน = 13+14 = 27 → ข้อ ค"
+  },
+  {
+    "id": "y61-q3",
+    "year": 61,
+    "questionNum": 3,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y61-p3.png",
+    "text": "เส้นสเปกตรัม 5 เส้น มีความยาวคลื่นดังนี้ A = 656 nm, B = 486 nm, C = 434 nm และ D = 410 nm การเปรียบเทียบเส้นสเปกตรัมในข้อใดถูกต้อง",
+    "choices": [
+      "ความถี่ของเส้นสเปกตรัม A > B",
+      "พลังงานของเส้นสเปกตรัม C > B",
+      "เส้นสเปกตรัม A และ C มีพลังงานต่างกันเท่ากับ 434) (656 hc  J",
+      "เส้นสเปกตรัม D เกิดจากการที่อิเล็กตรอนมีการเปลี่ยนแปลงพลังงานน้อยที่สุดในกลุ่ม"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q4",
+    "year": 61,
+    "questionNum": 4,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y61-p3.png",
+    "text": "ธาตุ X อยู่ในคาบที่ 2 ของตารางธาตุ ธาตุ Z มีจ านวนโปรตอนมากกว่าธาตุ X 6 โปรตอน ข้อใดถูกที่สุด",
+    "choices": [
+      "ธาตุ X และธาตุ Z อยู่ในคาบเดียวกันในตารางธาตุ",
+      "ธาตุ Z มีจ านวนอิเล็กตรอนในระดับพลังงานที่สองมากกว่า 6",
+      "จ านวนอนุภาคมูลฐานในนิวเคลียสของธาตุ Z มากกว่าของธาตุ X 6 อนุภาค",
+      "จ านวนอิเล็กตรอนในระดับพลังงานนอกสุดของธาตุ Z มากกว่า ธาตุ X 6 อิเล็กตรอน"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 61"
   },
   {
     "id": "y61-q5",
@@ -357,6 +1046,38 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "L=K(หมู่1) IE2 สูงมากเพราะดึง e- จาก noble gas core > M=Ca(หมู่2) ดังนั้น L>M ข้อ ก. บอก L<M จึงผิด"
   },
   {
+    "id": "y61-q7",
+    "year": 61,
+    "questionNum": 7,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y61-p4.png",
+    "text": "พิจารณาธาตุต่อไปนี้ : Na, Cl, Ca, Br การเปรียบเทียบขนาดของอะตอมและไอออนในข้อใดถูกต้อง",
+    "choices": [
+      "Na > Na+ > Cl",
+      "Ca > Cl > Na+",
+      "Br– > Br > Ca",
+      "Br > Cl > Na"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q8",
+    "year": 61,
+    "questionNum": 8,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y61-p4.png",
+    "text": "ข้อใดผิดเกี่ยวกับสมบัติของธาตุ X, T และ Z ซึ่งมีเลขอะตอม 15, 20 และ 33 ตามล าดับ",
+    "choices": [
+      "ค่า IE1 ของ X > T > Z",
+      "ค่า EN ของ X > Z > T",
+      "ขนาดอะตอมของ T > Z > X",
+      "จุดหลอมเหลวของ T > Z > X"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 61"
+  },
+  {
     "id": "y61-q9",
     "year": 61,
     "questionNum": 9,
@@ -370,6 +1091,70 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 3,
     "explanation": "X ต้องเป็นออกไซด์กรด (อโลหะ): SO₃→H₂SO₄. Y ต้องเป็นออกไซด์เบส (โลหะหมู่ 1/2): Na₂O→NaOH. ข้อ ง ถูก (Al₂O₃ เป็นแอมโฟเทริก, SiO₂ ไม่ละลายน้ำ)"
+  },
+  {
+    "id": "y61-q10",
+    "year": 61,
+    "questionNum": 10,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y61-p4.png",
+    "text": "พิจารณาข้อมูลการทดลองต่อไปนี้ a. ชิ้นโลหะ M ท าปฏิกิริยากับธาตุ X ซึ่งเป็นของแข็งระเหิดง่าย ได้สารประกอบ Y ซึ่งละลายในน้ าได้ดี b. แบ่งสารละลายของ Y ในน้ ามาเติมน้ าคลอรีนและคาร์บอนเตตระคลอไรด์ (CCl4) แล้วเขย่า พบว่า ชั้น CCl4 มีสีชมพูแกมม่วง c. โลหะ M แทบไม่ท าปฏิกิริยากับน้ าที่อุณหภูมิห้อง แต่เมื",
+    "choices": [
+      "สารประกอบ Y คือ MgI2",
+      "สารละลายของ X และของ Y ต่างก็มีสี",
+      "พลังงานไอออไนเซชันล าดับที่ 3 (IE3) ของ M มีค่าน้อยกว่าของ X",
+      "ถ้าเติมสารละลาย Na2SO4 ลงในสารละลายของ Y จะเกิดตะกอนสีขาว"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q11",
+    "year": 61,
+    "questionNum": 11,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y61-p4.png",
+    "text": "ธาตุ D อยู่ในคาบที่สามของตารางธาตุ มีเลขออกซิเดชันได้หลายค่าตั้งแต่ –3 ถึง +5 ข้อใดสรุปได้ถูกต้องเกี่ยวกับธาตุนี้",
+    "choices": [
+      "ปกติอยู่ในรูปโมเลกุล D2",
+      "ที่อุณหภูมิห้องอยู่ในสถานะแก๊ส",
+      "มีเลขออกซิเดชันเป็นค่าบวกเมื่ออยู่ในสารประกอบออกไซด์",
+      "เกิดสารประกอบคลอไรด์มากกว่า 1 ชนิด และเป็นสารมีขั้วทั้งหมด"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q12",
+    "year": 61,
+    "questionNum": 12,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y61-p4.png",
+    "text": "เมื่อน าสารประกอบต่อไปนี้มาละลายในน้ าแยกกัน สารละลายในข้อใดมีสีทั้งคู่",
+    "choices": [
+      "K2SO4, MnCl2",
+      "Cl2O, Co(NO3)2",
+      "K2Cr2O7, FeCl3",
+      "[Ni(NH3)6]Cl2, RbCl"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q13",
+    "year": 61,
+    "questionNum": 13,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y61-p5.png",
+    "text": "น าสารละลายของสาร A, B และ C มาแบ่งทดสอบโดยเติมสารละลาย NaCl, Na2CO3 และ Na2SO4 แยกกัน ได้ผลดังแสดงในตาราง สาร NaCl Na2CO3 Na2SO4 A ไม่เห็นการเปลี่ยนแปลง เกิดตะกอนขาว ไม่เห็นการเปลี่ยนแปลง B ไม่เห็นการเปลี่ยนแปลง ไม่เห็นการเปลี่ยนแปลง ไม่เห็นการเปลี่ยนแปลง C ไม่เห็นการเปลี่ยนแปลง เกิดตะกอนขาว เกิดตะ",
+    "choices": [
+      "KNO3 MgCl2 BaCl2",
+      "Mg(NO3)2 Ba(NO3)2 KCl",
+      "BaCl2 KNO3 Mg(NO3)2",
+      "MgCl2 KCl Ba(NO3)2"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 61"
   },
   {
     "id": "y61-q14",
@@ -402,6 +1187,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "การสลายบีตา (β⁻): นิวตรอน→โปรตอน+อิเล็กตรอน เลขอะตอมเพิ่ม 1 เลขมวลคงเดิม. แอลฟาลด 2, แกมมาไม่เปลี่ยน, โพซิตรอนลด 1 → ข้อ ข"
   },
   {
+    "id": "y61-q16",
+    "year": 61,
+    "questionNum": 16,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y61-p5.png",
+    "text": "เมื่อธาตุกัมมันตรังสี X เกิดการสลายตัว จะได้ไอโซโทปที่เสถียรของ Z โดยมีครึ่งชีวิต 20 วินาที ถ้าเริ่มต้นจาก ธาตุ X บริสุทธิ์ กราฟในข้อใดแสดงความสัมพันธ์ระหว่างมวล (m) ของ X กับเวลา (t) ได้ถูกต้อง",
+    "choices": [
+      "",
+      "",
+      "",
+      "m t (s) m t (s) t (s) m m t (s)"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 61"
+  },
+  {
     "id": "y61-q17",
     "year": 61,
     "questionNum": 17,
@@ -415,6 +1216,54 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 2,
     "explanation": "ฟิวชัน = นิวเคลียสเบารวมกันเป็นนิวเคลียสที่ใหญ่ขึ้น. ³He + ²H → ⁴He + ¹H เป็นการหลอมรวม → ข้อ ค (ข้อ ง คือฟิชชัน)"
+  },
+  {
+    "id": "y61-q18",
+    "year": 61,
+    "questionNum": 18,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y61-p5.png",
+    "text": "พิจารณาธาตุที่มีสัญลักษณ์สมมุติต่อไปนี้ 7A 16D 20L 37M สารละลายในน้ าของออกไซด์ของธาตุใดที่สามารถเปลี่ยนสีฟีนอลฟ์ทาลีนจากไม่มีสีเป็นสีชมพู",
+    "choices": [
+      "ธาตุ A และธาตุ D",
+      "ธาตุ A และธาตุ L",
+      "ธาตุ D และธาตุ M",
+      "ธาตุ L และธาตุ M"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q19",
+    "year": 61,
+    "questionNum": 19,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y61-p6.png",
+    "text": "ธาตุ X เป็นของแข็งที่อุณหภูมิห้อง มีเลขอะตอมอยู่ในช่วง 19–36 ไม่ท าปฏิกิริยากับน้ า แต่ท าปฏิกิริยากับกรด ให้แก๊ส Y และสารละลายไม่มีสี ถ้า X 2 mol ท าปฏิกิริยาพอดีกับแก๊สคลอรีน 3 mol ได้สารประกอบคลอไรด์ ข้อสรุปใดผิด",
+    "choices": [
+      "X อยู่หมู่ VA",
+      "X อยู่ในคาบที่ 4",
+      "แก๊ส Y ที่เกิดขึ้นคือไฮโดรเจน",
+      "X อยู่หมู่เดียวกับอะลูมิเนียม"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q20",
+    "year": 61,
+    "questionNum": 20,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y61-p6.png",
+    "text": "ธาตุ M มีเลขอะตอม 37 สมการเคมีแสดงปฏิกิริยาที่เกี่ยวกับธาตุหรือสารประกอบของ M ข้อใดถูกต้อง",
+    "choices": [
+      "M(s) + H2O(l) → 2MOH(aq) + H2(g)",
+      "M(s) + HCl(aq) → MCl2(aq) + H2(g)",
+      "MBr(aq) + I2(s) → MI(aq) + Br2(l)",
+      "M2SO4(aq) + BaCl2(aq) → ไม่เกิดปฏิกิริยา"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 61"
   },
   {
     "id": "y61-q21",
@@ -432,6 +1281,102 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "N≡C-C≡N: พันธะสาม 2 พันธะ, พันธะเดี่ยว 1 พันธะ, lone pair ที่ N แต่ละตัว = 2 คู่รวม"
   },
   {
+    "id": "y61-q22",
+    "year": 61,
+    "questionNum": 22,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y61-p6.png",
+    "text": "สารประกอบ A เกิดจากการสร้างพันธะของธาตุที่มีเลขอะตอม 6 กับ 16 ส่วนสารประกอบ B เกิดจากธาตุที่มี เลขอะตอม 14 กับ 8 ข้อใดสรุปเกี่ยวกับสารประกอบ A และ B ถูกต้อง",
+    "choices": [
+      "สารประกอบ A มีแรงยึดเหนี่ยวระหว่างโมเลกุลเป็นแรงดึงดูดระหว่างขั้ว",
+      "สารประกอบ A มีจุดหลอมเหลวและจุดเดือดสูงกว่าสารประกอบ B",
+      "สารประกอบ B ไม่ละลายน้ า แต่มีจุดหลอมเหลวและจุดเดือดสูง",
+      "สารประกอบ B สามารถละลายได้ดีในเฮกเซน"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q23",
+    "year": 61,
+    "questionNum": 23,
+    "topicId": "thermochemistry",
+    "imageUrl": "/exam-images/y61-p6.png",
+    "text": "ข้อที่ 23 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q24",
+    "year": 61,
+    "questionNum": 24,
+    "topicId": "thermochemistry",
+    "imageUrl": "/exam-images/y61-p6.png",
+    "text": "ข้อใดประกอบด้วยสารประกอบโคเวเลนต์ที่ละลายน้ าได้ดีทุกสาร",
+    "choices": [
+      "กลูโคส เบนซีน น้ าแข็งแห้ง",
+      "เอทานอล ไฮโดรเจนฟลูออไรด์ กรดแอซีติก",
+      "กรดไฮโดรคลอริก คาร์บอนเตตระคลอไรด์ ซิลิคอนไดออกไซด์",
+      "คาร์บอนไดซัลไฟด์ ออกซิเจนไดฟลูออไรด์ แอมโมเนียมคลอไรด์"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q25",
+    "year": 61,
+    "questionNum": 25,
+    "topicId": "thermochemistry",
+    "imageUrl": "/exam-images/y61-p7.png",
+    "text": "ข้อที่ 25 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q26",
+    "year": 61,
+    "questionNum": 26,
+    "topicId": "thermochemistry",
+    "imageUrl": "/exam-images/y61-p7.png",
+    "text": "เมื่อน าสารผสมระหว่าง เอทานอล (CH3CH2OH) ไดเอทิลอีเทอร์ (CH3CH2OCH2CH3) และบิวเทน (CH3CH2CH2CH3) มากลั่นล าดับส่วน ล าดับของสารที่กลั่นออกมาเป็นดังข้อใด ล าดับที่ 1 ล าดับที่ 2 ล าดับที่ 3",
+    "choices": [
+      "เอทานอล ไดเอทิลอีเทอร์ บิวเทน",
+      "ไดเอทิลอีเทอร์ บิวเทน เอทานอล",
+      "บิวเทน ไดเอทิลอีเทอร์ เอทานอล",
+      "บิวเทน เอทานอล ไดเอทิลอีเทอร์"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q27",
+    "year": 61,
+    "questionNum": 27,
+    "topicId": "thermochemistry",
+    "imageUrl": "/exam-images/y61-p7.png",
+    "text": "พิจารณาโมเลกุลหรือไอออนต่อไปนี้ : NO2, BF  4 , XeF4, CO  23 ข้อใดมีอะตอมกลางเป็นไปตามกฎออกเตตทั้งคู่",
+    "choices": [
+      "NO2 และ BF  4",
+      "NO2 และ CO  23",
+      "BF  4 และ XeF4",
+      "BF  4 และ CO  23"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 61"
+  },
+  {
     "id": "y61-q28",
     "year": 61,
     "questionNum": 28,
@@ -445,6 +1390,70 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 3,
     "explanation": "NH4+ มีพันธะ N-H 4 พันธะที่สมมูลกันทั้งหมด ข้อ ง. ผิด"
+  },
+  {
+    "id": "y61-q29",
+    "year": 61,
+    "questionNum": 29,
+    "topicId": "thermochemistry",
+    "imageUrl": "/exam-images/y61-p7.png",
+    "text": "รูปร่างโมเลกุลในข้อใดแตกต่างจากข้ออื่น",
+    "choices": [
+      "SO2",
+      "CO2",
+      "XeF2",
+      "BeCl2"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q30",
+    "year": 61,
+    "questionNum": 30,
+    "topicId": "thermochemistry",
+    "imageUrl": "/exam-images/y61-p7.png",
+    "text": "ถ้าพิจารณาเฉพาะมุมระหว่างพันธะที่เล็กที่สุดในโมเลกุลต่อไปนี้ มุมระหว่างพันธะของโมเลกุลใดมีค่าน้อยที่สุด",
+    "choices": [
+      "NCl3",
+      "PCl5",
+      "SOCl2",
+      "CH2Cl2"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q31",
+    "year": 61,
+    "questionNum": 31,
+    "topicId": "thermochemistry",
+    "imageUrl": "/exam-images/y61-p8.png",
+    "text": "สารในข้อใดมีแรงยึดเหนี่ยวระหว่างโมเลกุลเป็นแรงระหว่างขั้วทั้งคู่",
+    "choices": [
+      "PCl3 และ CO2",
+      "NH3 และ O2",
+      "CH4 และ SiH4",
+      "PH3 และ H2S"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q32",
+    "year": 61,
+    "questionNum": 32,
+    "topicId": "thermochemistry",
+    "imageUrl": "/exam-images/y61-p8.png",
+    "text": "ข้อที่ 32 (ดูรูปในหน้า 8)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(placeholder) ดูรูปในหน้า 8 ของข้อสอบปี 61"
   },
   {
     "id": "y61-q33",
@@ -522,6 +1531,38 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "Na₂CO₃=0.006 mol, AgNO₃=0.005 mol. 2Ag⁺+CO₃²⁻→Ag₂CO₃: Ag⁺ หมด ใช้ CO₃²⁻ 0.0025. CO₃²⁻ เหลือ = 0.006−0.0025 = 0.0035 mol ในปริมาตรรวม 0.1 dm³ = 0.035 M → ข้อ ข"
   },
   {
+    "id": "y61-q38",
+    "year": 61,
+    "questionNum": 38,
+    "topicId": "thermochemistry",
+    "imageUrl": "/exam-images/y61-p9.png",
+    "text": "โลหะผสมประกอบด้วยอะลูมิเนียม สังกะสี ซิลิคอน และทองแดง ถ้าน าโลหะผสมนี้ 1000 mg มาละลายด้วย สารละลายกรดไฮโดรคลอริกมากเกินพอ จะเกิดแก๊สไฮโดรเจนปริมาตร 448 cm3 ที่ STP และมีของแข็ง เหลืออยู่ 350 mg ซึ่งประกอบด้วยซิลิคอนและทองแดง ข้อใดคือร้อยละโดยมวลของอะลูมิเนียมในโลหะผสม",
+    "choices": [
+      "17.0",
+      "24.9",
+      "31.3",
+      "36.4"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q39",
+    "year": 61,
+    "questionNum": 39,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y61-p9.png",
+    "text": "ข้อที่ 39 (ดูรูปในหน้า 9)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(placeholder) ดูรูปในหน้า 9 ของข้อสอบปี 61"
+  },
+  {
     "id": "y61-q40",
     "year": 61,
     "questionNum": 40,
@@ -535,6 +1576,38 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 3,
     "explanation": "B₂H₆ ทฤษฎี = 0.210/0.70 = 0.300 mol. อัตราส่วน NaBH₄:B₂H₆ = 3:2 → NaBH₄ = 0.300×3/2 = 0.450 mol → ข้อ ง"
+  },
+  {
+    "id": "y61-q41",
+    "year": 61,
+    "questionNum": 41,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y61-p9.png",
+    "text": "โซเดียมเอไซด์ (NaN3) เป็นสารที่บรรจุในถุงลมนิรภัยในรถยนต์ แรงกระแทกเมื่อรถชนกันจะท าให้ NaN3 สลายตัวได้ผลิตภัณฑ์เป็นแก๊สไนโตรเจนและโลหะโซเดียม แก๊สไนโตรเจนที่เกิดขึ้นจะท าให้ถุงลมนิรภัยพองขึ้น อย่างรวดเร็ว และป้องกันไม่ให้ผู้ขับกระแทกกับพวงมาลัยรถ ส่วนโลหะโซเดียมอาจเกิดการระเบิดได้เมื่อสัมผัส กับควา",
+    "choices": [
+      "39",
+      "49",
+      "52",
+      "59"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q42",
+    "year": 61,
+    "questionNum": 42,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y61-p9.png",
+    "text": "แร่ Trona มีสูตรเคมีเป็น Na2CO3NaHCO32H2O และมีมวลสูตรเท่ากับ 226 จะต้องใช้สารละลาย HCl เข้มข้น 0.125 mol/dm3 กี่ลูกบาศก์เซนติเมตร ในการเปลี่ยนคาร์บอเนตและไบคาร์บอเนตในตัวอย่างแร่ 0.452 g ไปเป็นคาร์บอนไดออกไซด์และน้ าอย่างสมบูรณ์ ก าหนดให้ HCO  3 (aq) + H+(aq) → CO2(g) + H2O(l) CO  23 (aq) + 2H+",
+    "choices": [
+      "16.0",
+      "32.0",
+      "48.0",
+      "64.0"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 61"
   },
   {
     "id": "y61-q43",
@@ -612,6 +1685,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "CH₃COOH = 200×1.15×0.05/60 = 0.1917 mol. NaHCO₃ = 4.200/84 = 0.05 mol (1:1). เหลือ = 0.1417 mol ใน 0.2 dm³ = 0.708 M → ข้อ ข"
   },
   {
+    "id": "y61-q48",
+    "year": 61,
+    "questionNum": 48,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y61-p10.png",
+    "text": "ถ้าต้องการเตรียมสารละลายที่มีความเข้มข้นของไฮดรอกไซด์ไอออนเท่ากับ 0.4016 mol/dm3 ปริมาตร 500.0 cm3 โดยใช้สารละลาย Ba(OH)2 เข้มข้น 342 ppm ซึ่งมีความหนาแน่น 1.00 g/cm3 ปริมาตร 200.0 cm3 ผสมกับสารละลาย NaOH เข้มข้นร้อยละ 32.0 โดยมวล ซึ่งมีความหนาแน่น 1.25 g/cm3 แล้วจึงปรับ ปริมาตรของสารละลายเป็น 500 c",
+    "choices": [
+      "2.05",
+      "6.40",
+      "20.0",
+      "31.2"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 61"
+  },
+  {
     "id": "y61-q49",
     "year": 61,
     "questionNum": 49,
@@ -627,6 +1716,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "m = ΔTb/Kb = 1.40/2.53 = 0.5534. mol X = 0.5534×0.032 = 0.01771. M = 2.80/0.01771 = 158 → ข้อ ค"
   },
   {
+    "id": "y61-q50",
+    "year": 61,
+    "questionNum": 50,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y61-p11.png",
+    "text": "สารละลายในบีกเกอร์ที่ 1 คือ สารละลายของสาร M ในตัวท าละลาย A สารละลายนี้มีจุดเยือกแข็ง 2.0 oC สารละลายในบีกเกอร์ที่ 2 คือ สารละลายของสาร M ในตัวท าละลาย B ถ้ามวลของสาร M ในบีกเกอร์ทั้งสองเท่ากัน และมวลของตัวท าละลายในบีกเกอร์ทั้งสองเท่ากัน สารละลายใน บีกเกอร์ที่ 2 มีจุดเดือดเป็นกี่องศาเซลเซียส ก าหน",
+    "choices": [
+      "61.0",
+      "62.5",
+      "63.5",
+      "65.0"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 61"
+  },
+  {
     "id": "y61-q51",
     "year": 61,
     "questionNum": 51,
@@ -640,6 +1745,166 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "ผลต่าง = (100+0.51m) − (0−1.86m) = 100 + 2.37m = 109.48 → m = 4.0. น้ำ 100 g = 0.1 kg → mol X = 0.4 → มวล = 0.4×180 = 72.0 g → ข้อ ข"
+  },
+  {
+    "id": "y61-q52",
+    "year": 61,
+    "questionNum": 52,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y61-p11.png",
+    "text": "ข้อความใดผิด",
+    "choices": [
+      "ในน้ าแข็งแห้ง โมเลกุลของคาร์บอนไดออกไซด์ยึดเหนี่ยวกันด้วยแรงดึงดูดระหว่างขั้ว",
+      "LiF(s) ประกอบด้วย Li+ ไอออนและ F– ไอออนยึดเหนี่ยวกันด้วยแรงดึงดูดระหว่างประจุไฟฟ้า",
+      "Kr(s) ประกอบด้วยอะตอมของคริปตอนซึ่งไม่มีขั้วยึดเหนี่ยวกันด้วยแรงลอนดอน มีสมบัติเหมือนผลึก โมเลกุล",
+      "พันธะระหว่างอะตอมของทองค าเกิดจากแรงยึดเหนี่ยวระหว่างเวเลนซ์อิเล็กตรอนที่เคลื่อนที่ได้อย่างอิสระ กับโปรตอนในนิวเคลียสทุก"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q53",
+    "year": 61,
+    "questionNum": 53,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y61-p11.png",
+    "text": "พิจารณาสารต่อไปนี้ : C2H2, SiO2, CsI, W ข้อความใดผิด",
+    "choices": [
+      "W น าไฟฟ้าเมื่อมีสถานะเป็นของแข็ง",
+      "C2H2 มีสถานะเป็นแก๊สที่อุณหภูมิห้อง",
+      "CsI ละลายในน้ า ได้สารละลายที่น าไฟฟ้าได้",
+      "SiO2 มีจุดหลอมเหลวสูงกว่า C2H2 เนื่องจาก SiO2 มีแรงยึดเหนี่ยวระหว่างโมเลกุลเป็นแรงดึงดูดระหว่างขั้ว"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q54",
+    "year": 61,
+    "questionNum": 54,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y61-p11.png",
+    "text": "ข้อที่ 54 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(placeholder) ดูรูปในหน้า 11 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q55",
+    "year": 61,
+    "questionNum": 55,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y61-p12.png",
+    "text": "ที่อุณหภูมิ 25 oC สาร A, B และ C มีสถานะเป็นแก๊ส ของเหลว และของแข็ง ตามล าดับ จุดหลอมเหลวและจุดเดือดของสารทั้งสามในข้อใดเป็นไปได้ จุดเดือด (oC) จุดหลอมเหลว (oC) A B C A B C",
+    "choices": [
+      "–42 98 330 –188 –91 40",
+      "–42 330 98 –188 32 –91",
+      "98 –42 330 –91 –8.8 40",
+      "330 98 –42 32 –91 –188"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q56",
+    "year": 61,
+    "questionNum": 56,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y61-p12.png",
+    "text": "ข้อที่ 56 (ดูรูปในหน้า 12)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(placeholder) ดูรูปในหน้า 12 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q57",
+    "year": 61,
+    "questionNum": 57,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y61-p12.png",
+    "text": "ข้อใดถูกต้องเกี่ยวกับสมบัติของแก๊สตามทฤษฎีจลน์",
+    "choices": [
+      "โมเลกุลของแก๊สอุดมคติมีขนาดเล็กมากจนถือได้ว่ามีมวลเป็นศูนย์",
+      "ที่อุณหภูมิเดียวกัน โมเลกุลของแก๊ส A และแก๊ส B จะมีพลังงานจลน์เฉลี่ยเท่ากันเสมอ",
+      "แก๊สทั่วไปจะมีสมบัติใกล้เคียงกับแก๊สอุดมคติมากที่สุด ถ้าอยู่ในภาวะที่มีความดันสูงและอุณหภูมิต่ า",
+      "ถ้าลดอุณหภูมิของแก๊สจาก 100 oC เป็น 50 oC โดยที่ปริมาตรคงที่ ความดันของแก๊สจะเพิ่มขึ้นเป็น 2 เท่า"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q58",
+    "year": 61,
+    "questionNum": 58,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y61-p12.png",
+    "text": "พิจารณาไอของสารประกอบฟอสฟอรัสฟลูออไรด์สามชนิดคือ PF3, PF5 และ P2F4 ซึ่งมีสมบัติเป็นแก๊สอุดมคติ ไอของสารใดมีค่าความหนาแน่นเท่ากับ 4.60 g/L ที่ความดัน 0.82 atm และอุณหภูมิ 27 oC และถ้าปล่อยให้ ไอของสารทั้งสามชนิดผ่านท่อเล็ก ๆ ในสภาวะเดียวกัน ดังรูป ไอของสารใดแพร่จากจุด A ไปถึงจุด B ได้เร็วที่สุด สารที",
+    "choices": [
+      "PF5 PF3",
+      "PF5 P2F4",
+      "P2F4 PF3",
+      "P2F4 P2F4 A B"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q59",
+    "year": 61,
+    "questionNum": 59,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y61-p12.png",
+    "text": "แก๊สอุดมคติชนิดหนึ่ง มีความดัน 700 mmHg เมื่อปล่อยให้ฟุ้งกระจายที่อุณหภูมิเดิมจนกระทั่งความดันลดลง เป็น 200 mmHg อัตราส่วนระหว่างปริมาตรเดิมและปริมาตรใหม่เป็นเท่าใด",
+    "choices": [
+      "0.29 : 1",
+      "1 : 0.29",
+      "1 : 3.5",
+      "3.5 : 1"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y61-q60",
+    "year": 61,
+    "questionNum": 60,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y61-p12.png",
+    "text": "ฟองอากาศฟองหนึ่งมีปริมาตร 2.10 cm3 ลอยจากก้นทะเลสาบซึ่งมีอุณหภูมิ 10 oC และความดัน 5.66 atm ขึ้นมายังผิวน้ าซึ่งมีอุณหภูมิ 27 oC และความดัน 1.00 atm ฟองอากาศนี้จะมีปริมาตรสุดท้ายเป็นกี่ลูกบาศก์ เซนติเมตร",
+    "choices": [
+      "4.40",
+      "11.2",
+      "12.6",
+      "32.1 ส่วนที่ II. ข้อสอบอัตนัยแบบเขียนตอบ จ านวน 15 ข้อ ข้อละ 2 คะแนน รวม 30 คะแนน จงเขียนค าตอบลงในช่องว่างที่ก าหนดให้ใ"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 61"
+  },
+  {
+    "id": "y62-q1",
+    "year": 62,
+    "questionNum": 1,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y62-p3.png",
+    "text": "ข้อใดถูกต้องเกี่ยวกับจำนวนอนุภาคของ ¹²⁰₅₀Sn และ ¹²⁴₅₄Xe",
+    "choices": [
+      "จำนวนนิวตรอนห่างกัน 4 นิวตรอน",
+      "จำนวนโปรตอนของ Sn มากกว่าของ Xe",
+      "จำนวนอิเล็กตรอนของ Xe มากกว่าของ Sn ถึง 8 อิเล็กตรอน",
+      "จำนวนอิเล็กตรอนไม่เท่ากัน จำนวนนิวตรอนเท่ากัน และจำนวนโปรตอนไม่เท่ากัน"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sn-120: p=50, n=70, e=50. Xe-124: p=54, n=70, e=54. นิวตรอนของทั้งคู่ = 70 เท่ากัน แต่โปรตอนและอิเล็กตรอนต่างกัน → ข้อ ง ถูก"
   },
   {
     "id": "y62-q2",
@@ -747,6 +2012,38 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "IE กระโดดมากระหว่าง IE₂(1150)→IE₃(4920) แสดงว่า X มีเวเลนซ์อิเล็กตรอน 2 ตัว = หมู่ 2 (เช่น Ca). ออกไซด์เป็น XO อัตราส่วน X:O = 1:1 → ข้อ ค"
   },
   {
+    "id": "y62-q9",
+    "year": 62,
+    "questionNum": 9,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y62-p4.png",
+    "text": "การสลายตัวของนิวไคลด์กัมมันตรังสีในข้อใดถูกต้อง (ดูรูปประกอบ)",
+    "choices": [
+      "α decay เพิ่มเลขอะตอม 2 และลดเลขมวล 4",
+      "β⁻ decay ทำให้เลขอะตอมเพิ่ม 1",
+      "γ decay เปลี่ยนแปลงเลขอะตอมและเลขมวล",
+      "α decay ลดเลขอะตอม 2 และเพิ่มเลขมวล 4"
+    ],
+    "correctIndex": 1,
+    "explanation": "β⁻ decay: นิวตรอน → โปรตอน + β⁻ ทำให้เลขอะตอมเพิ่ม 1 เลขมวลคงที่. α decay ลดเลขอะตอม 2 ลดเลขมวล 4. γ ไม่เปลี่ยน Z หรือ A"
+  },
+  {
+    "id": "y62-q10",
+    "year": 62,
+    "questionNum": 10,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y62-p4.png",
+    "text": "ธาตุในข้อใดมีสมบัติที่กำหนดถูกต้องทั้งหมด (ดูตารางประกอบ)",
+    "choices": [
+      "N",
+      "Be",
+      "K",
+      "NH₃"
+    ],
+    "correctIndex": 0,
+    "explanation": "ดูตารางในรูปประกอบ"
+  },
+  {
     "id": "y62-q11",
     "year": 62,
     "questionNum": 11,
@@ -792,6 +2089,118 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "หมู่ 17 อยู่เป็นโมเลกุลอะตอมคู่พันธะเดี่ยว (I) และเกิดไอออน –1 กับโลหะ (III). EA ของ H ต่ำ (ไม่เหมือนหมู่17) และ +1 กับอโลหะเหมือนหมู่ 1 มากกว่า → ข้อ ค"
   },
   {
+    "id": "y62-q14",
+    "year": 62,
+    "questionNum": 14,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y62-p5.png",
+    "text": "ธาตุ X มีมวลอะตอมโดยประมาณ 36 เมื่อทำให้เป็นออกไซด์สูงสุด XO₂ และออกไซด์ต่ำสุด X₂O เลขออกซิเดชันของ X ในสาร XO₂ และ X₂O ตามลำดับคือข้อใด",
+    "choices": [
+      "+4, +1",
+      "+6, +2",
+      "+4, –2",
+      "+2, –1"
+    ],
+    "correctIndex": 0,
+    "explanation": "ใน XO₂: O มีเลขออกซิเดชัน –2, 2×(–2) = –4, ดังนั้น X = +4. ใน X₂O: 2X + (–2) = 0, X = +1. → +4 และ +1"
+  },
+  {
+    "id": "y62-q15",
+    "year": 62,
+    "questionNum": 15,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y62-p5.png",
+    "text": "ข้อใดเกี่ยวกับ [Co(NH₃)₅Cl]Cl₂ ไม่ถูกต้อง",
+    "choices": [
+      "ประจุของไอออนเชิงซ้อนเท่ากับ +2",
+      "Co มีเลขออกซิเดชัน +3",
+      "ไอออนตรงข้าม (counter ion) คือ Cl⁻ ปรากฏ 2 ตัวต่อสูตร",
+      "Co มีพันธะโคออร์ดิเนตกับ N และ Br"
+    ],
+    "correctIndex": 3,
+    "explanation": "ใน [Co(NH₃)₅Cl]²⁺ Co เชื่อมกับ N (จาก NH₃) และ Cl ไม่มี Br ในสารนี้ → ข้อ ง ไม่ถูก"
+  },
+  {
+    "id": "y62-q16",
+    "year": 62,
+    "questionNum": 16,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y62-p5.png",
+    "text": "จากสมการนิวเคลียร์ต่อไปนี้ ข้อใดถูกต้อง (ดูรูปประกอบ)",
+    "choices": [
+      "ปฏิกิริยา I เป็น α decay",
+      "ปฏิกิริยา II เป็น β⁺ decay",
+      "ผลิตภัณฑ์ของปฏิกิริยา I คือ ⁴He",
+      "เลขอะตอมของผลิตภัณฑ์ใน II น้อยกว่าสารตั้งต้น 1"
+    ],
+    "correctIndex": 3,
+    "explanation": "β⁻ decay: เลขอะตอมเพิ่ม 1, β⁺ decay: เลขอะตอมลด 1 → ในปฏิกิริยา β⁺ เลขอะตอมผลิตภัณฑ์น้อยกว่า 1"
+  },
+  {
+    "id": "y62-q17",
+    "year": 62,
+    "questionNum": 17,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y62-p5.png",
+    "text": "จากตารางแสดงการสลายตัวกัมมันตรังสีในข้อใดถูกต้อง (ดูตารางในรูป)",
+    "choices": [
+      "ก. a=90, b=2",
+      "ข. a=90, b=34",
+      "ค. a=94, b=2",
+      "ง. a=94, b=34"
+    ],
+    "correctIndex": 1,
+    "explanation": "ดูการอนุรักษ์เลขอะตอมและเลขมวลในตารางประกอบ"
+  },
+  {
+    "id": "y62-q18",
+    "year": 62,
+    "questionNum": 18,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y62-p6.png",
+    "text": "โบห์เรียม (Bh) เป็นธาตุกัมมันตรังสีที่สร้างขึ้น สมบัติข้อใดสันนิษฐานได้ถูกต้อง",
+    "choices": [
+      "อยู่ในคาบที่ 6 หมู่ที่ 7",
+      "เป็นอโลหะ มีจุดหลอมเหลวต่ำ",
+      "เป็นของแข็งที่ 25°C",
+      "มีอิเล็กตรอนในวงวาเลนซ์เพียง 2 ตัว"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bh (Z=107) อยู่คาบ 7 หมู่ 7 (VIIB) เป็นโลหะทรานซิชัน → เป็นของแข็งที่ 25°C มีจุดหลอมเหลวสูง ไม่ใช่อโลหะ"
+  },
+  {
+    "id": "y62-q19",
+    "year": 62,
+    "questionNum": 19,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y62-p6.png",
+    "text": "ธาตุ X อยู่ในคาบ 3 ออกไซด์สูงสุดของ X เป็นออกไซด์ที่เป็นกรด ธาตุ X ควรอยู่ในหมู่ใด",
+    "choices": [
+      "หมู่ IA",
+      "หมู่ IIA",
+      "หมู่ IVA",
+      "หมู่ VIA"
+    ],
+    "correctIndex": 3,
+    "explanation": "ออกไซด์สูงสุดของหมู่ VIA (เช่น SO₃) เป็นกรด. หมู่ IA/IIA เป็นเบส. หมู่ IVA เป็นกลาง (SiO₂) หรืออ่อน"
+  },
+  {
+    "id": "y62-q20",
+    "year": 62,
+    "questionNum": 20,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y62-p6.png",
+    "text": "จัดว่าข้อความเกี่ยวกับ (XeO₃)F₂ ต่อไปนี้ข้อใดถูก\nI. Xe มีเลขออกซิเดชัน +6\nII. รูปร่างโมเลกุลเป็น octahedral\nIII. โมเลกุลมีขั้ว\nIV. มี lone pair บน Xe จำนวน 0 คู่",
+    "choices": [
+      "I เท่านั้น",
+      "I และ III",
+      "II และ III",
+      "I, II และ IV"
+    ],
+    "correctIndex": 1,
+    "explanation": "XeO₃F₂: Xe มี 3O + 2F + 1 lone pair → trigonal bipyramidal variant → มีขั้ว. เลขออกซิเดชัน Xe: 3(–2)+2(–1)+Xe=0 → Xe=+8. (ตรวจสอบกับรูปในหน้า 6)"
+  },
+  {
     "id": "y62-q21",
     "year": 62,
     "questionNum": 21,
@@ -807,6 +2216,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "I ถูก (NO₃⁻ เรโซแนนซ์ 3 โครงสร้าง). II ผิด: NH₄Br มีพันธะไอออนิกระหว่าง NH₄⁺ กับ Br⁻. III ถูก: C₂H₂ (H–C≡C–H) และ HCN (H–C≡N) มีพันธะสาม = ใช้ 6 e⁻ ร่วมกัน → ข้อ ข"
   },
   {
+    "id": "y62-q22",
+    "year": 62,
+    "questionNum": 22,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y62-p6.png",
+    "text": "จากตาราง พิจารณาสูตรเคมีของสารประกอบไอออนิก ข้อใดถูกต้องทั้งหมด (ดูตารางประกอบ)",
+    "choices": [
+      "ก. I เท่านั้น",
+      "ข. I และ II",
+      "ค. I และ III",
+      "ง. I, II และ III"
+    ],
+    "correctIndex": 1,
+    "explanation": "ดูตารางสูตรไอออนิกในรูปประกอบหน้า 6"
+  },
+  {
     "id": "y62-q23",
     "year": 62,
     "questionNum": 23,
@@ -820,6 +2245,38 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 0,
     "explanation": "BF₃ (B มี 6e⁻ ขาดออกเตต), SF₆ (S ขยายออกเตต 12e⁻), XeF₂ (Xe ขยายออกเตต) — ทั้งสามไม่เป็นไปตามกฎออกเตต → ข้อ ก"
+  },
+  {
+    "id": "y62-q24",
+    "year": 62,
+    "questionNum": 24,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y62-p7.png",
+    "text": "พิจารณาการอ่านชื่อและรูปร่างโมเลกุลตามแบบจำลอง VSEPR ของสารในตาราง ข้อใดถูกต้อง (ดูตารางประกอบ)",
+    "choices": [
+      "I เท่านั้น",
+      "I และ II",
+      "III เท่านั้น",
+      "I และ III"
+    ],
+    "correctIndex": 0,
+    "explanation": "ดูตารางชื่อสารและรูปร่างโมเลกุล VSEPR ในรูปประกอบหน้า 7"
+  },
+  {
+    "id": "y62-q25",
+    "year": 62,
+    "questionNum": 25,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y62-p7.png",
+    "text": "ข้อใดถูกต้องเกี่ยวกับ IF₅ และ XeF₄",
+    "choices": [
+      "มีรูปร่างโมเลกุลเหมือนกัน",
+      "มีจำนวน lone pair รอบอะตอมกลางเท่ากัน",
+      "ทั้งคู่ไม่มีขั้ว",
+      "IF₅ มีขั้ว XeF₄ ไม่มีขั้ว"
+    ],
+    "correctIndex": 3,
+    "explanation": "IF₅: square pyramidal (1 lone pair บน I) → มีขั้ว. XeF₄: square planar (2 lone pair บน Xe, สมมาตร) → ไม่มีขั้ว"
   },
   {
     "id": "y62-q26",
@@ -852,6 +2309,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "XeF₄: AX₄E₂ = สี่เหลี่ยมแบนราบ (square planar). ดึง lone pair 1 คู่ออก → AX₄E₁ = seesaw → ข้อ ข"
   },
   {
+    "id": "y62-q28",
+    "year": 62,
+    "questionNum": 28,
+    "topicId": "states-of-matter",
+    "imageUrl": "/exam-images/y62-p7.png",
+    "text": "จัดว่าข้อความเกี่ยวกับแรงระหว่างโมเลกุลต่อไปนี้ข้อใดถูก (ดูตารางประกอบ)",
+    "choices": [
+      "I เท่านั้น",
+      "II เท่านั้น",
+      "I และ II",
+      "I, II และ III"
+    ],
+    "correctIndex": 2,
+    "explanation": "ดูตารางแรงระหว่างโมเลกุลในรูปประกอบหน้า 7"
+  },
+  {
     "id": "y62-q29",
     "year": 62,
     "questionNum": 29,
@@ -882,6 +2355,102 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "I ถูก: CCl₄ ระเหยยากกว่าน้ำ ความดันไอต่ำกว่า. II ผิด: SF₆ มีมวลและขนาดมากกว่า แรงลอนดอนมากกว่า จุดเดือดสูงกว่า SF₄. III ผิด: SO₂ ละลายน้ำได้ดี → ข้อ ก"
   },
   {
+    "id": "y62-q31",
+    "year": 62,
+    "questionNum": 31,
+    "topicId": "states-of-matter",
+    "imageUrl": "/exam-images/y62-p8.png",
+    "text": "พิจารณาข้อความต่อไปนี้\nI. น้ำแข็งแห้งระเหิดโดยไม่ผ่านสถานะของเหลว\nII. น้ำบริสุทธิ์ที่ 0°C และ 1 atm เกิดสมดุลระหว่างน้ำแข็งและน้ำเหลว\nข้อใดถูกต้อง",
+    "choices": [
+      "I เท่านั้น",
+      "II เท่านั้น",
+      "ทั้ง I และ II",
+      "ไม่มีข้อใดถูก"
+    ],
+    "correctIndex": 2,
+    "explanation": "CO₂(แห้ง) ระเหิดที่ความดันบรรยากาศ → I ถูก. H₂O ที่ 0°C 1 atm อยู่ในสมดุลน้ำแข็ง-น้ำ → II ถูก"
+  },
+  {
+    "id": "y62-q32",
+    "year": 62,
+    "questionNum": 32,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y62-p8.png",
+    "text": "กำหนดธาตุ A, D, E, G มีสมบัติตามตาราง ข้อใดถูกต้อง (ดูตารางประกอบ)",
+    "choices": [
+      "สารประกอบของ A และ G เป็นไอออนิก",
+      "จุดเดือดของ G สูงกว่า D",
+      "ออกไซด์ของ A เป็นออกไซด์กรด",
+      "ขนาดอะตอม A > D > E > G"
+    ],
+    "correctIndex": 0,
+    "explanation": "ดูสมบัติของ A, D, E, G จากตารางในรูปหน้า 8 เพื่อตัดสินข้อ"
+  },
+  {
+    "id": "y62-q33",
+    "year": 62,
+    "questionNum": 33,
+    "topicId": "states-of-matter",
+    "imageUrl": "/exam-images/y62-p8.png",
+    "text": "พิจารณาข้อความต่อไปนี้เกี่ยวกับสารอินทรีย์\nI. บิวเทน (C₄H₁₀) มีจุดเดือดสูงกว่าโพรเพน (C₃H₈)\nII. เอทานอล (C₂H₅OH) มีจุดเดือดสูงกว่าไดเมทิลอีเทอร์ (CH₃OCH₃)\nIII. กลีเซอรอล (C₃H₈O₃) มีจุดเดือดสูงกว่าเอทิลีนไกลคอล (C₂H₆O₂)\nข้อใดถูกต้อง",
+    "choices": [
+      "I เท่านั้น",
+      "I และ II",
+      "II และ III",
+      "I, II และ III"
+    ],
+    "correctIndex": 3,
+    "explanation": "I: C₄ > C₃ มวลมากกว่า → ถูก. II: เอทานอลมี H-bond → จุดเดือดสูงกว่าอีเทอร์ → ถูก. III: กลีเซอรอลมี 3 OH → H-bond มากกว่าเอทิลีนไกลคอล (2 OH) → ถูก"
+  },
+  {
+    "id": "y62-q34",
+    "year": 62,
+    "questionNum": 34,
+    "topicId": "states-of-matter",
+    "imageUrl": "/exam-images/y62-p8.png",
+    "text": "สารชนิดหนึ่งมีสมบัติ: มีจุดหลอมเหลวสูง นำไฟฟ้าได้เมื่อหลอมเหลว ละลายน้ำได้ สารนี้น่าจะเป็นชนิดใด",
+    "choices": [
+      "โมเลกุลโคเวเลนต์",
+      "ไอออนิก",
+      "โลหะ",
+      "โคเวเลนต์โครงร่างตาข่าย"
+    ],
+    "correctIndex": 1,
+    "explanation": "จุดหลอมเหลวสูง + นำไฟฟ้าเมื่อหลอมเหลว + ละลายน้ำ → สารไอออนิก"
+  },
+  {
+    "id": "y62-q35",
+    "year": 62,
+    "questionNum": 35,
+    "topicId": "states-of-matter",
+    "imageUrl": "/exam-images/y62-p9.png",
+    "text": "X, Y และ Z เป็นสารประกอบโคเวเลนต์ ที่ 25°C สาร X และ Y เป็นของเหลว มีความดันไอ 0.7 atm และ 0.3 atm ตามลำดับ สาร Z มีจุดเดือดต่ำกว่า 25°C จัดว่าข้อความต่อไปนี้ข้อใดถูก\nI. X มีแรงยึดเหนี่ยวระหว่างโมเลกุลน้อยกว่า Y\nII. จุดเดือดของ Z ต่ำกว่า X\nIII. ความดันไอของ Z ที่ 25°C น้อยกว่า Y",
+    "choices": [
+      "I เท่านั้น",
+      "I และ II",
+      "II เท่านั้น",
+      "I, II และ III"
+    ],
+    "correctIndex": 1,
+    "explanation": "I: X มีความดันไอสูงกว่า Y → แรงยึดเหนี่ยวระหว่างโมเลกุลน้อยกว่า → ถูก. II: Z เป็นก๊าซที่ 25°C → จุดเดือด < 25°C < จุดเดือด X (ของเหลว) → ถูก. III: Z เป็นก๊าซ ความดันไอ = ความดันรวม >> 0.3 atm ของ Y → ผิด"
+  },
+  {
+    "id": "y62-q36",
+    "year": 62,
+    "questionNum": 36,
+    "topicId": "states-of-matter",
+    "imageUrl": "/exam-images/y62-p9.png",
+    "text": "จากรูปที่แสดงภาชนะ A บรรจุของเหลว X และภาชนะ B ว่างเปล่า เมื่อเปิดวาล์วให้ถึงกัน จัดว่าข้อความต่อไปนี้ข้อใดถูกต้อง (ดูรูปประกอบ)",
+    "choices": [
+      "ของเหลวจาก A จะถ่ายเทไปยัง B ทั้งหมด",
+      "ความดันไอของระบบจะเพิ่มขึ้นเรื่อยๆ",
+      "สมดุลไอ-ของเหลวจะเกิดใหม่ที่ความดันไอต่ำกว่าเดิม",
+      "ถ้าปริมาตร B มากพอ ของเหลวจะระเหยจนหมดและความดันต่ำกว่าความดันไออิ่มตัว"
+    ],
+    "correctIndex": 3,
+    "explanation": "เมื่อปริมาตรเพิ่มขึ้น ถ้าพื้นที่มากพอ ของเหลวระเหยทั้งหมดกลายเป็นก๊าซที่ความดัน < P_vap"
+  },
+  {
     "id": "y62-q37",
     "year": 62,
     "questionNum": 37,
@@ -910,6 +2479,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 2,
     "explanation": "กฎเกย์-ลูสแซก P₁/T₁=P₂/T₂. T₁=300 K, T₂=600 K. P₂=2.0×600/300=4.0 atm → ข้อ ค"
+  },
+  {
+    "id": "y62-q39",
+    "year": 62,
+    "questionNum": 39,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y62-p10.png",
+    "text": "ในการสังเคราะห์แก๊ส NO₂ โดยบรรจุสารตั้งต้นในภาชนะดังรูป ปฏิกิริยา: 2NO(g) + O₂(g) ⇌ 2NO₂(g) ΔH < 0 จัดว่าข้อใดถูกต้อง (ดูรูปประกอบ)",
+    "choices": [
+      "ถ้า NO มากกว่า O₂ จะได้ NO₂ มากขึ้น",
+      "เมื่อถึงสมดุล ความเข้มข้นของ NO₂ จะไม่เปลี่ยน",
+      "การเพิ่มอุณหภูมิจะทำให้ได้ NO₂ มากขึ้น",
+      "การลดปริมาตรภาชนะจะทำให้ equilibrium เลื่อนไปทางซ้าย"
+    ],
+    "correctIndex": 1,
+    "explanation": "ที่สมดุล ความเข้มข้นของสารทุกชนิดคงที่ → ข้อ ข ถูก. อุณหภูมิเพิ่ม → equilibrium เลื่อนไป endothermic (ซ้าย) ได้ NO₂ น้อยลง → ข้อ ค ผิด"
   },
   {
     "id": "y62-q40",
@@ -972,6 +2557,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "X₂=56.0/22400=0.0025 โมล. มวล X₂=1.12−0.72=0.40 g (อนุรักษ์มวล). มวลโมเลกุล X₂=0.40/0.0025=160 → มวลอะตอม X=80 → ข้อ ง"
   },
   {
+    "id": "y62-q44",
+    "year": 62,
+    "questionNum": 44,
+    "topicId": "electrochemistry",
+    "imageUrl": "/exam-images/y62-p11.png",
+    "text": "พิจารณาปฏิกิริยา: MnO₂(s) + 4HCl(aq) → MnCl₂(aq) + Cl₂(g) + 2H₂O(l) ข้อใดถูกต้อง",
+    "choices": [
+      "MnO₂ เป็นตัวรีดิวซ์",
+      "Cl⁻ เป็นตัวออกซิไดซ์",
+      "Mn ถูกรีดิวซ์จาก +4 เป็น +2",
+      "Cl ไม่มีการเปลี่ยนเลขออกซิเดชัน"
+    ],
+    "correctIndex": 2,
+    "explanation": "MnO₂: Mn = +4. MnCl₂: Mn = +2 → Mn ถูกรีดิวซ์ (+4→+2) → MnO₂ เป็นตัวออกซิไดซ์. HCl: Cl = –1. Cl₂: Cl = 0 → Cl ถูกออกซิไดซ์ → Cl⁻ เป็นตัวรีดิวซ์"
+  },
+  {
     "id": "y62-q45",
     "year": 62,
     "questionNum": 45,
@@ -985,6 +2586,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 2,
     "explanation": "อัตราส่วนปริมาตร = อัตราส่วนโมล: 3X₂ + Y₃ → 3Z. นับอะตอม: X=6, Y=3 กระจายใน 3 โมเลกุล Z → แต่ละ Z มี X₂Y → ข้อ ค"
+  },
+  {
+    "id": "y62-q46",
+    "year": 62,
+    "questionNum": 46,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y62-p12.png",
+    "text": "สารละลาย A มีความเข้มข้น 0.10 mol/dm³ ปริมาตร 25 cm³ ต้องการเจือจางให้ได้ความเข้มข้น 0.025 mol/dm³ ต้องเติมน้ำอีกกี่ cm³",
+    "choices": [
+      "25",
+      "75",
+      "50",
+      "100"
+    ],
+    "correctIndex": 1,
+    "explanation": "C₁V₁ = C₂V₂ → 0.10 × 25 = 0.025 × V₂ → V₂ = 100 cm³ → เติมน้ำ = 100 – 25 = 75 cm³"
   },
   {
     "id": "y62-q47",
@@ -1002,6 +2619,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "NH₃=85/17=5 mol, O₂=96/32=3 mol. O₂ ต้องการ 5×5/4=6.25 mol แต่มีแค่ 3 → O₂ เป็นตัวกำหนด. NO ทางทฤษฎี=(4/5)×3=2.4 mol=72 g. ผลได้=54/72×100=75% → ข้อ ง"
   },
   {
+    "id": "y62-q48",
+    "year": 62,
+    "questionNum": 48,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y62-p12.png",
+    "text": "สารละลายที่มีจุดเยือกแข็ง –0.930°C (Kf = 1.86 °C/mol·kg) มีโมแลลิตีเท่าใด",
+    "choices": [
+      "0.25",
+      "0.50",
+      "1.00",
+      "1.86"
+    ],
+    "correctIndex": 1,
+    "explanation": "ΔTf = Kf × m → 0.930 = 1.86 × m → m = 0.50 mol/kg"
+  },
+  {
     "id": "y62-q49",
     "year": 62,
     "questionNum": 49,
@@ -1015,6 +2648,70 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "FeS₂ = 480×0.05 = 24 g; M(FeS₂)=120 → 0.2 mol. 4FeS₂+11O₂→2Fe₂O₃+8SO₂: SO₂ = 0.2×(8/4)=0.4 mol = 0.4×64 = 25.6 g → ข้อ ข"
+  },
+  {
+    "id": "y62-q50",
+    "year": 62,
+    "questionNum": 50,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y62-p12.png",
+    "text": "สูตรเอมพิริคัลของสารอินทรีย์ชนิดหนึ่งซึ่งประกอบด้วย C:H:O มีอัตราส่วนโดยมวล 24:5:20 สูตรเอมพิริคัลคือข้อใด",
+    "choices": [
+      "C₂H₅O₂",
+      "CH₂O",
+      "C₃H₅O₂",
+      "C₂H₅O"
+    ],
+    "correctIndex": 0,
+    "explanation": "หาร C:H:O ด้วยมวลอะตอม: 24/12=2, 5/1=5, 20/16=1.25. หารด้วย 1.25: C=1.6, H=4, O=1. อัตราส่วน ×5: C₈H₂₀O₅ → หาอัตราส่วนน้อยสุด: 24/12:5/1:20/16 = 2:5:1.25 → ×4 = 8:20:5, หาร GCD=1 → C₈H₂₀O₅ → ตรวจสอบกับตัวเลือก ข้อ ก C₂H₅O₂"
+  },
+  {
+    "id": "y62-q51",
+    "year": 62,
+    "questionNum": 51,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y62-p12.png",
+    "text": "สารละลาย NH₄Cl 0.20 mol/dm³ ปริมาตร 25 cm³ ผสมกับสารละลาย FeCl₃ 0.10 mol/dm³ ปริมาตร 25 cm³ ความเข้มข้นของ Cl⁻ ในสารละลายผสมมีค่าเท่าใด (mol/dm³)",
+    "choices": [
+      "0.20",
+      "0.25",
+      "0.30",
+      "0.35"
+    ],
+    "correctIndex": 1,
+    "explanation": "mol Cl⁻ จาก NH₄Cl: 0.20 × 0.025 = 0.005 mol (1 Cl⁻/formula). จาก FeCl₃: 0.10 × 0.025 × 3 = 0.0075 mol. รวม = 0.0125 mol ใน 50 cm³ → [Cl⁻] = 0.0125/0.050 = 0.25 mol/dm³"
+  },
+  {
+    "id": "y62-q52",
+    "year": 62,
+    "questionNum": 52,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y62-p12.png",
+    "text": "ละลายสาร NaCl 14.6 g ใน 250 g น้ำ สารละลายนี้มีจุดเดือดเท่าใด (Kb ของน้ำ = 0.51 °C·kg/mol, NaCl แตกตัวสมบูรณ์)",
+    "choices": [
+      "100.51",
+      "101.02",
+      "101.53",
+      "102.04"
+    ],
+    "correctIndex": 1,
+    "explanation": "mol NaCl = 14.6/58.5 = 0.250 mol. m = 0.250/0.250 = 1.00 mol/kg. NaCl → Na⁺ + Cl⁻ → i=2. ΔTb = 0.51 × 1.00 × 2 = 1.02°C → จุดเดือด = 101.02°C"
+  },
+  {
+    "id": "y62-q53",
+    "year": 62,
+    "questionNum": 53,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y62-p13.png",
+    "text": "ที่ 25°C สารละลายน้ำชนิดหนึ่งมีความดันออสโมติก 24.6 atm คำนวณจากสมการ π=MRT (R=0.082 L·atm/mol·K) ความเข้มข้นของสารละลายนี้คือข้อใด",
+    "choices": [
+      "0.50 M",
+      "1.00 M",
+      "1.50 M",
+      "2.00 M"
+    ],
+    "correctIndex": 1,
+    "explanation": "M = π/(RT) = 24.6/(0.082 × 298) = 24.6/24.436 ≈ 1.00 mol/L"
   },
   {
     "id": "y62-q54",
@@ -1122,6 +2819,486 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "ΔTb=101.7−100=1.7°C → m·i=1.7/0.51=3.33. ΔTf=Kf·(m·i)=1.86×3.33=6.2°C → จุดเยือกแข็ง=0−6.2=−6.2°C → ข้อ ก"
   },
   {
+    "id": "y64-q1",
+    "year": 64,
+    "questionNum": 1,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p3.png",
+    "text": "ข้อที่ 1 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q2",
+    "year": 64,
+    "questionNum": 2,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p3.png",
+    "text": "ข้อที่ 2 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q3",
+    "year": 64,
+    "questionNum": 3,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p3.png",
+    "text": "ข้อที่ 3 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q4",
+    "year": 64,
+    "questionNum": 4,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p3.png",
+    "text": "ข้อที่ 4 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q5",
+    "year": 64,
+    "questionNum": 5,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p3.png",
+    "text": "ข้อที่ 5 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q6",
+    "year": 64,
+    "questionNum": 6,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p3.png",
+    "text": "ข้อที่ 6 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q7",
+    "year": 64,
+    "questionNum": 7,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p4.png",
+    "text": "ข้อที่ 7 (ดูรูปในหน้า 4)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q8",
+    "year": 64,
+    "questionNum": 8,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p4.png",
+    "text": "ข้อที่ 8 (ดูรูปในหน้า 4)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q9",
+    "year": 64,
+    "questionNum": 9,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p4.png",
+    "text": "ข้อที่ 9 (ดูรูปในหน้า 4)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q10",
+    "year": 64,
+    "questionNum": 10,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p4.png",
+    "text": "ข้อที่ 10 (ดูรูปในหน้า 4)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q11",
+    "year": 64,
+    "questionNum": 11,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p4.png",
+    "text": "ข้อที่ 11 (ดูรูปในหน้า 4)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q12",
+    "year": 64,
+    "questionNum": 12,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p4.png",
+    "text": "ข้อที่ 12 (ดูรูปในหน้า 4)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q13",
+    "year": 64,
+    "questionNum": 13,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p5.png",
+    "text": "ข้อที่ 13 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q14",
+    "year": 64,
+    "questionNum": 14,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p5.png",
+    "text": "ข้อที่ 14 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q15",
+    "year": 64,
+    "questionNum": 15,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y64-p5.png",
+    "text": "ข้อที่ 15 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q16",
+    "year": 64,
+    "questionNum": 16,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p5.png",
+    "text": "ข้อที่ 16 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q17",
+    "year": 64,
+    "questionNum": 17,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p5.png",
+    "text": "ข้อที่ 17 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q18",
+    "year": 64,
+    "questionNum": 18,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p5.png",
+    "text": "ข้อที่ 18 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q19",
+    "year": 64,
+    "questionNum": 19,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p6.png",
+    "text": "ข้อที่ 19 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q20",
+    "year": 64,
+    "questionNum": 20,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p6.png",
+    "text": "ข้อที่ 20 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q21",
+    "year": 64,
+    "questionNum": 21,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p6.png",
+    "text": "ข้อที่ 21 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q22",
+    "year": 64,
+    "questionNum": 22,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p6.png",
+    "text": "ข้อที่ 22 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q23",
+    "year": 64,
+    "questionNum": 23,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p6.png",
+    "text": "ข้อที่ 23 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q24",
+    "year": 64,
+    "questionNum": 24,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p6.png",
+    "text": "ข้อที่ 24 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q25",
+    "year": 64,
+    "questionNum": 25,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p7.png",
+    "text": "ข้อที่ 25 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q26",
+    "year": 64,
+    "questionNum": 26,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p7.png",
+    "text": "ข้อที่ 26 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q27",
+    "year": 64,
+    "questionNum": 27,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p7.png",
+    "text": "ข้อที่ 27 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q28",
+    "year": 64,
+    "questionNum": 28,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p7.png",
+    "text": "ข้อที่ 28 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q29",
+    "year": 64,
+    "questionNum": 29,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p7.png",
+    "text": "ข้อที่ 29 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q30",
+    "year": 64,
+    "questionNum": 30,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y64-p7.png",
+    "text": "ข้อที่ 30 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 64"
+  },
+  {
     "id": "y64-q31",
     "year": 64,
     "questionNum": 31,
@@ -1197,6 +3374,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "Na₃N มวลสูตร = 3(23)+14 = 83. ร้อยละ N = 14/83×100 = 16.9% → ข้อ ก"
   },
   {
+    "id": "y64-q36",
+    "year": 64,
+    "questionNum": 36,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y64-p8.png",
+    "text": "ข้อที่ 36 (ดูรูปในหน้า 8)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 64"
+  },
+  {
     "id": "y64-q37",
     "year": 64,
     "questionNum": 37,
@@ -1225,6 +3418,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 0,
     "explanation": "มวล H₂SO₄ = 5.00×1.30 = 6.5 g → 6.5/98 = 0.0663 mol ในปริมาตร 0.5 dm³ = 0.13 mol/dm³ → ข้อ ก"
+  },
+  {
+    "id": "y64-q39",
+    "year": 64,
+    "questionNum": 39,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y64-p9.png",
+    "text": "ข้อที่ 39 (ดูรูปในหน้า 9)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 64"
   },
   {
     "id": "y64-q40",
@@ -1272,6 +3481,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "มวลสารละลาย = 200 g มีกลูโคส 10 g. ให้เติม x g: (10+x)/(200+x)=0.10 → 0.9x=10 → x=11.1 ≈ 11.2 g → ข้อ ข"
   },
   {
+    "id": "y64-q43",
+    "year": 64,
+    "questionNum": 43,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y64-p10.png",
+    "text": "ข้อที่ 43 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 64"
+  },
+  {
     "id": "y64-q44",
     "year": 64,
     "questionNum": 44,
@@ -1285,6 +3510,54 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 3,
     "explanation": "โมแลล: A=(18/180)/0.082=1.22, B=1.0, C=0.18/(0.82×18/1000)=12.2. ลำดับ C>A>B. จุดเยือกแข็ง (ยิ่งโมแลลมากยิ่งต่ำ) → B>A>C → ข้อ ง"
+  },
+  {
+    "id": "y64-q45",
+    "year": 64,
+    "questionNum": 45,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y64-p10.png",
+    "text": "ข้อที่ 45 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q46",
+    "year": 64,
+    "questionNum": 46,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y64-p10.png",
+    "text": "ข้อที่ 46 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q47",
+    "year": 64,
+    "questionNum": 47,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y64-p10.png",
+    "text": "ข้อที่ 47 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 64"
   },
   {
     "id": "y64-q48",
@@ -1317,6 +3590,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "Al₄C₃ + 12H₂O → 4Al(OH)₃ + 3CH₄. CH₄ = 9.6/16 = 0.6 mol → Al(OH)₃ = 0.6×4/3 = 0.80 mol → ข้อ ง"
   },
   {
+    "id": "y64-q50",
+    "year": 64,
+    "questionNum": 50,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y64-p11.png",
+    "text": "ข้อที่ 50 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 64"
+  },
+  {
     "id": "y64-q51",
     "year": 64,
     "questionNum": 51,
@@ -1332,6 +3621,54 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "2Al + 2NaOH + 6H₂O → 2NaAl(OH)₄ + 3H₂. Al = 3.24/27 = 0.12 mol → H₂ = 0.12×3/2 = 0.18 mol → 0.18×22.4 = 4.03 ≈ 4.0 L → ข้อ ง"
   },
   {
+    "id": "y64-q52",
+    "year": 64,
+    "questionNum": 52,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y64-p11.png",
+    "text": "ข้อที่ 52 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q53",
+    "year": 64,
+    "questionNum": 53,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y64-p11.png",
+    "text": "ข้อที่ 53 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q54",
+    "year": 64,
+    "questionNum": 54,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y64-p11.png",
+    "text": "ข้อที่ 54 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 64"
+  },
+  {
     "id": "y64-q55",
     "year": 64,
     "questionNum": 55,
@@ -1345,6 +3682,54 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 2,
     "explanation": "Na₂S₂O₃ = 0.10×0.008 = 0.0008 mol → I₂ = 0.0004 mol → CO = 5×I₂ = 0.002 mol. ปริมาตร CO = 0.002×25.0 = 0.05 L = 50 mL. %v/v = 50/250×100 = 20% → ข้อ ค"
+  },
+  {
+    "id": "y64-q56",
+    "year": 64,
+    "questionNum": 56,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y64-p12.png",
+    "text": "ข้อที่ 56 (ดูรูปในหน้า 12)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q57",
+    "year": 64,
+    "questionNum": 57,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y64-p12.png",
+    "text": "ข้อที่ 57 (ดูรูปในหน้า 12)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 64"
+  },
+  {
+    "id": "y64-q58",
+    "year": 64,
+    "questionNum": 58,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y64-p12.png",
+    "text": "ข้อที่ 58 (ดูรูปในหน้า 12)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 64"
   },
   {
     "id": "y64-q59",
@@ -1377,6 +3762,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "C₆H₆ = 52/78 = 0.667 mol → ไนโตรเบนซีน = 0.667×0.85×123 = 69.7 ≈ 70.0 g → ข้อ ง"
   },
   {
+    "id": "y65-q1",
+    "year": 65,
+    "questionNum": 1,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p3.png",
+    "text": "ข้อที่ 1 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 65"
+  },
+  {
     "id": "y65-q2",
     "year": 65,
     "questionNum": 2,
@@ -1390,6 +3791,470 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 3,
     "explanation": "อนุกรมบัลเมอร์ 1/λ ∝ (1/4−1/n²): n ยิ่งสูง ΔE ยิ่งมาก λ ยิ่งสั้น. a(n=6)=410 ม่วง, c(n=5)=434 น้ำเงินแกมม่วง, b(n=4)=486 น้ำเงินเขียว, d(n=3)=656 แดง → a,b,c,d = ม่วง, น้ำเงินเขียว, น้ำเงินแกมม่วง, แดง → ข้อ ง"
+  },
+  {
+    "id": "y65-q3",
+    "year": 65,
+    "questionNum": 3,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p3.png",
+    "text": "ข้อที่ 3 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q4",
+    "year": 65,
+    "questionNum": 4,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p3.png",
+    "text": "ข้อที่ 4 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q5",
+    "year": 65,
+    "questionNum": 5,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p3.png",
+    "text": "ข้อที่ 5 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q6",
+    "year": 65,
+    "questionNum": 6,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p3.png",
+    "text": "ข้อที่ 6 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q7",
+    "year": 65,
+    "questionNum": 7,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p4.png",
+    "text": "ข้อที่ 7 (ดูรูปในหน้า 4)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q8",
+    "year": 65,
+    "questionNum": 8,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p4.png",
+    "text": "ข้อที่ 8 (ดูรูปในหน้า 4)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q9",
+    "year": 65,
+    "questionNum": 9,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p4.png",
+    "text": "ข้อที่ 9 (ดูรูปในหน้า 4)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q10",
+    "year": 65,
+    "questionNum": 10,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p4.png",
+    "text": "ข้อที่ 10 (ดูรูปในหน้า 4)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q11",
+    "year": 65,
+    "questionNum": 11,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p4.png",
+    "text": "ข้อที่ 11 (ดูรูปในหน้า 4)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q12",
+    "year": 65,
+    "questionNum": 12,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p4.png",
+    "text": "ข้อที่ 12 (ดูรูปในหน้า 4)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q13",
+    "year": 65,
+    "questionNum": 13,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p5.png",
+    "text": "ข้อที่ 13 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q14",
+    "year": 65,
+    "questionNum": 14,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p5.png",
+    "text": "ข้อที่ 14 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q15",
+    "year": 65,
+    "questionNum": 15,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y65-p5.png",
+    "text": "ข้อที่ 15 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q16",
+    "year": 65,
+    "questionNum": 16,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p5.png",
+    "text": "ข้อที่ 16 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q17",
+    "year": 65,
+    "questionNum": 17,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p5.png",
+    "text": "ข้อที่ 17 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q18",
+    "year": 65,
+    "questionNum": 18,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p5.png",
+    "text": "ข้อที่ 18 (ดูรูปในหน้า 5)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q19",
+    "year": 65,
+    "questionNum": 19,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p6.png",
+    "text": "ข้อที่ 19 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q20",
+    "year": 65,
+    "questionNum": 20,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p6.png",
+    "text": "ข้อที่ 20 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q21",
+    "year": 65,
+    "questionNum": 21,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p6.png",
+    "text": "ข้อที่ 21 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q22",
+    "year": 65,
+    "questionNum": 22,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p6.png",
+    "text": "ข้อที่ 22 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q23",
+    "year": 65,
+    "questionNum": 23,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p6.png",
+    "text": "ข้อที่ 23 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q24",
+    "year": 65,
+    "questionNum": 24,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p6.png",
+    "text": "ข้อที่ 24 (ดูรูปในหน้า 6)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q25",
+    "year": 65,
+    "questionNum": 25,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p7.png",
+    "text": "ข้อที่ 25 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q26",
+    "year": 65,
+    "questionNum": 26,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p7.png",
+    "text": "ข้อที่ 26 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q27",
+    "year": 65,
+    "questionNum": 27,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p7.png",
+    "text": "ข้อที่ 27 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q28",
+    "year": 65,
+    "questionNum": 28,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p7.png",
+    "text": "ข้อที่ 28 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q29",
+    "year": 65,
+    "questionNum": 29,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p7.png",
+    "text": "ข้อที่ 29 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q30",
+    "year": 65,
+    "questionNum": 30,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y65-p7.png",
+    "text": "ข้อที่ 30 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q31",
+    "year": 65,
+    "questionNum": 31,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y65-p8.png",
+    "text": "ข้อที่ 31 (ดูรูปในหน้า 8)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 65"
   },
   {
     "id": "y65-q32",
@@ -1437,6 +4302,118 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "มวล B ในสูตร = 3×32 = 96. %B = 96/(2A+96) = 0.64 → 96 = 1.28A+61.44 → A = 27 → ข้อ ก"
   },
   {
+    "id": "y65-q35",
+    "year": 65,
+    "questionNum": 35,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y65-p8.png",
+    "text": "ข้อที่ 35 (ดูรูปในหน้า 8)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q36",
+    "year": 65,
+    "questionNum": 36,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y65-p8.png",
+    "text": "ข้อที่ 36 (ดูรูปในหน้า 8)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q37",
+    "year": 65,
+    "questionNum": 37,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y65-p9.png",
+    "text": "ข้อที่ 37 (ดูรูปในหน้า 9)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q38",
+    "year": 65,
+    "questionNum": 38,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y65-p9.png",
+    "text": "ข้อที่ 38 (ดูรูปในหน้า 9)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q39",
+    "year": 65,
+    "questionNum": 39,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y65-p9.png",
+    "text": "ข้อที่ 39 (ดูรูปในหน้า 9)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q40",
+    "year": 65,
+    "questionNum": 40,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y65-p9.png",
+    "text": "ข้อที่ 40 (ดูรูปในหน้า 9)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q41",
+    "year": 65,
+    "questionNum": 41,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y65-p9.png",
+    "text": "ข้อที่ 41 (ดูรูปในหน้า 9)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 65"
+  },
+  {
     "id": "y65-q42",
     "year": 65,
     "questionNum": 42,
@@ -1450,6 +4427,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 2,
     "explanation": "แปลงเป็น M: a=0.050/58.5=8.55×10⁻⁴, b=0.5 g/L /58.5=8.55×10⁻³, c=5.0×10⁻³. เรียง b>c>a → ข้อ ค"
+  },
+  {
+    "id": "y65-q43",
+    "year": 65,
+    "questionNum": 43,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y65-p10.png",
+    "text": "ข้อที่ 43 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 65"
   },
   {
     "id": "y65-q44",
@@ -1467,6 +4460,86 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "mol = 2.495/250 = 0.00998 → เข้มข้นแรก = 0.0998 M. เจือจาง 5/250 → 0.001996 M. Cu²⁺ = 0.001996×63.5×1000 = 127 ppm → ข้อ ข"
   },
   {
+    "id": "y65-q45",
+    "year": 65,
+    "questionNum": 45,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y65-p10.png",
+    "text": "ข้อที่ 45 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q46",
+    "year": 65,
+    "questionNum": 46,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y65-p10.png",
+    "text": "ข้อที่ 46 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q47",
+    "year": 65,
+    "questionNum": 47,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y65-p10.png",
+    "text": "ข้อที่ 47 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q48",
+    "year": 65,
+    "questionNum": 48,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y65-p10.png",
+    "text": "ข้อที่ 48 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q49",
+    "year": 65,
+    "questionNum": 49,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y65-p11.png",
+    "text": "ข้อที่ 49 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 65"
+  },
+  {
     "id": "y65-q50",
     "year": 65,
     "questionNum": 50,
@@ -1480,6 +4553,54 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "มวล = 2000×0.816 = 1632 g; M(C₁₅H₂₄)=204 → 8.0 mol. เผาไหม้ได้ CO₂ = 15×8.0 = 120 mol → 120×22.4 = 2688 L = 2.69×10³ → ข้อ ข"
+  },
+  {
+    "id": "y65-q51",
+    "year": 65,
+    "questionNum": 51,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y65-p11.png",
+    "text": "ข้อที่ 51 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q52",
+    "year": 65,
+    "questionNum": 52,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y65-p11.png",
+    "text": "ข้อที่ 52 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q53",
+    "year": 65,
+    "questionNum": 53,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y65-p11.png",
+    "text": "ข้อที่ 53 (ดูรูปในหน้า 11)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 65"
   },
   {
     "id": "y65-q54",
@@ -1525,6 +4646,534 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "2NaOH+CaCl₂→Ca(OH)₂+2NaCl. NaOH=0.1, CaCl₂=0.1; NaOH เป็นตัวกำหนด → Ca(OH)₂=0.05×74=3.7 g, NaCl=0.1×58.5=5.85 g. รวม = 9.55 ≈ 9.6 g → ข้อ ข"
+  },
+  {
+    "id": "y65-q57",
+    "year": 65,
+    "questionNum": 57,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y65-p12.png",
+    "text": "ข้อที่ 57 (ดูรูปในหน้า 12)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q58",
+    "year": 65,
+    "questionNum": 58,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y65-p12.png",
+    "text": "ข้อที่ 58 (ดูรูปในหน้า 12)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q59",
+    "year": 65,
+    "questionNum": 59,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y65-p12.png",
+    "text": "ข้อที่ 59 (ดูรูปในหน้า 12)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y65-q60",
+    "year": 65,
+    "questionNum": 60,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y65-p12.png",
+    "text": "ข้อที่ 60 (ดูรูปในหน้า 12)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 65"
+  },
+  {
+    "id": "y66-q1",
+    "year": 66,
+    "questionNum": 1,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y66-p3.png",
+    "text": "สัญลักษณ์ต่อไปนี้จะปรากฏบนฉลากสารเคมีประเภทใด",
+    "choices": [
+      "สารที่ระเบิดได้",
+      "สารที่กัดกร่อน",
+      "สารที่เป็นพิษต่อระบบทางเดินหายใจ",
+      "สารที่เป็นอันตรายต่อสิ่งแวดล้อม"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q2",
+    "year": 66,
+    "questionNum": 2,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y66-p3.png",
+    "text": "ข้อใดผิดเกี่ยวกับการใช้สารเคมี",
+    "choices": [
+      "นักเรียนอ่านฉลากสารเคมี ก่อนนำไปชั่ง",
+      "นักเรียนรีบไปเข้าห้องน้ำ โดยฝากเพื่อนที่อยู่ในกลุ่มเดียวกันชั่งสารเคมีแทน",
+      "นักเรียนแบ่งกรดเข้มข้นจากขวดบรรจุใส่ในบีกเกอร์ก่อนตวงเพื่อนำไปเจือจาง",
+      "นักเรียนชั่งสารเคมีเกินมา เลยนำส่วนเกินเก็บใส่ขวดตามเดิมเพื่อลดการใช้สารเคมี"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q3",
+    "year": 66,
+    "questionNum": 3,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y66-p3.png",
+    "text": "ข้อใดถูกเกี่ยวกับการทิ้งสารเคมี",
+    "choices": [
+      "นักเรียนทิ้งสารละลายกรดเข้มข้นที่เหลือในหลอดทดลองลงอ่างน้ำ",
+      "นักเรียนทิ้งสารเคมีทั้งหมดทุกประเภทที่เหลือจากการทดลองรวมกัน",
+      "นักเรียนทิ้งตัวทำละลายที่ไม่ละลายน้ำที่เหลือจากการทดลองลงอ่างน้ำโดยตรง",
+      "นักเรียนทิ้งสารเคมีแยกตามประเภทจนเต็มภาชนะก่อนแล้วจึงทิ้งในภาชนะใบใหม่"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q4",
+    "year": 66,
+    "questionNum": 4,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y66-p3.png",
+    "text": "พฤติกรรมในข้อใดเสี่ยงอันตรายในขณะทำปฏิบัติการ I) แต่งตัวถูกระเบียบ เตรียมสารละลาย NaOH บนโต๊ะปฏิบัติการ II) สวมเสื้อคลุมปฏิบัติการและแว่นตานิรภัย ใส่รองเท้าแตะ แบ่งถ่ายสารละลายกรดเข้มข้นในตู้ควัน III) สวมแว่นตานิรภัย รับประทานอาหารในห้องปฏิบัติการระหว่างรอทำการทดลอง IV) เทสารละลายเกลือที่เกิดจากการท",
+    "choices": [
+      "I, II, III",
+      "III, IV, V",
+      "II และ III เท่านั้น",
+      "III และ V เท่านั้น"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q5",
+    "year": 66,
+    "questionNum": 5,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y66-p3.png",
+    "text": "ของเหลวชนิดหนึ่งมีความหนาแน่น 0.950 g/mL นาย จ. ชั่งของเหลวชนิดนี้โดยใช้เครื่องชั่งละเอียดได้ 23.7500 g นาย ฉ. ชั่งของเหลวชนิดเดียวกันโดยใช้เครื่องชั่งสามคานได้ 38.00 g ปริมาตรของเหลวที่แต่ละ คนคำนวณได้ควรเป็นกี่มิลลิลิตร นาย จ. นาย ฉ. นาย จ. นาย ฉ.",
+    "choices": [
+      "25 40",
+      "25.0 40.0",
+      "25.0 40",
+      "25.00 40.0"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q6",
+    "year": 66,
+    "questionNum": 6,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y66-p3.png",
+    "text": "ของเหลวที่อยู่ในกระบอกตวงตามรูปข้างล่างนี้ควรมีมวลกี่กรัม ถ้าของเหลวมีความหนาแน่น 1.10 g/mL",
+    "choices": [
+      "7.04",
+      "7.5",
+      "7.7",
+      "9.46"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q7",
+    "year": 66,
+    "questionNum": 7,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y66-p4.png",
+    "text": "พิจารณาการจัดเรียงอิเล็กตรอนของไอออนของธาตุ 4 ชนิด ในตารางต่อไปนี้ ไอออน การจัดเรียงอิเล็กตรอน A– [10Ne] 3s2 D2+ [18Ar] 4s2 3d10 E3+ [10Ne] 3s2 G3– [36Kr] ข้อใดผิดเกี่ยวกับธาตุหรือไอออนของธาตุ A, D, E และ G",
+    "choices": [
+      "A+ จะเสถียรมากกว่า A–",
+      "D อยู่หมู่เดียวกับ 50Sn",
+      "E3+ จะเสถียรมากกว่า E3–",
+      "G อยู่หมู่เดียวกับ E"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q8",
+    "year": 66,
+    "questionNum": 8,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y66-p4.png",
+    "text": "พิจารณาจำนวนอิเล็กตรอนในระดับพลังงานย่อย 4s + 3d + 4p ของธาตุ A, D, E และ G ในตารางต่อไปนี้ ธาตุ จำนวนอิเล็กตรอนในระดับพลังงานย่อย 4s + 3d + 4p A 2 D 5 E 12 G 17 ข้อใดถูกเกี่ยวกับสมบัติของธาตุและสารประกอบของ A, D, E และ G",
+    "choices": [
+      "E และ G เป็นอโลหะ",
+      "DG3 เป็นโมเลกุลโคเวเลนต์มีขั้ว",
+      "G อยู่หมู่เดียวกับธาตุที่มีเลขอะตอม 31",
+      "AG2 และ EG2 เป็นสารประกอบไอออนิก"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q9",
+    "year": 66,
+    "questionNum": 9,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y66-p4.png",
+    "text": "ธาตุ X และธาตุ Z อยู่ในคาบที่ 3 ของตารางธาตุ โดยสารประกอบคลอไรด์ XCl5 และ ZCl6 มีแรงยึดเหนี่ยว ระหว่างโมเลกุลเป็นแรงแผ่กระจายลอนดอน ข้อใดถูกเกี่ยวกับสมบัติของธาตุ X และธาตุ Z",
+    "choices": [
+      "ธาตุ X มีขนาดอะตอมเล็กกว่าธาตุ Z",
+      "ธาตุ X มีจำนวนอิเล็กตรอนมากกว่าธาตุ Z",
+      "สารประกอบไฮไดรด์ของธาตุ X และของธาตุ Z เป็นของแข็งที่อุณหภูมิห้อง",
+      "XCl3 และ ZCl2 เป็นโมเลกุลที่อะตอมกลางมีจำนวนอิเล็กตรอนครบออกเตต"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q10",
+    "year": 66,
+    "questionNum": 10,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y66-p4.png",
+    "text": "ธาตุ A อยู่ในคาบที่ 3 มีค่าพลังงานไอออไนเซชัน (kJ/mol) ดังนี้ IE1 IE2 IE3 IE4 IE5 IE6 577 1823 2751 11584 14837 18384 ข้อใดคือสูตรของสารประกอบซัลไฟด์ของ A",
+    "choices": [
+      "AS",
+      "AS2",
+      "AS3",
+      "A2S3"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q11",
+    "year": 66,
+    "questionNum": 11,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y66-p4.png",
+    "text": "พิจารณาข้อมูลของสารประกอบไอออนิกต่อไปนี้ สารประกอบไอออนิก ไอออนบวก, จำนวนอิเล็กตรอน ในระดับพลังงานย่อย 3d ไอออนลบ จำนวน ไอออนบวก : ไอออนลบ 1 A+, 0 GO4x– 3 : 1 2 D3+, 6 JO4y– 2 : 3 3 E2+, 0 LO4z– 1 : 2 ธาตุ A, D, E เป็นธาตุในคาบที่ 4 ในขณะที่ธาตุ G, J, L เป็นธาตุในคาบที่ 3 และไอออนลบทั้งสามมีรูปร่างเ",
+    "choices": [
+      "ธาตุ A, D, E เป็นโลหะในกลุ่มธาตุหมู่หลัก",
+      "ธาตุ G, J, L อยู่ในหมู่ 16, 15, 14 ตามลำดับ",
+      "สารประกอบไอออนิกระหว่าง E กับ L มีสูตรเป็น EL2",
+      "สารประกอบไอออนิกระหว่าง A กับ G มีสูตรเป็น A2G"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q12",
+    "year": 66,
+    "questionNum": 12,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y66-p4.png",
+    "text": "ธาตุ A, D และ E อยู่ในคาบที่ 4 มีสมบัติทางกายภาพและทางเคมีดังนี้ ธาตุ สถานะ สมบัติการนำไฟฟ้า พลังงานไอออไนเซชัน ลำดับที่ 1 (IE1, kJ/mol) สมบัติทางเคมี A ของแข็ง นำไฟฟ้าได้ดี 419 ทำปฏิกิริยากับน้ำอย่างรวดเร็ว ให้สารละลายที่เปลี่ยนสี ฟีนอล์ฟทาลีนเป็นสีชมพู D ของแข็ง นำไฟฟ้าได้ดี 665 ไม่ทำปฏิกิริยากับน",
+    "choices": [
+      "ธาตุ A และ D เป็นโลหะแอลคาไลและโลหะแอลคาไลน์เอิร์ท ตามลำดับ",
+      "จำนวนอิเล็กตรอนของธาตุ D มากกว่าธาตุ 20Ca",
+      "ธาตุ G เป็นธาตุหมู่หลักและอยู่หมู่เดียวกับธาตุ E",
+      "ขนาดอะตอมของ A > D > E"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q13",
+    "year": 66,
+    "questionNum": 13,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p5.png",
+    "text": "ธาตุ 4 ชนิดเกิดสารประกอบกับ O ได้สารประกอบที่มีสูตรเคมีเหมือนกัน แต่มีสมบัติต่างกันดังข้อมูลในตาราง ธาตุ สมบัติของสารประกอบกับ O A AO2 : A2+ มีการจัดเรียงอิเล็กตรอนเหมือนกับ 18Ar โดยที่ไอออนลบมีสูตร O22– D DO2 : โมเลกุลโคเวเลนต์ไม่มีขั้ว โดยมี D เป็นอะตอมกลางและมีจำนวนอิเล็กตรอนครบออกเตต E EO2 : โมเ",
+    "choices": [
+      "D อยู่ในคาบที่ 2",
+      "E มีจำนวนโปรตอนน้อยที่สุด",
+      "A มีจำนวนเวเลนซ์อิเล็กตรอนเท่ากับ 2",
+      "G2+ มีจำนวนอิเล็กตรอนใน 4s เท่ากับ 2"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q14",
+    "year": 66,
+    "questionNum": 14,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p5.png",
+    "text": "พิจารณาสมบัติของสารประกอบคลอไรด์ของธาตุ A, D, E และ G ในตารางต่อไปนี้ ธาตุ สมบัติของสารประกอบคลอไรด์ A ACl3 : ไอออนของธาตุ A มีการจัดอิเล็กตรอนเป็น [18Ar] 3d5 D DCl2 : โมเลกุลโคเวเลนต์ มีอิเล็กตรอนคู่โดดเดี่ยวที่อะตอมกลาง 2 คู่ E ECl4 : โมเลกุลโคเวเลนต์ ไม่มีอิเล็กตรอนคู่โดดเดี่ยวที่อะตอมกลาง G GCl3",
+    "choices": [
+      "อะตอมของธาตุ D(g) รับอิเล็กตรอนได้ง่ายที่สุด",
+      "ขนาดอะตอมของ A > D > E > G",
+      "ธาตุ E มีเลขอะตอมเท่ากับ 16",
+      "ธาตุ G มีค่า IE1 สูงกว่า 7N"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q15",
+    "year": 66,
+    "questionNum": 15,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p5.png",
+    "text": "กำหนดค่าพลังงานไอออไนเซชันลำดับที่ 1 ถึง 6 ของธาตุ A, D, E และ G ดังนี้ ธาตุ พลังงานไอออไนเซชัน (kJ/mol ) IE1 IE2 IE3 IE4 IE5 IE6 A 495.9 4560 6900 9540 13400 16600 D 577.9 1820 2750 11600 14800 18400 E 786.3 1580 3230 4360 16000 20000 G 1012 1904 2910 4960 6240 21000 ธาตุทั้ง 4 ชนิดอยู่ในคาบที่ 3 ข",
+    "choices": [
+      "A2O, สารประกอบไอออนิก",
+      "DO3, สารประกอบไอออนิก",
+      "EO2, สารประกอบโคเวเลนต์",
+      "G2O5, สารประกอบโคเวเลนต์"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q16",
+    "year": 66,
+    "questionNum": 16,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p5.png",
+    "text": "สารประกอบออกไซด์ของโลหะแทรนซิชัน 4 ธาตุมีสูตรเป็น AO2, DO, EO3 และ G2O3 จำนวนอิเล็กตรอนใน ระดับพลังงานย่อย 3d ของไอออนของธาตุ A, D, E และ G ตามลำดับเป็นดังข้อใด กำหนดให้ 25A, 30D, 27E, 26G",
+    "choices": [
+      "0, 10, 0, 4",
+      "1, 8, 1, 3",
+      "3, 10, 3, 5",
+      "5, 10, 7, 6"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q17",
+    "year": 66,
+    "questionNum": 17,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p5.png",
+    "text": "พิจารณาข้อมูลเกี่ยวกับเลขออกซิเดชันสูงสุดของธาตุแทรนซิชันในคาบที่ 4 ดังตาราง ธาตุแทรนซิชัน เลขออกซิเดชันสูงสุด A +7 D +5 E +4 G +6 เลขหมู่ของธาตุ A, D, E และ G ตามลำดับเป็นดังข้อใด",
+    "choices": [
+      "6, 4, 3, 5",
+      "7, 5, 4, 6",
+      "8, 6, 5, 6",
+      "9, 7, 6, 8"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q18",
+    "year": 66,
+    "questionNum": 18,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p5.png",
+    "text": "ไอออนหรือโมเลกุลในข้อใดที่อะตอมกลางมีอิเล็กตรอนคู่โดดเดี่ยวเท่ากัน และระบุจำนวนคู่ได้ถูกต้อง",
+    "choices": [
+      "H2O และ PH3 2 คู่",
+      "XeF2 และ SF4 2 คู่",
+      "SO3 และ SO42– 1 คู่",
+      "ClO3– และ H3O+ 1 คู่"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q19",
+    "year": 66,
+    "questionNum": 19,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p6.png",
+    "text": "พิจารณาสารต่อไปนี้ FeCl3 Na2O2 SF6 SO2 (กำหนดให้ ไอออนลบใน Na2O2 มีสูตร O22–) อะตอมหรือไอออนในสารใดที่สร้างพันธะแล้วไม่สามารถเขียนโครงสร้างลิวอิสให้เป็นไปตามกฎออกเตตได้",
+    "choices": [
+      "Fe ใน FeCl3 และ S ใน SF6",
+      "Na ใน Na2O2 และ Fe ใน FeCl3",
+      "O ใน Na2O2 และ S ใน SO2",
+      "S ใน SF6 และ S ใน SO2"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q20",
+    "year": 66,
+    "questionNum": 20,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p6.png",
+    "text": "ธาตุ Q, R และ T มีเลขอะตอม 24, 19 และ 17 ตามลำดับ ข้อใดถูกเกี่ยวกับสารประกอบของธาตุเหล่านี้",
+    "choices": [
+      "สารประกอบระหว่าง R กับ T เมื่อละลายน้ำแล้วเติม Na2CO3 จะเกิดตะกอน",
+      "สารประกอบระหว่าง R กับ T มีสูตร RT เมื่อละลายน้ำจะได้สารละลายที่นำไฟฟ้า",
+      "Q ไม่เกิดสารประกอบกับธาตุอื่น ๆ ยกเว้นฟลูออรีน เนื่องจากมีพันธะโลหะที่แข็งแรง",
+      "สารประกอบระหว่าง Q กับ T มีสูตร QT3 เมื่อละลายน้ำจะเกิดแก๊สและได้สารละลายมีสี"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q21",
+    "year": 66,
+    "questionNum": 21,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p6.png",
+    "text": "ไซยาไนด์เป็นสารพิษ สามารถกำจัดได้ด้วยโซเดียมไทโอซัลเฟตและโซเดียมไนไทรต์ ปฏิกิริยาที่เกี่ยวข้องทำให้ ไอออนเกิดการเปลี่ยนแปลงดังนี้ CN– → SCN– S2O32– → SO32– และ NO2– → NO3– ข้อใดถูก (กำหนดให้ S2O32– มี S เป็นอะตอมกลาง 1 อะตอม)",
+    "choices": [
+      "SCN– และ CN– ไม่มีเรโซแนนซ์",
+      "SO32– และ NO3– มีรูปร่างโมเลกุลเหมือนกัน",
+      "ไม่สามารถเขียนสูตรลิวอิสของ S2O32– ที่เป็นไปตามกฎออกเตตได้",
+      "มุมพันธะ O–X–O ในไอออนต่าง ๆ เปรียบเทียบได้ดังนี้ SO32– < NO2– < NO3–"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q22",
+    "year": 66,
+    "questionNum": 22,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p6.png",
+    "text": "การเปรียบเทียบมุมระหว่างพันธะของสารและไอออนในข้อใดถูกต้อง",
+    "choices": [
+      "H2CO  BF4–  ClO3–  SCl2",
+      "I3 –  ClO3 –  H2CO  BF4 –",
+      "ClO3 –  SCl2  H2CO  BF4 –",
+      "ClO3 –  BF4 –  SCl2  NF3"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q23",
+    "year": 66,
+    "questionNum": 23,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p6.png",
+    "text": "เมื่อเติมน้ำลงไปในผงแคลเซียมคาร์ไบด์ (CaC2) จะเกิดปฏิกิริยาได้ Ca(OH)2 และ C2H2 พิจารณาข้อความ เกี่ยวกับ C2H2 ต่อไปนี้ I) มีรูปร่างโมเลกุลเป็นเส้นตรง II) ในโมเลกุลมีพันธะเดี่ยวและพันธะสาม III) ละลายน้ำได้ดี IV) โมเลกุลยึดเหนี่ยวกันด้วยแรงแผ่กระจายลอนดอนและแรงระหว่างขั้ว ข้อใดถูก",
+    "choices": [
+      "I และ II",
+      "I และ III",
+      "II, III และ IV",
+      "II และ IV เท่านั้น"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q24",
+    "year": 66,
+    "questionNum": 24,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p6.png",
+    "text": "ข้อใดระบุรูปร่างและสภาพขั้วของโมเลกุลได้ถูกต้อง โมเลกุล รูปร่างโมเลกุล สภาพขั้วของโมเลกุล",
+    "choices": [
+      "O3 เส้นตรง ไม่มีขั้ว",
+      "COCl2 สามเหลี่ยมแบนราบ ไม่มีขั้ว",
+      "HOCl เส้นตรง มีขั้ว",
+      "PBr3 พีระมิดฐานสามเหลี่ยม มีขั้ว"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q25",
+    "year": 66,
+    "questionNum": 25,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p7.png",
+    "text": "ข้อใดเปรียบเทียบจุดเดือดของสารได้ถูกต้อง",
+    "choices": [
+      "Ar < C2H6 < C2H5OH < H2O < KBr",
+      "C2H6 < Ar < H2O < C2H5OH < KBr",
+      "Ar < C2H6 < KBr < C2H5OH < H2O",
+      "C2H6 < H2O < Ar < C2H5OH < KBr"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q26",
+    "year": 66,
+    "questionNum": 26,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p7.png",
+    "text": "พิจารณาสารต่อไปนี้ ข้อใดระบุสารที่มีจุดเดือดสูงกว่าและแรงยึดเหนี่ยวระหว่างโมเลกุลของสารที่มีจุดเดือด สูงกว่าได้ถูกต้อง สาร สารที่มีจุดเดือดสูงกว่า แรงยึดเหนี่ยวระหว่างโมเลกุล",
+    "choices": [
+      "I2 และ HI HI แรงระหว่างขั้ว",
+      "SiO2 และ CO2 SiO2 แรงแผ่กระจายลอนดอน",
+      "C2H6 และ C3H8 C3H8 แรงระหว่างขั้ว",
+      "CH3NH2 และ CH3F CH3NH2 พันธะไฮโดรเจน"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q27",
+    "year": 66,
+    "questionNum": 27,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p7.png",
+    "text": "ธาตุ A มีเลขอะตอม 54 เกิดสารประกอบได้หลายชนิดกับฟลูออรีน โดยชนิดหนึ่งมีสูตรโมเลกุล AF4 ข้อใดถูกเกี่ยวกับ AF4",
+    "choices": [
+      "เป็นโมเลกุลมีขั้ว",
+      "มีรูปร่างเป็นทรงสี่หน้า",
+      "อะตอมกลางมีอิเล็กตรอนคู่โดดเดี่ยว 2 คู่",
+      "แรงยึดเหนี่ยวระหว่างโมเลกุลคือแรงระหว่างขั้ว"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q28",
+    "year": 66,
+    "questionNum": 28,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p7.png",
+    "text": "ข้อที่ 28 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q29",
+    "year": 66,
+    "questionNum": 29,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y66-p7.png",
+    "text": "ลวดโลหะ X ที่มีเส้นผ่านศูนย์กลาง 2.0 mm ยาว 1 m มี X กี่อะตอม ถ้า X มีมวลอะตอมเท่ากับ M มี ความหนาแน่น d g/cm3 และ N คือ ค่าคงตัวอาโวกาโดร",
+    "choices": [
+      "𝜋𝑑𝑁 𝑀",
+      "4𝜋𝑑𝑁 𝑀",
+      "𝜋𝑁 𝑑𝑀",
+      "𝜋𝑑 𝑀𝑁"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 66"
   },
   {
     "id": "y66-q30",
@@ -1632,6 +5281,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "2.65 %w/v = 26.5 g/L → 26.5/106 = 0.25 mol/L Na₂CO₃. แต่ละโมลให้ Na⁺ 2 ตัว → [Na⁺] = 0.50 M → ข้อ ค"
   },
   {
+    "id": "y66-q37",
+    "year": 66,
+    "questionNum": 37,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y66-p9.png",
+    "text": "สินแร่พลวง 0.45 g เมื่อนำมาวิเคราะห์พบว่ามีแร่สติบไนต์ (Sb2S3) อยู่ 0.90 mg สินแร่พลวงนี้มีแร่สติบไนต์อยู่ กี่ส่วนในพันล้านส่วน",
+    "choices": [
+      "2.0  103",
+      "5.0  105",
+      "2.0  106",
+      "2.0  109"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 66"
+  },
+  {
     "id": "y66-q38",
     "year": 66,
     "questionNum": 38,
@@ -1675,6 +5340,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "มวลสารละลาย = 150 g → X = 70.5 g → 1.7625 mol. ปริมาตรสุดท้าย = 1.7625/1.00 = 1762 mL → เติมน้ำ = 1762 − 100 ≈ 1660 mL → ข้อ ข"
+  },
+  {
+    "id": "y66-q41",
+    "year": 66,
+    "questionNum": 41,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y66-p9.png",
+    "text": "สารละลายของ A, B, C และ D ในน้ำเข้มข้น 25 %w/w มีจุดเดือด 100.5, 101.8, 100.9 และ 102.7 °C ตามลำดับ ข้อใดเปรียบเทียบมวลต่อโมลของสาร A, B, C และ D ได้ถูกต้อง กำหนดให้ A, B, C, D เป็นสารระเหยยากและไม่แตกตัวเป็นไอออน Kb ของน้ำ = 0.51 °C/m",
+    "choices": [
+      "A < C < B < D",
+      "B < A < D < C",
+      "C < D < A < B",
+      "D < B < C < A"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 66"
   },
   {
     "id": "y66-q42",
@@ -1735,6 +5416,134 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "mol Mn = 0.55/55 = 0.01. มวล F = 1.12−0.55 = 0.57 g → mol F = 0.03. อัตราส่วน F:Mn = 3:1 → MnF₃ → ข้อ ข"
+  },
+  {
+    "id": "y66-q46",
+    "year": 66,
+    "questionNum": 46,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y66-p10.png",
+    "text": "ปฏิกิริยาระหว่างแก๊สไฮโดรเจนที่มากเกินพอกับคอปเปอร์(I)ออกไซด์ปริมาณหนึ่ง ได้โลหะทองแดง 12.7 g และ น้ำเป็นผลิตภัณฑ์ ข้อความต่อไปนี้ข้อใดถูก",
+    "choices": [
+      "ได้น้ำ 1.8 g",
+      "ใช้คอปเปอร์(I)ออกไซด์ 15.9 g",
+      "จำนวนโมลของน้ำเป็น 2 เท่าของทองแดง",
+      "จำนวนโมลของคอปเปอร์(I)ออกไซด์เท่ากับของทองแดง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q47",
+    "year": 66,
+    "questionNum": 47,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y66-p10.png",
+    "text": "แก๊ส X และ Y ทำปฏิกิริยากันได้แก๊ส Z ซึ่งละลายน้ำได้ 100 % เมื่อผ่านแก๊ส X และ Y เข้าสู่กระบอกตวงซึ่ง คว่ำอยู่ในอ่างน้ำดังรูป โดยทดลองเป็น 4 ขั้นต่อเนื่องกัน ได้ผลดังแสดงในตาราง ขั้นที่ แก๊สและปริมาตรที่ผ่าน เข้าสู่กระบอกตวง ปริมาตรแก๊สเมื่อ ปฏิกิริยาสิ้นสุด (mL) 1 แก๊ส X 30 mL 30 2 แก๊ส Y 10 mL 10 ",
+    "choices": [
+      "1 : 3",
+      "3 : 1",
+      "1 : 2",
+      "2 : 1"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q48",
+    "year": 66,
+    "questionNum": 48,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y66-p10.png",
+    "text": "จากปฏิกิริยาต่อไปนี้ H2S + O2 → SO2 + H2O (สมการยังไม่ดุล) ถ้าในระบบปิดมีแก๊สไข่เน่าและแก๊สออกซิเจนอย่างละ 10.0 g ผสมกันอยู่ หลังจากเกิดปฏิกิริยาสมบูรณ์จะได้ แก๊สซัลเฟอร์ไดออกไซด์กี่ลิตรที่ STP",
+    "choices": [
+      "4.7",
+      "6.6",
+      "7.0",
+      "10.5 ท่อนำแก สเข้า กระบอกตวง อ่างน้ำ"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q49",
+    "year": 66,
+    "questionNum": 49,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y66-p11.png",
+    "text": "NH4HCO3 สังเคราะห์ได้จากปฏิกิริยา NH3(g) + CO2(g) + H2O(l) → NH4HCO3(aq) โดย NH3 และ CO2 ที่ใช้เป็นสารตั้งต้นสังเคราะห์ได้จากปฏิกิริยาต่อไปนี้ 2H2O(l) → 2H2(g) + O2(g) N2(g) + 3H2(g) → 2NH3(g) CaCO3(s) → CaO(s) + CO2(g) ถ้าต้องการสังเคราะห์ NH4HCO3 790 g จะต้องใช้ H2O อย่างน้อย 5A g ค่า A เป็นเท่าใด",
+    "choices": [
+      "36",
+      "54",
+      "90",
+      "450"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q50",
+    "year": 66,
+    "questionNum": 50,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y66-p11.png",
+    "text": "ธาตุฟอสฟอรัส (P4) 217 g ทำปฏิกิริยากับแก๊สออกซิเจนมากเกินพอได้เตตระฟอสฟอรัสเดคะออกไซด์ (tetraphosphorus decaoxide) เป็นผลิตภัณฑ์ ถ้าผลได้ร้อยละของปฏิกิริยาเท่ากับ 90 จะมีเตตระ ฟอสฟอรัสเดคะออกไซด์เกิดขึ้นกี่กรัม",
+    "choices": [
+      "346",
+      "447",
+      "497",
+      "552"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q51",
+    "year": 66,
+    "questionNum": 51,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y66-p11.png",
+    "text": "ปฏิกิริยาการสลายตัวของ KClO3 ดังสมการ KClO3(s) → KCl(s) + O2(g) (สมการยังไม่ดุล) มีผลได้ร้อยละของปฏิกิริยาเท่ากับ 20.0 ถ้านำแก๊สออกซิเจนที่เกิดขึ้นไปใช้ในกระบวนการถลุงเหล็ก โดยมี ขั้นตอนดังนี้ ขั้นที่ 1 C(s) + O2(g) → CO(g) (สมการยังไม่ดุล) ขั้นที่ 2 Fe2O3(s) + CO(g) → Fe(s) + CO2(g) (สมการยังไม่ดุล",
+    "choices": [
+      "6.1",
+      "20",
+      "31",
+      "61"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q52",
+    "year": 66,
+    "questionNum": 52,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y66-p11.png",
+    "text": "Sodium azide (NaN3) เป็นสารที่มีความเป็นพิษสูง กำจัดได้โดยการทำปฏิกิริยากับกรดไนตรัส (HNO2) ในภาวะกรดภายในตู้ดูดควันเนื่องจากเกิดแก๊สพิษ NO ดังสมการ 2NaN3(s) + 2HNO2(aq) + 2HCl(aq) → 3N2(g) + 2NO(g) + 2NaCl(aq) + 2H2O(l) เมื่อนำ NaN3 52.0 g มาทำปฏิกิริยากับสารละลาย HNO2 เข้มข้น 0.800 M ปริมาตร 2.50 ",
+    "choices": [
+      "9.6",
+      "22",
+      "27",
+      "34"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q53",
+    "year": 66,
+    "questionNum": 53,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y66-p11.png",
+    "text": "ถ้าวัดความดันในถังดำน้ำ (scuba tank) ที่ใช้แล้วได้เท่ากับ 1470 psi ความดันนี้ในหน่วยอื่น ๆ ข้อใดผิด",
+    "choices": [
+      "1.01  107 Pa",
+      "100 atm",
+      "100 bar",
+      "7600 torr"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 66"
   },
   {
     "id": "y66-q54",
@@ -1812,6 +5621,166 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "n(H2)=PV/RT=1×24.6/(0.082×300)=1.0mol, n(BaH2)=0.5mol=0.5×139=69.5≈70g ดังนั้น 70"
   },
   {
+    "id": "y66-q59",
+    "year": 66,
+    "questionNum": 59,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y66-p12.png",
+    "text": "ข้อใดไม่ใช่สมมุติฐานเกี่ยวกับอนุภาคของแก๊สในทฤษฎีจลน์ของแก๊ส",
+    "choices": [
+      "ไม่มีมวล",
+      "ไม่มีแรงกระทำต่อกัน",
+      "ไม่มีปริมาตรหรือปริมาตรน้อยมาก",
+      "ไม่มีการสูญเสียพลังงานจลน์รวมเมื่อชนกัน"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y66-q60",
+    "year": 66,
+    "questionNum": 60,
+    "topicId": "equilibrium",
+    "imageUrl": "/exam-images/y66-p12.png",
+    "text": "ผสมแก๊สมีเทน (CH4) 0.5 mol ไฮโดรเจน (H2) 0.5 mol และซัลเฟอร์ไดออกไซด์ (SO2) 0.5 mol ในถังขนาด 10 L ที่อุณหภูมิ 25 °C สักครู่หนึ่งพบว่าปิดวาล์วถังไม่แน่นพอแก๊สจึงรั่วไหลได้ ความดันย่อยของแก๊สภายใน ถังจะเป็นดังข้อใด",
+    "choices": [
+      "PSO2 > PCH4 > PH2",
+      "PSO2 = PCH4 = PH2",
+      "PCH4 > PSO2 > PH2",
+      "PH2 > PSO2 > PCH4"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 66"
+  },
+  {
+    "id": "y67-q1",
+    "year": 67,
+    "questionNum": 1,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y67-p3.png",
+    "text": "ข้อที่ 1 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q2",
+    "year": 67,
+    "questionNum": 2,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y67-p3.png",
+    "text": "ข้อใดถูกต้อง",
+    "choices": [
+      "เมื่อสัมผัสบีกเกอร์หรือภาชนะที่ร้อน ควรใช้ยาสีฟันทาบริเวณที่สัมผัสของร้อน",
+      "เมื่อได้กลิ่นแปลกปลอมในห้องปฏิบัติการ ควรเดินหาสาเหตุและที่มาของกลิ่นนั้น",
+      "หากจำเป็นต้องทดสอบกลิ่น สามารถสูดดมสารเคมีโดยตรงเพื่อจะได้พิสูจน์ทราบกลิ่นชัด ๆ",
+      "กรดเจือจางหรือเบสเจือจางปริมาตร 100 mL ที่เหลือจากการทดลอง สามารถเททิ้งลงอ่างน้ำได้ 3. ข้อใดเป็นการตอบโต้สถานการณ์ได้ถูก"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q3",
+    "year": 67,
+    "questionNum": 3,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y67-p3.png",
+    "text": "ข้อที่ 3 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q4",
+    "year": 67,
+    "questionNum": 4,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y67-p3.png",
+    "text": "แก๊สอุดมคติชนิดหนึ่งมีความดันในหน่วยเอสไอเท่ากับ 1.00  105 ปาสคาล หากกำหนดให้ ความดัน คือ แรง ที่กระทำต่อหนึ่งหน่วยพื้นที่ ดังสมการ P = F/A หน่วยปาสคาลซึ่งเป็นหน่วยเอสไออนุพัทธ์สอดคล้องกับ หน่วยเอสไอพื้นฐานใดต่อไปนี้มากที่สุด",
+    "choices": [
+      "กิโลกรัม เมตร–1 วินาที–2",
+      "กรัม เซนติเมตร–1 วินาที–2",
+      "กิโลกรัม เมตร วินาที 2",
+      "นิวตัน เมตร–2"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q5",
+    "year": 67,
+    "questionNum": 5,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y67-p3.png",
+    "text": "น้ำปริมาตร 10.00 cm3 เมื่อได้รับความร้อนทุก ๆ 418.4 J จะทำให้อุณหภูมิของน้ำเพิ่มขึ้น 10.00 °C จากการทดลอง ให้ความร้อนที่ได้จากปฏิกิริยาการเผาไหม้ของแก๊สธรรมชาติ ปริมาณ 8.080 kcal แก่น้ำจำนวนหนึ่งพบว่า อุณหภูมิของ น้ำก่อนและหลังการให้ความร้อนที่วัดโดยใช้เทอร์มอมิเตอร์ เป็นดังรูป การทดลองดังกล่าวใช้น้",
+    "choices": [
+      "0.400",
+      "0.4000",
+      "400",
+      "400.0 6. นักเรียน 4 คนทดลองวัดปริมาตรสารละลาย NaOH ที่ใช้ทำปฏิกิริยาพอดีกับสารละลายกรดตัวอย่างชนิด เดียวกันโดยใช้เครื่อง"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q6",
+    "year": 67,
+    "questionNum": 6,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y67-p3.png",
+    "text": "ข้อที่ 6 (ดูรูปในหน้า 3)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q7",
+    "year": 67,
+    "questionNum": 7,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y67-p4.png",
+    "text": "จากแบบจำลองอะตอมของโบร์ ถ้าอิเล็กตรอนในอะตอมไฮโดรเจนคายพลังงานออกมาเป็นแสงที่มองเห็นได้ ข้อใดเป็นปรากฏการณ์ที่น่าจะเกิดขึ้นมากที่สุด",
+    "choices": [
+      "อิเล็กตรอนวงนอกหลุดออกนอกอะตอม",
+      "อิเล็กตรอนวงในเปลี่ยนระดับพลังงานจากต่ำไปหาสูง",
+      "อิเล็กตรอนจากระดับพลังงานที่ 2 ลงมาอยู่ที่สถานะพื้น",
+      "อิเล็กตรอนจากระดับพลังงานที่ 4 ลงมาอยู่ระดับพลังงานที่ 2 36 35 16 15"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q8",
+    "year": 67,
+    "questionNum": 8,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y67-p4.png",
+    "text": "แบบจำลองอะตอมของโบร์สามารถใช้ในการตอบข้อสงสัยว่า “ทำไมอิเล็กตรอนซึ่งมีประจุลบไม่ถูกดูดเข้าหา นิวเคลียสซึ่งมีประจุบวก” ข้อใดเป็นคำอธิบายที่ตอบข้อสงสัยนี้",
+    "choices": [
+      "นิวเคลียสมีอนุภาคที่มีประจุบวกคอยผลักอิเล็กตรอนไม่ให้เข้าไปรวมกับนิวเคลียส",
+      "อิเล็กตรอนมีวงโคจรที่แน่นอน ตราบเท่าที่ไม่มีพลังงานภายนอกมากระทำ",
+      "อิเล็กตรอนเคลื่อนที่ด้วยความเร็วสูง หนีแรงดึงดูดของนิวเคลียสได้",
+      "นิวเคลียสมีนิวตรอนที่ช่วยบดบังไม่ให้โปรตอนดึงดูดอิเล็กตรอน"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 67"
+  },
+  {
     "id": "y67-q9",
     "year": 67,
     "questionNum": 9,
@@ -1825,6 +5794,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 0,
     "explanation": "[5(2a+4)+2(2a+6)+1(2a+8)]/8=(16a+40)/8=2a+5"
+  },
+  {
+    "id": "y67-q10",
+    "year": 67,
+    "questionNum": 10,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y67-p4.png",
+    "text": "ไอออนของธาตุหนึ่งมีประจุ +3 มีเลขมวล 85 และมี 34 อิเล็กตรอน ข้อใดถูกต้องเกี่ยวกับธาตุนี้",
+    "choices": [
+      "อะตอมของธาตุนี้มี 31 อิเล็กตรอน",
+      "อะตอมของธาตุนี้มีขนาดเล็กกว่า 36Kr",
+      "ไอโซโทปหนึ่งของธาตุนี้มี 48 นิวตรอน",
+      "ไอออนที่เสถียรของธาตุนี้มีทั้งประจุ +3 และ +1"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 67"
   },
   {
     "id": "y67-q11",
@@ -1842,6 +5827,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "อะตอมที่มีจำนวนอนุภาคในนิวเคลียส (โปรตอน+นิวตรอน) เท่ากัน = เลขมวลเท่ากัน = มวลใกล้เคียงกัน"
   },
   {
+    "id": "y67-q12",
+    "year": 67,
+    "questionNum": 12,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y67-p4.png",
+    "text": "ข้อใดผิดเกี่ยวกับแนวโน้มของสมบัติธาตุตามตารางธาตุ",
+    "choices": [
+      "ในหมู่เดียวกัน ธาตุที่มีขนาดอะตอมใหญ่กว่ามีจำนวนอิเล็กตรอนมากกว่า",
+      "ในคาบเดียวกัน ธาตุที่มีจำนวนอิเล็กตรอนมากกว่ามีแรงดึงดูดอิเล็กตรอนจากนิวเคลียสมากกว่า",
+      "ในคาบเดียวกัน ธาตุที่มีจำนวนโปรตอนมากกว่ามีความสามารถในการดึงดูดอิเล็กตรอนในพันธะมากกว่า",
+      "ในหมู่เดียวกัน ธาตุที่มีจำนวนอิเล็กตรอนมากกว่ามีความสามารถในการดึงดูดอิเล็กตรอนในพันธะน้อยกว่า"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 67"
+  },
+  {
     "id": "y67-q13",
     "year": 67,
     "questionNum": 13,
@@ -1855,6 +5856,54 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 0,
     "explanation": "K(หมู่1) IE2 สูงมาก (ดึง e- จาก core), Ga IE2 ปานกลาง, Ca(หมู่2) IE2 ต่ำกว่า K แต่ K IE2 ค่าจริง 3052 > Ga 1979 > Ca 1145 kJ/mol → K>Ga>Ca"
+  },
+  {
+    "id": "y67-q14",
+    "year": 67,
+    "questionNum": 14,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y67-p5.png",
+    "text": "ธาตุ M, Q, R, T มีสมบัติดังนี้ I. IE1 ของ Q > T > R II. M และ R เมื่อได้รับพลังงาน อิเล็กตรอนในระดับพลังงานย่อย 4s จะหลุดก่อน III. Q และ T เมื่อรับอิเล็กตรอนจะเข้ามาอยู่ในระดับพลังงานย่อย 4p IV. เลขอะตอมของธาตุทั้งสี่ คือ 19, 30, 31, 34 (ไม่เรียงตามลำดับธาตุ) ข้อใดเป็นเลขอะตอมของธาตุ M, Q, R, T ตามล",
+    "choices": [
+      "19, 30, 31, 34",
+      "19, 34, 31, 30",
+      "30, 19, 34, 31",
+      "30, 34, 19, 31"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q15",
+    "year": 67,
+    "questionNum": 15,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y67-p5.png",
+    "text": "พิจารณาเลขหมู่และคาบของธาตุที่มีสัญลักษณ์สมมติต่อไปนี้ ธาตุ เลขหมู่ เลขคาบ A 14 3 D 12 4 E 2 5 G 17 3 นักเรียนคนหนึ่งวิเคราะห์ข้อมูลในตาราง ได้ข้อสรุปดังนี้ I. สารประกอบระหว่าง A และ E มีสูตรเคมีเป็น E2A II. ธาตุ D มีเลขออกซิเดชันหลายค่า III. สารประกอบระหว่าง A และ G มีแรงยึดเหนี่ยวระหว่างโมเลกุลเป็",
+    "choices": [
+      "I และ II",
+      "I และ IV",
+      "II และ III",
+      "III และ IV"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q16",
+    "year": 67,
+    "questionNum": 16,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y67-p5.png",
+    "text": "เมื่อแมงกานีส–55 ( Mn 25 55 ) ถูกยิงด้วยโปรตอน จะได้นิวตรอนกับธาตุใด",
+    "choices": [
+      "Cr 24 54",
+      "Mn 25 54",
+      "Fe 26 55",
+      "Co 27 58"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 67"
   },
   {
     "id": "y67-q17",
@@ -1872,6 +5921,150 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "226Ra → 222Rn + 4He: เลขมวล 226=222+4✓, เลขอะตอม 88=86+2✓"
   },
   {
+    "id": "y67-q18",
+    "year": 67,
+    "questionNum": 18,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y67-p5.png",
+    "text": "โครงสร้างลิวอิสข้อใดไม่ถูกต้อง",
+    "choices": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q19",
+    "year": 67,
+    "questionNum": 19,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y67-p6.png",
+    "text": "เมื่อนำสารละลายเลดไนเทรต (Pb(NO3)2) เข้มข้น 0.50 mol/L ปริมาตร 1.00 mL ผสมกับสารละลาย โพแทสเซียมไอโอไดด์ (KI) เข้มข้น 0.80 mol/L ปริมาตร 1.00 mL ข้อใดเปรียบเทียบปริมาณไอออนใน สารละลายผสมได้ถูกต้อง",
+    "choices": [
+      "โพแทสเซียมไอออน > ไอโอไดด์ไอออน > ไนเทรตไอออน > เลดไอออน",
+      "ไนเทรตไอออน > โพแทสเซียมไอออน = ไอโอไดด์ไอออน > เลดไอออน",
+      "โพแทสเซียมไอออน > ไนเทรตไอออน > ไอโอไดด์ไอออน > เลดไอออน",
+      "ไนเทรตไอออน > โพแทสเซียมไอออน > เลดไอออน > ไอโอไดด์ไอออน S O O F F F N Si Cl Cl Cl Cl P Cl Cl Cl Cl Cl"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q20",
+    "year": 67,
+    "questionNum": 20,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y67-p6.png",
+    "text": "เมื่อเขียนโครงสร้างลิวอิสที่เสถียรของ เบนซาไมด์ (benzamide, C6H5CONH2) ข้อใดระบุอัตราส่วนจำนวนคู่ ของอิเล็กตรอนคู่โดดเดี่ยว : พันธะเดี่ยว : พันธะคู่ : พันธะสาม ได้ถูกต้อง กำหนดให้ C6H5– มีโครงสร้างที่คาร์บอนจับกันเป็นวงหกเหลี่ยม",
+    "choices": [
+      "3 : 12 : 1 : 2",
+      "3 : 12 : 4 : 0",
+      "3 : 15 : 1 : 0",
+      "4 : 13 : 3 : 0"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q21",
+    "year": 67,
+    "questionNum": 21,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y67-p6.png",
+    "text": "การละลายของสารประกอบไอออนิกมีพลังงานที่เกี่ยวข้องคือ พลังงานแลตทิซ และพลังงานไฮเดรชันซึ่งเป็น ผลรวมจากพลังงานไฮเดรชันของไอออนที่เป็นองค์ประกอบ พิจารณาข้อมูลพลังงาน (kJ/mol) สำหรับสารประกอบแฮไลด์ของธาตุ A, D, E และ G ต่อไปนี้ สาร พลังงานแลตทิซ พลังงานไฮเดรชัน ไอออนบวก ไอออนลบ รวม BaBr2 1950 1305 288.",
+    "choices": [
+      "เมื่อ EF2 ละลายในน้ำ สารละลายจะร้อนขึ้น",
+      "พลังงานไฮเดรชันของ GI2 มากกว่า AF อยู่ 1,189.1 kJ/mol",
+      "สารประกอบที่ไอออนบวกมีประจุสูงมีแนวโน้มจะคายพลังงานเมื่อละลายน้ำ",
+      "ผลต่างระหว่างพลังงานแลตทิซกับพลังงานไฮเดรชันของ EF2 มีค่ามากที่สุด"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q22",
+    "year": 67,
+    "questionNum": 22,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y67-p6.png",
+    "text": "เมื่อนำสารต่อไปนี้ K2SO4, BaCl2, Na2CO3 และ Cu(NO3)2 อย่างละ 0.5 g ละลายในน้ำ 10 mL แล้ว เทรวมกัน พบตะกอนเกิดขึ้น ตะกอนนี้เป็นสารชนิดใดบ้าง",
+    "choices": [
+      "BaSO4, BaCO3 และ CuCO3",
+      "BaSO4, BaCO3 และ CuSO4",
+      "BaCO3, CuSO4 และ K2CO3",
+      "BaSO4, CuCO3 และ K2CO3"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q23",
+    "year": 67,
+    "questionNum": 23,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y67-p6.png",
+    "text": "เปรียบเทียบเลขออกซิเดชันของอะตอมและไอออนในสารประกอบต่อไปนี้ N2O5 NH3 Na2S SF6 CrCl3 ข้อใดมีอะตอมหรือไอออนที่มีเลขออกซิเดชันสูงที่สุดในสารประกอบหนึ่ง และต่ำที่สุดในอีกสารประกอบหนึ่ง",
+    "choices": [
+      "N2O5 และ SF6",
+      "SF6 และ NH3",
+      "CrCl3 และ NH3",
+      "CrCl3 และ Na2S"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q24",
+    "year": 67,
+    "questionNum": 24,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y67-p6.png",
+    "text": "การอ่านชื่อสารในข้อใดถูกต้อง",
+    "choices": [
+      "FeCO3 เหล็ก(II)คาร์บอเนต",
+      "Mg3(PO4)2 ไตรแมกนีเซียมฟอสเฟต",
+      "Mn2O7 ไดแมงกานีส(VII)เฮปตอกไซด์",
+      "Ca(HCO3)2 แคลเซียมไฮโดรเจนคาร์บอเนต"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q25",
+    "year": 67,
+    "questionNum": 25,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y67-p7.png",
+    "text": "สารในข้อใดมีรูปร่างโมเลกุลเหมือนกัน และอะตอมกลางต่างก็มีอิเล็กตรอนคู่โดดเดี่ยว",
+    "choices": [
+      "I3– และ XeF2",
+      "CS2 และ H2S",
+      "PCl3 และ ClF3",
+      "HCN และ ICl2–"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q26",
+    "year": 67,
+    "questionNum": 26,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y67-p7.png",
+    "text": "โมเลกุลต่อไปนี้ XeF4, H2O, HI และ CHCl3 โมเลกุลใดมีสภาพขั้วสูงที่สุด",
+    "choices": [
+      "HI",
+      "H2O",
+      "XeF4",
+      "CHCl3"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 67"
+  },
+  {
     "id": "y67-q27",
     "year": 67,
     "questionNum": 27,
@@ -1885,6 +6078,38 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "มุมพันธะในเพชร(sp3)=109.5°, แกรไฟต์(sp2)=120° → แกรไฟต์มากกว่า ข้อ ข. ผิด"
+  },
+  {
+    "id": "y67-q28",
+    "year": 67,
+    "questionNum": 28,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y67-p7.png",
+    "text": "พิจารณาสมบัติของธาตุ A, D, E, G, L, M และสารประกอบ CaF2 ต่อไปนี้ สาร จุดหลอมเหลว จุดเดือด การนำไฟฟ้า (°C) (°C) เมื่อเป็นของแข็ง เมื่อเป็นของเหลว 4A 1280 2469 นำ นำ 14D 1414 3265 นำเล็กน้อย นำเล็กน้อย 16E 113 445 ไม่นำ ไม่นำ 19G 63.5 759 นำ นำ 24L 1857 2672 นำ นำ 82M 328 1749 นำ นำ CaF2 1418 2533 ไม่",
+    "choices": [
+      "พันธะโลหะของธาตุที่อะตอมมีขนาดเล็กจะแข็งแรงกว่ากรณีที่อะตอมมีขนาดใหญ่",
+      "E มีจุดหลอมเหลวและจุดเดือดต่ำแสดงว่า พันธะโคเวเลนต์ในธาตุนี้ไม่แข็งแรง",
+      "G และ M มีพันธะโคเวเลนต์ ซึ่งเปลี่ยนเป็นพันธะโลหะเมื่อหลอมเหลว",
+      "พันธะโลหะมีความแข็งแรงกว่าพันธะโคเวเลนต์และพันธะไอออนิก"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q29",
+    "year": 67,
+    "questionNum": 29,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y67-p7.png",
+    "text": "ข้อที่ 29 (ดูรูปในหน้า 7)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 67"
   },
   {
     "id": "y67-q30",
@@ -1975,6 +6200,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 3,
     "explanation": "UF₆ = 3.52/352 = 0.01 mol → U=0.01, F รวม=0.06. HF = 0.80/20 = 0.04 → F ในผลิตภัณฑ์ = 0.02. มวล O = 3.08 − 0.01×238 − 0.02×19 = 0.32 → 0.02 mol O. U:O:F = 0.01:0.02:0.02 = 1:2:2 → UO₂F₂ → ข้อ ง"
+  },
+  {
+    "id": "y67-q36",
+    "year": 67,
+    "questionNum": 36,
+    "topicId": "stoichiometry",
+    "imageUrl": "/exam-images/y67-p8.png",
+    "text": "ปฏิกิริยาเคมีแสดงการหาปริมาณ Fe2+ ในสารละลายตัวอย่างด้วยสารละลาย K2Cr2O7 ในภาวะกรด เป็นดังนี้ a Cr2O72– + b Fe2+ + c H+ ⟶ d Cr3+ + e Fe3+ + f H2O (สมการยังไม่ดุล) ตัวเลขสัมประสิทธิ์ในข้อใดถูกต้อง",
+    "choices": [
+      "a = 1, b = 3",
+      "b = 3, d = 2",
+      "c = 8, e = 2",
+      "d = 2, f = 7"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 67"
   },
   {
     "id": "y67-q37",
@@ -2112,6 +6353,70 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "A=2mol, B=0.5mol → B เป็น limiting reagent, C=3×0.5=1.5mol=135g → MW(C)=90"
   },
   {
+    "id": "y67-q46",
+    "year": 67,
+    "questionNum": 46,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y67-p10.png",
+    "text": "ยูเรีย ((NH2)2CO) เตรียมได้จากปฏิกิริยาดังนี้ N2(g) + 3H2(g) ⟶ 2NH3(g) CO2(g) + 2NH3(g) ⟶ (NH2)2CO(aq) + H2O(l) ถ้าเตรียมยูเรียโดยใช้ N2 2 mol, H2 3 mol และ CO2 4 mol พบว่า เกิดยูเรีย 45 g ผลได้ร้อยละของยูเรีย เป็นเท่าใด",
+    "choices": [
+      "37.5",
+      "50",
+      "75",
+      "87.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q47",
+    "year": 67,
+    "questionNum": 47,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y67-p10.png",
+    "text": "ข้อที่ 47 (ดูรูปในหน้า 10)",
+    "choices": [
+      "ก",
+      "ข",
+      "ค",
+      "ง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q48",
+    "year": 67,
+    "questionNum": 48,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y67-p10.png",
+    "text": "โพรพราโนลอล (Propranolol, C16H21NO2, 259 g/mol) เป็นยาที่ใช้รักษาความดันโลหิตสูง โดยความเข้มข้น ของยาในพลาสมาที่ทำให้ยาออกฤทธิ์ได้เท่ากับ 50 ng/L ความเข้มข้นนี้ที่คำนวณในหน่วยอื่น ข้อใดผิด กำหนดให้ ความหนาแน่นของพลาสมาเท่ากับ 1.025 g/mL",
+    "choices": [
+      "49 ppm",
+      "4.9  10–2 ppb",
+      "1.9  10–10 M",
+      "1.9  10–10 m"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q49",
+    "year": 67,
+    "questionNum": 49,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y67-p11.png",
+    "text": "ถ้าต้องการเตรียมสารละลายของคาร์บอเนตไอออน (A และ B) ให้มีความเข้มข้นที่แม่น ดังนี้ สารละลาย ความเข้มข้นของ CO32– (M) ปริมาตร (mL) สารที่ใช้เตรียม A 0.4000 250.0 Na2CO3 B 0.1000 100.0 สารละลาย A มวล Na2CO3 ที่ต้องใช้ในการเตรียมสารละลาย A และวัสดุ อุปกรณ์ที่ต้องใช้ในการเตรียมสารละลาย B จาก สารละลาย A ",
+    "choices": [
+      "6.00 กระบอกตวงขนาด 25 mL บีกเกอร์ขนาด 250 mL น้ำกลั่น แท่งแก้วคน",
+      "6.00 ปิเปตต์ขนาด 25 mL ขวดกำหนดปริมาตรขนาด 100 mL น้ำกลั่น",
+      "10.60 กระบอกตวงขนาด 25 mL บีกเกอร์ขนาด 250 mL น้ำกลั่น แท่งแก้วคน",
+      "10.60 ปิเปตต์ขนาด 25 mL ขวดกำหนดปริมาตรขนาด 100 mL น้ำกลั่น"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 67"
+  },
+  {
     "id": "y67-q50",
     "year": 67,
     "questionNum": 50,
@@ -2142,6 +6447,38 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "dTb=0.66°C, m=0.66/2.64=0.25mol/kg, mol=0.025mol, MW=3.85/0.025=154 g/mol"
   },
   {
+    "id": "y67-q52",
+    "year": 67,
+    "questionNum": 52,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y67-p11.png",
+    "text": "สารละลายชนิดหนึ่งมีคาร์บอนเตตระคลอไรด์ (CCl4) เป็นตัวทำละลาย มีจุดเดือด 81.8 °C จุดเยือกแข็งของ สารละลายนี้เป็นกี่องศาเซลเซียส กำหนดให้ ตัวทำละลาย จุดเดือด (°C) Kb (°C/m) จุดเยือกแข็ง (°C) Kf (°C/m) คาร์บอนเตตระคลอไรด์ 76.8 5.00 –22.9 29.8",
+    "choices": [
+      "–52.7",
+      "–29.8",
+      "6.9",
+      "106.6"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q53",
+    "year": 67,
+    "questionNum": 53,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y67-p11.png",
+    "text": "บารอมิเตอร์อย่างง่ายดังภาพ สร้างจากขวดพลาสติก กับสายยางปลายเปิดขนาดเล็ก ในวันจันทร์ได้ปรับ ระดับน้ำในสายยางให้เท่ากับระดับน้ำในขวด อ่าน ค่าความดันบรรยากาศจากบารอมิเตอร์ปรอทที่ใช้ อ้างอิงได้ 730 mmHg และอ่านอุณหภูมิได้ 27.0 °C เมื่อตั้งทิ้งไว้แล้วกลับมาอ่านอีกครั้งในวันอังคาร พบว่า ระดับน้ำในสายยางถู",
+    "choices": [
+      "725",
+      "735",
+      "755",
+      "765"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 67"
+  },
+  {
     "id": "y67-q54",
     "year": 67,
     "questionNum": 54,
@@ -2157,6 +6494,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "กฎอาโวกาโดร: ที่ T,P เดียวกัน แก๊สทุกชนิดมีจำนวนโมลเท่ากัน → N เท่ากัน"
   },
   {
+    "id": "y67-q55",
+    "year": 67,
+    "questionNum": 55,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y67-p12.png",
+    "text": "ความดันอากาศภายในลูกบาสเกตบอลที่แนะนำให้ใช้ในการแข่งขันทั่วไปคือ 22.05 psi ถ้ามีลูกบาสเกตบอล ขนาด 7.5 L ที่ผ่านการใช้งานจนความดันภายในกับภายนอกเท่ากัน จะต้องสูบอากาศเข้าไปกี่โมล ณ อุณหภูมิ 27 °C เพื่อให้สามารถใช้ในการแข่งขันได้ กำหนดให้ ปริมาตรของลูกบาสเกตบอลหลังสูบอากาศเข้าไปไม่เปลี่ยนแปลงจากปริมาต",
+    "choices": [
+      "0.0015",
+      "0.15",
+      "0.46",
+      "2.2"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 67"
+  },
+  {
     "id": "y67-q56",
     "year": 67,
     "questionNum": 56,
@@ -2170,6 +6523,214 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "ความหนาแน่น ∝ MW, D2(MW=4)/H2(MW=2) = 2 เท่า ✓"
+  },
+  {
+    "id": "y67-q57",
+    "year": 67,
+    "questionNum": 57,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y67-p12.png",
+    "text": "จากแผนภาพของภาชนะใบหนึ่งที่บรรจุแก๊สเฉื่อย 3 ชนิด หากความดันรวมในภาชนะเท่ากับ 900 mmHg ข้อใดถูก",
+    "choices": [
+      "เศษส่วนโมลของแก๊ส Ne = 0.2",
+      "ความดันย่อยของแก๊ส He = 270 mmHg",
+      "ความดันย่อยของแก๊ส Ar = 450 mmHg",
+      "เศษส่วนโมลของ Ar = 0.5 NA เมื่อ NA = 6.02  1023 อนุภาค"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q58",
+    "year": 67,
+    "questionNum": 58,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y67-p12.png",
+    "text": "ขวดแก้วสามใบที่มีปริมาตรเท่ากัน บรรจุแก๊สดังที่ระบุไว้ในตาราง ขวด แก๊สที่บรรจุ ความดัน (mmHg) อุณหภูมิ (°C) A H2 760 25.0 B Cl2 380 25.0 C NO2 190 25.0 ข้อความต่อไปนี้ ข้อใดถูก",
+    "choices": [
+      "พลังงานจลน์รวมของแก๊สในขวด A > B > C",
+      "อัตราเร็วเฉลี่ยของอนุภาคแก๊สในขวด A = B = C",
+      "พลังงานจลน์เฉลี่ยต่อโมลของแก๊สในขวด A > B > C",
+      "ความถี่ที่อนุภาคแก๊สชนกับผนังภาชนะในขวด A > C > B แทน อะตอม He แทน อะตอม Ne แทน อะตอม Ar"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q59",
+    "year": 67,
+    "questionNum": 59,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y67-p12.png",
+    "text": "ตัวอย่างอากาศในข้อใดควรมีอัตราการแพร่ผ่านสูงที่สุด",
+    "choices": [
+      "อากาศแห้ง",
+      "อากาศจากท่อไอเสียรถยนต์",
+      "อากาศที่มีความชื้นสัมพัทธ์ 95%",
+      "อากาศที่มีฝุ่น PM 2.5 ในปริมาณสูง"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y67-q60",
+    "year": 67,
+    "questionNum": 60,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y67-p12.png",
+    "text": "แก๊สผสมของแก๊ส  และแก๊ส ⚫ ซึ่งมีอัตราส่วนจำนวนอนุภาคเป็น 1 : 1 แพร่ผ่านรูเล็ก ๆ รูหนึ่ง ดังรูป ก่อนการแพร่ผ่าน หลังการแพร่ผ่าน กำหนดให้ แก๊ส ⚫ มีมวลต่อโมลเท่ากับ 32 g/mol มวลต่อโมลของแก๊ส  เป็นเท่าใดในหน่วย g/mol",
+    "choices": [
+      "14",
+      "21",
+      "48",
+      "72 ส่วนที่ II. ข้อสอบอัตนัยแบบเขียนตอบ จำนวน 15 ข้อ ข้อละ 2 คะแนน รวม 30 คะแนน เขียนคำตอบลงในช่องว่างที่กำหนดให้ในกระดาษ"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 67"
+  },
+  {
+    "id": "y68-q1",
+    "year": 68,
+    "questionNum": 1,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p3.png",
+    "text": "ข้อใดควรปฏิบัติในการทำปฏิบัติการเคมี",
+    "choices": [
+      "ขออนุญาตคุณครูทำการทดลองเองหลังเลิกเรียนโดยสัญญาว่าจะปิดห้องให้เรียบร้อย",
+      "เมื่อสารเคมีหกบนเครื่องชั่ง ควรรีบทำความสะอาดทันทีโดยไม่ต้องปิดเครื่องชั่ง",
+      "ทดสอบกลิ่นของของเหลวโดยใช้มือโบกให้ไอสารเข้าจมูกเพียงเล็กน้อย",
+      "ให้ความร้อนแก่เอทานอลด้วยตะเกียงที่มีเปลวไฟ"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q2",
+    "year": 68,
+    "questionNum": 2,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p3.png",
+    "text": "นักวิทยาศาสตร์ต้องการเตรียมสารละลายกรดซัลฟิวริก (H2SO4) ที่มีความเข้มข้นประมาณ 3 M ปริมาตร 120 mL โดยการตวงกรดซัลฟิวริกเข้มข้น (Conc. H2SO4, 18 M) จำนวน 20 mL ในตู้ดูดควัน พบว่า ขวดกรด มีขนาดใหญ่ 2.5 L ขั้นตอนการปฏิบัติการข้อใดไม่เหมาะสม ขั้นที่ 1 อ่านชื่อและข้อมูลบนฉลากของสารเคมีที่อยู่ในตู้ดูดควัน",
+    "choices": [
+      "ขั้นที่ 1 และ 2",
+      "ขั้นที่ 2 และ 3",
+      "ขั้นที่ 3 และ 4",
+      "ขั้นที่ 4 เท่านั้น"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q3",
+    "year": 68,
+    "questionNum": 3,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p3.png",
+    "text": "หลังจากทำการทดลองสังเคราะห์สารประกอบเชิงซ้อนของ Cu2+ พบว่า มีสารเคมีเหลือดังนี้ CuCl2 (เหลือ 0.1 mg) เอทิลแอลกอฮอล์ (C2H5OH, เหลือ 10 mL) สารละลายเบสแอมโมเนียมไฮดรอกไซด์เข้มข้น 0.1 M (เหลือ 20 mL) ไดคลอโรมีเทน (CH2Cl2, ตัวทำละลายที่ระเหยง่ายและเป็นอันตรายต่อสิ่งแวดล้อม, เหลือ 10 mL) สารละลายกรดไฮโดร",
+    "choices": [
+      "เท CuCl2 กลับคืนขวดเดิม",
+      "เทของเหลวทุกชนิดยกเว้นไดคลอโรมีเทนลงอ่างน้ำได้เลย แล้วเปิดน้ำตามมาก ๆ",
+      "ทำให้สารละลายแอมโมเนียมไฮดรอกไซด์และกรดไฮโดรคลอริกเป็นกลางก่อนเทลงอ่างน้ำ",
+      "เก็บสารเคมีที่เหลือทุกชนิดในขวดแบ่งแยกต่างหากจากขวดสารเคมีเดิมเพื่อเก็บไว้ใช้ในครั้งต่อไป"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q4",
+    "year": 68,
+    "questionNum": 4,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p3.png",
+    "text": "ทดลองหาปริมาณแมกนีเซียมในแม่น้ำแห่งหนึ่งโดยเก็บน้ำตัวอย่าง แล้วนำไปวิเคราะห์ 2 วิธี ได้ผลดังตาราง ครั้งที่ ปริมาณแมกนีเซียม (mg/L) วิธี A วิธี B 1 5.75 5.85 2 5.72 5.95 3 5.76 5.80 4 5.80 5.85 5 5.78 5.60 6 5.70 5.75 ถ้าค่าจริงของปริมาณแมกนีเซียมในแม่น้ำนี้เท่ากับ 5.80 mg/L ข้อใดถูก",
+    "choices": [
+      "วิธี A มีความเที่ยงสูงกว่า แต่ความแม่นต่ำกว่าวิธี B",
+      "วิธี A มีความเที่ยงต่ำกว่า แต่ความแม่นสูงกว่าวิธี B",
+      "วิธี A มีความเที่ยงและความแม่นต่ำกว่าวิธี B",
+      "วิธี A มีความเที่ยงและความแม่นเท่ากับวิธี B"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q5",
+    "year": 68,
+    "questionNum": 5,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p3.png",
+    "text": "สารในข้อใดสามารถบรรจุในขวดแก้วทรงกระบอกจุ 1 L I. ตัวทำละลายอินทรีย์มวล 600 g ความหนาแน่น 0.66 g/cm3 II. เกล็ดน้ำตาลทรายมวล 1.0 kg ความหนาแน่น 1.59 g/cm3 III. ก้อนพลาสติกรูปลูกบาศก์ขนาด 1.2 cm3 จำนวน 900 ก้อน IV. สารละลาย NaCl เข้มข้น 3.0 mol/L มี NaCl 234 g",
+    "choices": [
+      "I และ II เท่านั้น",
+      "II และ III",
+      "III และ IV",
+      "I, II และ IV"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q6",
+    "year": 68,
+    "questionNum": 6,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p3.png",
+    "text": "สาร A เป็นของแข็งที่ละลายน้ำได้ดีที่อุณหภูมิห้อง เมื่อนำตัวอย่างสารชนิดนี้มาละลายน้ำเพื่อเตรียมสารละลาย เจือจาง พบว่ามีของแข็งบางส่วนเหลืออยู่ นักเรียนพยายามอธิบายผลการทดลองดังกล่าวโดย “ตั้งสมมติฐาน และออกแบบวิธีการทดสอบ” ตามวิธีการทางวิทยาศาสตร์ ดังนี้ แนวทาง สมมติฐาน วิธีการทดสอบ* I ตัวอย่างนี้มีส",
+    "choices": [
+      "I เท่านั้น",
+      "II เท่านั้น",
+      "I และ II",
+      "I และ III"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q7",
+    "year": 68,
+    "questionNum": 7,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p4.png",
+    "text": "กำหนดแผนภาพระดับพลังงานของอิเล็กตรอนในอะตอมไฮโดรเจนดังรูป (แสดงระดับพลังงานเพียงบางส่วน) พิจารณาข้อความต่อไปนี้ สำหรับอะตอมไฮโดรเจน I. ตามแบบจำลองอะตอมของโบร์ ถ้าอิเล็กตรอนเปลี่ยนวงโคจรจาก n = 1 ไปยัง n = 3 จะคายพลังงาน 1.94 × 10–18 J II. เส้นสเปกตรัมที่เกิดจากการเปลี่ยนระดับพลังงาน n = 2 ไปยัง n = ",
+    "choices": [
+      "I และ II",
+      "II และ III",
+      "I และ III",
+      "II เท่านั้น"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q8",
+    "year": 68,
+    "questionNum": 8,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p4.png",
+    "text": "อะตอมของธาตุ A มีการจัดเรียงอิเล็กตรอนดังนี้ 2 8 18 2 อะตอมของธาตุ D มีอิเล็กตรอนน้อยกว่านิวตรอน อยู่ 4 และน้อยกว่าจำนวนอิเล็กตรอนของไอออนที่เสถียรของธาตุ A อยู่ 2 ข้อใดคือสัญลักษณ์นิวเคลียร์และ จำนวนอิเล็กตรอนของ D2+",
+    "choices": [
+      "D 26 56 2+ มี 24 อิเล็กตรอน",
+      "D 28 60 2+ มี 26 อิเล็กตรอน",
+      "D 28 58 2+ มี 28 อิเล็กตรอน",
+      "D 26 56 2+ มี 26 อิเล็กตรอน"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q9",
+    "year": 68,
+    "questionNum": 9,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p4.png",
+    "text": "บิสมัทออกไซด์ (Bi2O3) เป็นสารประกอบที่ถูกนำมาใช้กันอย่างแพร่หลายในอุตสาหกรรมต่าง ๆ เช่น การผลิต เซรามิก แก้ว และสีเคลือบ ข้อใดเป็นจำนวนอิเล็กตรอนรวมในระดับพลังงาน n = 5 และ 6 ของ Bi 1 อนุภาค ในสารประกอบ Bi2O3",
+    "choices": [
+      "18",
+      "20",
+      "23",
+      "34"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 68"
   },
   {
     "id": "y68-q10",
@@ -2202,6 +6763,70 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "A=Mg, Mg2+ มีโปรตอน=12 อิเล็กตรอน=10 → โปรตอน>อิเล็กตรอน ข้อ ข. บอกว่าโปรตอนน้อยกว่า จึงผิด"
   },
   {
+    "id": "y68-q12",
+    "year": 68,
+    "questionNum": 12,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p4.png",
+    "text": "กำหนดให้ ไอออน A– มีการจัดเรียงอิเล็กตรอนเหมือนแก๊สมีสกุลที่อยู่ในคาบที่ 3 ธาตุ D มี 4 อิเล็กตรอนใน 3p ออร์บิทัล พิจารณาข้อความต่อไปนี้ I. ธาตุ A มี 5 อิเล็กตรอนใน 3p ออร์บิทัล II. ทุกธาตุที่อยู่หมู่เดียวกับ D มีสมบัติเป็นอโลหะ III. พลังงานไอออไนเซชันลำดับที่ 1 ของธาตุ A มีค่ามากกว่าธาตุ D IV. โมเลก",
+    "choices": [
+      "I และ III เท่านั้น",
+      "II และ III",
+      "II และ IV",
+      "I, III และ IV"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q13",
+    "year": 68,
+    "questionNum": 13,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p5.png",
+    "text": "ข้อใดต่อไปนี้เรียงลำดับค่าอิเล็กโทรเนกาติวิตีของธาตุจากมากไปน้อยได้ถูกต้อง",
+    "choices": [
+      "12Mg, 20Ca, 33As, 35Br",
+      "15P, 33As, 20Ca, 19K",
+      "56Ba, 38Sr, 20Ca, 12Mg",
+      "53I, 51Sb, 38Sr, 20Ca"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q14",
+    "year": 68,
+    "questionNum": 14,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p5.png",
+    "text": "ข้อใดเป็นการจัดเรียงอิเล็กตรอนในอะตอมของธาตุแทรนซิชันในสถานะกระตุ้น",
+    "choices": [
+      "[Kr]4d3",
+      "[Ar]3d14s2",
+      "[Kr]4d25s15p1",
+      "[Ar]3d104s25p1"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q15",
+    "year": 68,
+    "questionNum": 15,
+    "topicId": "atomic-structure",
+    "imageUrl": "/exam-images/y68-p5.png",
+    "text": "กำหนดให้ธาตุ M, Q, R, T และ X มีค่าพลังงานไอออไนเซชันลำดับที่ 1 (IE1) และมีสมบัติดังตารางต่อไปนี้ ธาตุ IE1 (kJ/mol) สมบัติ M 786 เป็นของแข็งที่อุณหภูมิห้อง มีจุดหลอมเหลวสูง นำไฟฟ้าได้เล็กน้อย Q 1681 เป็นแก๊สที่อุณหภูมิห้อง สามารถเกิดปฏิกิริยากับลิเทียมได้สารประกอบไอออนิก LiQ R 496 เป็นโลหะที่ทำปฏิกิ",
+    "choices": [
+      "I, II และ III",
+      "I, II และ IV",
+      "II, III และ IV",
+      "I, III และ IV"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 68"
+  },
+  {
     "id": "y68-q16",
     "year": 68,
     "questionNum": 16,
@@ -2230,6 +6855,182 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 3,
     "explanation": "รังสีบีตา: Z+1, A ไม่เปลี่ยน. II: Bi(83)→Po(84) Z+1, A=214✓. I,III,IV ไม่ใช่ beta decay → II เท่านั้น"
+  },
+  {
+    "id": "y68-q18",
+    "year": 68,
+    "questionNum": 18,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y68-p5.png",
+    "text": "โมเลกุลหรือไอออนในข้อใดที่เวกเตอร์สภาพขั้วของพันธะหักล้างกันไม่หมด",
+    "choices": [
+      "SO3",
+      "ClO3–",
+      "BCl4–",
+      "CO32–"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q19",
+    "year": 68,
+    "questionNum": 19,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y68-p6.png",
+    "text": "ไอออนคู่ใดมีจำนวนอิเล็กตรอนคู่โดดเดี่ยวของอะตอมกลางไม่เท่ากัน แต่รูปร่างเหมือนกัน กำหนดให้ ทุกอะตอมมีจำนวนอิเล็กตรอนล้อมรอบไม่เกินแปด",
+    "choices": [
+      "NO2– และ ClO2–",
+      "NO3– และ SO32–",
+      "SO32– และ PO3–",
+      "ClO4– และ PO43–"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q20",
+    "year": 68,
+    "questionNum": 20,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y68-p6.png",
+    "text": "ไอออนคู่ใดมีอิเล็กตรอนคู่โดดเดี่ยวรอบอะตอมกลางเป็น 2 คู่เท่ากัน",
+    "choices": [
+      "BH2– และ CH3–",
+      "ClF4– และ ClO2–",
+      "IF2– และ SF5–",
+      "SnCl3– และ NH2–"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q21",
+    "year": 68,
+    "questionNum": 21,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y68-p6.png",
+    "text": "พิจารณาโมเลกุลและไอออนที่ยังเติมจำนวนพันธะและอิเล็กตรอนคู่โดดเดี่ยวไม่สมบูรณ์ต่อไปนี้ I. N−C−C−N II. O−N−C−C−H III. [H2C−C−N]− โมเลกุลหรือไอออนใดที่เกิดทั้งพันธะ C=C และ C=N",
+    "choices": [
+      "I เท่านั้น",
+      "II เท่านั้น",
+      "III",
+      "I และ II"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q22",
+    "year": 68,
+    "questionNum": 22,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y68-p6.png",
+    "text": "ข้อใดเปรียบเทียบมุมพันธะได้ถูกต้อง",
+    "choices": [
+      "Cl2O  CCl4  BCl3  XeF2",
+      "Cl2O  BCl3  XeF2  CCl4",
+      "CCl4  Cl2O  BCl3  XeF2",
+      "Cl2O  BCl3  CCl4  XeF2"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q23",
+    "year": 68,
+    "questionNum": 23,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y68-p6.png",
+    "text": "พิจารณาสมบัติของธาตุ A, D, E, G, J ในตารางต่อไปนี้ ธาตุ สมบัติ A มีเลขอะตอมเท่ากับ 20 D อยู่ในคาบ 3 และมีเวเลนซ์อิเล็กตรอนเท่ากับ 5 E อยู่ในคาบ 2 และเกิดสารประกอบกับ D ได้โมเลกุลที่มีรูปร่างเป็นพีระมิดคู่ฐานสามเหลี่ยม G อยู่ในคาบเดียวกับ D และเกิดสารประกอบกับ D ได้สารที่มีสูตรเคมีเป็น GD J อยู่ในคาบ",
+    "choices": [
+      "A3D2",
+      "AE2",
+      "GE2",
+      "G2J3"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q24",
+    "year": 68,
+    "questionNum": 24,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y68-p6.png",
+    "text": "โมเลกุลในข้อใดมีแรงระหว่างโมเลกุลเป็นแรงแผ่กระจายลอนดอนเท่านั้น",
+    "choices": [
+      "PCl5 และ SiF4",
+      "BCl3 และ NH3",
+      "XeF6 และ SCl6",
+      "XeO3 และ SnBr4"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q25",
+    "year": 68,
+    "questionNum": 25,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y68-p7.png",
+    "text": "โมเลกุลในข้อใดต่อไปนี้มีจำนวนอิเล็กตรอนล้อมรอบเป็นเลขคี่",
+    "choices": [
+      "CO2",
+      "SO2",
+      "ClO2",
+      "XeO2"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q26",
+    "year": 68,
+    "questionNum": 26,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y68-p7.png",
+    "text": "พิจารณาข้อมูลต่อไปนี้ สูตรโมเลกุล รูปร่างโมเลกุล จำนวนอิเล็กตรอนคู่โดดเดี่ยวรอบอะตอมกลาง (คู่) XF4 ทรงสี่หน้าบิดเบี้ยว 1 YCl3 สามเหลี่ยมแบนราบ 0 ZCl3 รูปตัวที 2 ธาตุ X, Y, Z ในข้อใดเป็นไปได้ X Y Z",
+    "choices": [
+      "Cl N Br",
+      "Cl B F",
+      "S N P",
+      "S B I"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q27",
+    "year": 68,
+    "questionNum": 27,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y68-p7.png",
+    "text": "พิจารณาโครงสร้างลิวอิสของโมเลกุลต่อไปนี้ กลีเซอรอล แอซีโทน เอทิลีนไกลคอล ข้อใดกล่าวถูกต้อง I. โมเลกุลทั้งสามมีแรงยึดเหนี่ยวระหว่างโมเลกุลเป็นพันธะไฮโดรเจนเหมือนกัน II. กลีเซอรอลและแอซีโทนมีจุดเดือดแตกต่างกันเพราะมีขนาดของแรงยึดเหนี่ยวระหว่างโมเลกุลแตกต่างกัน III. แอซีโทนผสมเป็นเนื้อเดียวกับเอทิลีนไก",
+    "choices": [
+      "I เท่านั้น",
+      "I และ II เท่านั้น",
+      "II และ III เท่านั้น",
+      "I, II และ III"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q28",
+    "year": 68,
+    "questionNum": 28,
+    "topicId": "chemical-bonding",
+    "imageUrl": "/exam-images/y68-p7.png",
+    "text": "พิจารณาสมบัติของสาร R, S, T และ U ต่อไปนี้ สาร จุดเดือด (°C) จุดหลอมเหลว (°C) การนำไฟฟ้าในสถานะของแข็ง การละลายน้ำ R 122 18 ไม่นำไฟฟ้า ละลาย S 1,935 772 ไม่นำไฟฟ้า ละลาย T 4,300 2,700 ไม่นำไฟฟ้า ไม่ละลาย U 2,162 968 นำไฟฟ้า ไม่ละลาย ข้อความใดต่อไปนี้มีความเป็นไปได้มากที่สุด",
+    "choices": [
+      "สาร R เป็นสารประกอบโคเวเลนต์ที่มีแรงยึดเหนี่ยวระหว่างโมเลกุลเป็นพันธะไฮโดรเจน",
+      "สาร T มีแรงยึดเหนี่ยวระหว่างอนุภาคเป็นแรงระหว่างขั้ว",
+      "สาร S และ U เป็นสารประกอบประเภทเดียวกัน",
+      "สาร U เมื่อหลอมเหลวจะไม่นำไฟฟ้า"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 68"
   },
   {
     "id": "y68-q29",
@@ -2337,6 +7138,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "น้ำสูญเสีย=0.18g=0.01mol H2O, BaCl2=1.04g=0.005mol → H2O:BaCl2=2 → BaCl2·2H2O"
   },
   {
+    "id": "y68-q36",
+    "year": 68,
+    "questionNum": 36,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y68-p8.png",
+    "text": "พิจารณาข้อความต่อไปนี้ I. ใส่น้ำแข็งแห้งในบีกเกอร์เปล่า เกิดแก๊สคาร์บอนไดออกไซด์ทันที II. ละลายน้ำตาลทรายด้วยน้ำแล้วให้ความร้อนจนได้น้ำเชื่อมที่ข้นหนืด III. ใส่ผงปูนขาว (CaO) ลงในน้ำแล้วพบว่า กระดาษลิตมัสเปลี่ยนสีจากแดงเป็นน้ำเงิน IV. ผสมสารละลาย A ที่ไม่มีสี กับสารละลาย B ที่มีสีเขียวในภาวะเบสแล้วไ",
+    "choices": [
+      "I และ II",
+      "II และ III เท่านั้น",
+      "III และ IV เท่านั้น",
+      "II, III และ IV"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 68"
+  },
+  {
     "id": "y68-q37",
     "year": 68,
     "questionNum": 37,
@@ -2365,6 +7182,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "วิ่ง 8 km ใช้น้ำมัน 0.4 L = 320 g → C = 240 g = 20 mol → CO₂ = 20 mol = 880 g = 0.88 kg → ข้อ ข"
+  },
+  {
+    "id": "y68-q39",
+    "year": 68,
+    "questionNum": 39,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y68-p9.png",
+    "text": "เครื่องตรวจวัดแอลกอฮอล์ในลมหายใจ (Breathalyzer) ชนิดหนึ่ง อาศัยปฏิกิริยาที่มี Ag+ เป็นตัวเร่ง ดังสมการ 3CH3CH2OH(aq) + 2Cr2O72−(aq) + 16H+(aq) ⟶ 3CH3CO2H(aq) + 4Cr3+(aq) + 11H2O(l) หากชุดทดสอบประกอบด้วยสารละลาย K2Cr2O7 0.245 mg/mL ปริมาตร 3.0 mL ที่มี H2SO4 30 % v/v และ AgNO3 0.25 mg/mL ต้องใช้เอทาน",
+    "choices": [
+      "0.077",
+      "0.086",
+      "0.12",
+      "0.17"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 68"
   },
   {
     "id": "y68-q40",
@@ -2442,6 +7275,70 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "มวลน้ำยา=146×1.05=153.3g, HCl=15.33g=0.42mol, CO2=0.21mol=4.70L แต่คำนวณได้ 4.70 → ต้องตรวจ: HCl 10% ของ 153.3g = 15.33g/36.5=0.42mol, CO2=0.42/2=0.21mol=4.70L"
   },
   {
+    "id": "y68-q45",
+    "year": 68,
+    "questionNum": 45,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y68-p10.png",
+    "text": "เตรียมปุ๋ยแอมโมเนียมซัลเฟต ((NH4)2SO4) ตามขั้นตอนดังนี้ ขั้นที่ 1 Ca(OH)2(s) + 2NH4Cl(s) ⟶ CaCl2(s) + 2H2O(l) + 2NH3(g) ขั้นที่ 2 2NH3(g) + H2SO4(aq) ⟶ (NH4)2SO4(s) ถ้านำ Ca(OH)2 111 g มาทำปฏิกิริยากับ NH4Cl 214 g แล้วนำแก๊สแอมโมเนียทั้งหมดที่ได้จากขั้นที่ 1 ไปทำ ปฏิกิริยากับ H2SO4 147 g จะได้ปุ๋ยแอ",
+    "choices": [
+      "99",
+      "198",
+      "396",
+      "792"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q46",
+    "year": 68,
+    "questionNum": 46,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y68-p10.png",
+    "text": "นักเรียนคนหนึ่งผสมสารละลาย NaHCO3 15.0 mM ปริมาตร 60.0 mL กับสารละลาย H2SO4 10.0 mM ปริมาตร 35.0 mL แล้วเก็บแก๊สคาร์บอนไดออกไซด์ที่เกิดขึ้นที่ STP โดยบรรจุในลูกโป่งที่ขยายตัวได้อย่าง อิสระและเป็นทรงกลม จะได้ลูกโป่งมีรัศมีกี่เซนติเมตร NaHCO3(aq) + H2SO4(aq) ⟶ CO2(g) + Na2SO4(aq) + H2O(l) (สมการยังไม่",
+    "choices": [
+      "√0.936 3",
+      "√1.87 3",
+      "√3.75 3",
+      "√37.0 3"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q47",
+    "year": 68,
+    "questionNum": 47,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y68-p10.png",
+    "text": "ไวน์แดงชนิดหนึ่งผลิตจากการหมักผลองุ่น มีแอลกอฮอล์ร้อยละ 13 โดยปริมาตร และมีความหนาแน่น 0.9805 g/mL แอลกอฮอล์ในไวน์นี้ประกอบด้วยเอทานอล 138 g/L และเมทานอล 200 mg/L การรายงาน ปริมาณของแอลกอฮออล์ในไวน์แดงนี้ ข้อใดผิด กำหนดให้ - องค์ประกอบหลักของไวน์แดงคือน้ำและแอลกอฮอล์ ไม่ต้องคำนึงถึงปริมาณส่วนผสมอื่น",
+    "choices": [
+      "เศษส่วนโมลของเอทานอลเท่ากับ 0.051",
+      "ความเข้มข้นของเอทานอลเท่ากับ 3.6 m",
+      "ความเข้มข้นของเมทานอลเท่ากับ 204 ppm",
+      "ความเข้มข้นของเมทานอลเท่ากับ 0.0062 M"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q48",
+    "year": 68,
+    "questionNum": 48,
+    "topicId": "solutions",
+    "imageUrl": "/exam-images/y68-p10.png",
+    "text": "พระราชบัญญัติจราจรทางบกกำหนดว่า หากมีปริมาณแอลกอฮอล์มากกว่า 50 mg ในเลือด 100 cm3 ถือว่า เมาสุราขณะขับรถ ถ้านาย A หนัก 70 kg จะต้องโทษเมาแล้วขับเมื่อดื่มเครื่องดื่มในข้อใด กำหนดให้ - เมื่อดื่มเครื่องดื่มที่มีแอลกอฮอล์ แอลกอฮอล์ซึ่งเป็นโมเลกุลขนาดเล็กและละลายน้ำได้ดีจะถูก ดูดซึมเข้าสู่กระแสเลือดผ่านเ",
+    "choices": [
+      "ไวน์แดง 160 cm3 (มีแอลกอฮอล์ 14 % v/v)",
+      "ไวน์ขาว 170 cm3 (มีแอลกอฮอล์ 12 % v/v)",
+      "เบียร์ 400 cm3 (มีแอลกอฮอล์ 5 % v/v)",
+      "วิสกี้ 50 cm3 (มีแอลกอฮอล์ 40 % v/v)"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 68"
+  },
+  {
     "id": "y68-q49",
     "year": 68,
     "questionNum": 49,
@@ -2487,6 +7384,22 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "dTb=1.02°C, m=2.0mol/kg, mol=2.0×0.030=0.060mol, มวล=0.060×180=10.8 ≈ 11g"
   },
   {
+    "id": "y68-q52",
+    "year": 68,
+    "questionNum": 52,
+    "topicId": "acid-base",
+    "imageUrl": "/exam-images/y68-p11.png",
+    "text": "สาร X ประกอบด้วยธาตุ C, H และ O เมื่อละลายสารนี้ 0.20 g ในไซโคลเฮกเซน (C6H12) 8.0 mL พบว่า สารละลายมีจุดเยือกแข็งเท่ากับ 2.40 °C ข้อใดคือสูตรเคมีของสาร X กำหนดให้ ไซโคลเฮกเซนมีค่า Kf = 20.0 °C/m, จุดเยือกแข็ง = 6.50 °C และความหนาแน่น = 0.80 g/mL",
+    "choices": [
+      "C4H6O",
+      "C7H6O2",
+      "C10H16O",
+      "C15H16O4"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 68"
+  },
+  {
     "id": "y68-q53",
     "year": 68,
     "questionNum": 53,
@@ -2530,6 +7443,86 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "P1V1/T1=P2V2/T2 → 3.00×2.50/400=P2×5.00/600 → P2=2.25 atm"
+  },
+  {
+    "id": "y68-q56",
+    "year": 68,
+    "questionNum": 56,
+    "topicId": "acid-base",
+    "imageUrl": "/exam-images/y68-p12.png",
+    "text": "แก๊สชนิดหนึ่งมีมวล 2.64 g บรรจุอยู่ในภาชนะขนาด 2.25 L ที่อุณหภูมิ 27 °C และความดัน 0.656 atm แก๊สนี้ควรเป็นแก๊สชนิดใด",
+    "choices": [
+      "NO",
+      "N2O",
+      "NO2",
+      "N2O4"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q57",
+    "year": 68,
+    "questionNum": 57,
+    "topicId": "acid-base",
+    "imageUrl": "/exam-images/y68-p12.png",
+    "text": "เมื่อบรรจุแก๊ส Xe และแก๊ส F2 ที่มีความดัน 0.861 atm และ 1.23 atm ตามลำดับ ในภาชนะปิดขนาด 20 L ที่อุณหภูมิ 327 °C แก๊ส Xe จะทำปฏิกิริยากับแก๊ส F2 ให้แก๊สซีนอนเตตระฟลูออไรด์ (XeF4) หากปฏิกิริยานี้ เกิดขึ้นอย่างสมบูรณ์ หลังปฏิกิริยาสิ้นสุดภายในภาชนะนี้จะมีความดันกี่บรรยากาศ",
+    "choices": [
+      "0.25",
+      "0.62",
+      "0.86",
+      "1.2"
+    ],
+    "correctIndex": 0,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q58",
+    "year": 68,
+    "questionNum": 58,
+    "topicId": "acid-base",
+    "imageUrl": "/exam-images/y68-p12.png",
+    "text": "เมื่อบรรจุแก๊สอะเซทิลีน (C2H2) 2.0 mol และแก๊สออกซิเจน 5.0 mol ในภาชนะปิดขนาด 6.0 L ที่อุณหภูมิ 327 °C แก๊สทั้งสองจะทำปฏิกิริยากัน ถ้าแก๊สอะเซทิลีนเกิดปฏิกิริยาไป 70 % ความดันรวมของแก๊สใน ภาชนะนี้เป็นกี่บรรยากาศ",
+    "choices": [
+      "28",
+      "34",
+      "48",
+      "52"
+    ],
+    "correctIndex": 1,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q59",
+    "year": 68,
+    "questionNum": 59,
+    "topicId": "acid-base",
+    "imageUrl": "/exam-images/y68-p12.png",
+    "text": "แก๊ส X และแก๊ส Y ต่างบรรจุอยู่ในภาชนะขนาด 1.0 L ที่อุณหภูมิ 25 °C โดยบรรจุแก๊ส X ให้มีความหนาแน่น เป็นสองเท่าของแก๊ส Y ที่ภาวะเดียวกัน พบว่า แก๊ส X แพร่ผ่านภาชนะออกมาจนหมดภายใน 14 นาที ในขณะที่แก๊ส Y ใช้เวลา 10 นาที ความดันของแก๊ส X เป็นกี่เท่าของแก๊ส Y",
+    "choices": [
+      "0.25",
+      "1.0",
+      "2.8",
+      "4.0"
+    ],
+    "correctIndex": 2,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 68"
+  },
+  {
+    "id": "y68-q60",
+    "year": 68,
+    "questionNum": 60,
+    "topicId": "acid-base",
+    "imageUrl": "/exam-images/y68-p12.png",
+    "text": "สัตว์ตัวเล็ก ๆ เช่น หนู ยังคงดำรงชีวิตอยู่ได้ในสภาวะที่ความดันลดต่ำลงถึง 20 kPa จากการทดลองศึกษา ความดันในถังใบหนึ่งที่ให้หนูอาศัยอยู่โดยสูบอากาศออกบางส่วน พบว่า บารอมิเตอร์อ่านค่าความดันได้ 100 kPa และแมนอมิเตอร์วัดค่าความดันของแก๊สในถังที่หนูอาศัยอยู่ได้ 57 cmHg (ดังรูป) พิจารณาข้อสรุปจากผลการทดลอ",
+    "choices": [
+      "I เท่านั้น",
+      "I และ II เท่านั้น",
+      "I และ III เท่านั้น",
+      "I, II และ III"
+    ],
+    "correctIndex": 3,
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 68"
   }
 ]
 

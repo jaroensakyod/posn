@@ -66,9 +66,18 @@ export default function QuizView({
           <span className="w-7 h-7 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center text-sm font-bold shrink-0">
             {current + 1}
           </span>
-          <p className="text-slate-700 font-medium leading-relaxed whitespace-pre-line text-sm md:text-base">
-            {q.text}
-          </p>
+          <div className="flex-1 min-w-0">
+            {q.imageUrl && (
+              <img
+                src={q.imageUrl}
+                alt="โจทย์"
+                className="mb-3 rounded-lg border border-slate-200 max-w-full"
+              />
+            )}
+            <p className="text-slate-700 font-medium leading-relaxed whitespace-pre-line text-sm md:text-base">
+              {q.text}
+            </p>
+          </div>
         </div>
 
         <div className="space-y-2.5">

@@ -7,6 +7,7 @@ export interface Question {
   explanation: string
   difficulty: 'easy' | 'medium' | 'hard'
   hasMath?: boolean
+  imageUrl?: string
 }
 
 export const practiceQuestions: Question[] = [

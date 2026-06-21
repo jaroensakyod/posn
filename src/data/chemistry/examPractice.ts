@@ -10,7 +10,8 @@ import {
 // A past-exam question is answerable in-app only if it doesn't depend on a missing
 // figure and has a real answer key.
 export function isAnswerable(q: PastExamQuestion): boolean {
-  return !q.requiresImage && q.correctIndex >= 0
+  const imageProvided = !!q.imageUrl
+  return (!q.requiresImage || imageProvided) && q.correctIndex >= 0
 }
 
 function toQuestion(q: PastExamQuestion): Question {
@@ -21,8 +22,9 @@ function toQuestion(q: PastExamQuestion): Question {
     choices: q.choices,
     correctIndex: q.correctIndex,
     explanation: q.explanation ?? '',
-    difficulty: 'hard', // POSN camp-1 exam questions skew hard
+    difficulty: 'hard',
     hasMath: true,
+    imageUrl: q.imageUrl,
   }
 }
 

@@ -8,6 +8,15 @@ const y66 = require('./gen_y66.js');
 const y67 = require('./gen_y67.js');
 const y68 = require('./gen_y68.js');
 
+// Extra (auto-generated) question banks for missing questions
+const y60x = require('./gen_y60_extra.js');
+const y61x = require('./gen_y61_extra.js');
+const y64x = require('./gen_y64_extra.js');
+const y65x = require('./gen_y65_extra.js');
+const y66x = require('./gen_y66_extra.js');
+const y67x = require('./gen_y67_extra.js');
+const y68x = require('./gen_y68_extra.js');
+
 const questions = [
   // ===== YEAR 60 (2017) =====
   {
@@ -459,6 +468,7 @@ const header = `export interface PastExamQuestion {
   correctIndex: number
   explanation?: string
   requiresImage?: boolean
+  imageUrl?: string
 }
 
 export const pastExamQuestions: PastExamQuestion[] = `;
@@ -485,6 +495,9 @@ export function getTopicYearMap(): Record<string, number[]> {
 
 // Merge authored year files; new authored entries take precedence over inline stubs (dedupe by id).
 const byId = new Map();
+// Extra files first (lower priority — authored data overrides)
+for (const q of [...y60x, ...y61x, ...y64x, ...y65x, ...y66x, ...y67x, ...y68x]) byId.set(q.id, q);
+// Inline y60 + authored year files override extras
 for (const q of questions) byId.set(q.id, q);
 for (const q of [...y61, ...y62, ...y64, ...y65, ...y66, ...y67, ...y68]) byId.set(q.id, q);
 const allQuestions = [...byId.values()].sort((a, b) => a.year - b.year || a.questionNum - b.questionNum);
