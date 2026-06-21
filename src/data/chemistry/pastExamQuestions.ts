@@ -1932,6 +1932,51 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "แก๊ส=0.01mol, CaCO3=0.03mol=CO2 → C ต่อโมล = 3 → C3H8"
   },
   {
+    "id": "y67-q33",
+    "year": 67,
+    "questionNum": 33,
+    "topicId": "stoichiometry",
+    "text": "สารประกอบประกอบด้วย Na, S, O เท่านั้น มีกำมะถัน 26.9% และออกซิเจน 53.8% โดยมวล ถ้ามวลสูตรเป็นสองเท่าของมวลสูตรเอมพิริคัล สารนี้ 3.01×10²³ หน่วยสูตร มีมวลกี่กรัม (Na=23, S=32, O=16)",
+    "choices": [
+      "119",
+      "71",
+      "63",
+      "59.5"
+    ],
+    "correctIndex": 0,
+    "explanation": "Na = 100−26.9−53.8 = 19.3%. โมล Na:S:O = 19.3/23 : 26.9/32 : 53.8/16 = 1:1:4 → NaSO₄ (มวล 119). มวลสูตรจริง = 2×119 = 238 (Na₂S₂O₈). 3.01×10²³ = 0.5 mol → 0.5×238 = 119 g → ข้อ ก"
+  },
+  {
+    "id": "y67-q34",
+    "year": 67,
+    "questionNum": 34,
+    "topicId": "stoichiometry",
+    "text": "สารประกอบมี Ba เป็นองค์ประกอบ ละลายสารนี้ 6.85 g เติม NaIO₃ มากเกินพอ เกิดตะกอน Ba(IO₃)₂ 4.87 g ร้อยละโดยมวลของ Ba ในสารประกอบเป็นเท่าใด (Ba=137, I=127, O=16)",
+    "choices": [
+      "10",
+      "20",
+      "31",
+      "40"
+    ],
+    "correctIndex": 1,
+    "explanation": "M(Ba(IO₃)₂) = 137+2(127+48) = 487 → mol = 4.87/487 = 0.01 → mol Ba = 0.01 → มวล Ba = 1.37 g. %Ba = 1.37/6.85×100 = 20% → ข้อ ข"
+  },
+  {
+    "id": "y67-q35",
+    "year": 67,
+    "questionNum": 35,
+    "topicId": "stoichiometry",
+    "text": "UF₆ 3.52 g ทำปฏิกิริยากับน้ำมากเกินพอ ได้สารประกอบสูตรเอมพิริคัล UₓOᵧFᵤ มวล 3.08 g และ HF 0.80 g สูตรเอมพิริคัลคือข้อใด (U=238, F=19, O=16, H=1)",
+    "choices": [
+      "UOF₂",
+      "UOF₄",
+      "UO₂F",
+      "UO₂F₂"
+    ],
+    "correctIndex": 3,
+    "explanation": "UF₆ = 3.52/352 = 0.01 mol → U=0.01, F รวม=0.06. HF = 0.80/20 = 0.04 → F ในผลิตภัณฑ์ = 0.02. มวล O = 3.08 − 0.01×238 − 0.02×19 = 0.32 → 0.02 mol O. U:O:F = 0.01:0.02:0.02 = 1:2:2 → UO₂F₂ → ข้อ ง"
+  },
+  {
     "id": "y67-q37",
     "year": 67,
     "questionNum": 37,
@@ -1951,7 +1996,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "year": 67,
     "questionNum": 38,
     "topicId": "stoichiometry",
-    "text": "2NaOH + Cl2 → NaOCl + NaCl + H2O ถ้าใช้ NaOH 20.0 g ทำปฏิกิริยากับ Cl2 มากเกินพอ จะได้ NaOCl กี่กรัม",
+    "text": "2NaOH + Cl₂ → NaOCl + NaCl + H₂O ถ้าใช้ NaOH 20.0 g ทำปฏิกิริยากับ Cl₂ มากเกินพอ จะได้ NaOCl กี่กรัม (NaOH=40, NaOCl=74.5)",
     "choices": [
       "10.0",
       "18.6",
@@ -1959,7 +2004,97 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "74.5"
     ],
     "correctIndex": 1,
-    "explanation": "NaOH 20g=0.5mol → NaOCl=0.25mol=0.25×74.5=18.6g"
+    "explanation": "NaOH = 20.0/40 = 0.5 mol → NaOCl = 0.5/2 = 0.25 mol → 0.25×74.5 = 18.6 g → ข้อ ข"
+  },
+  {
+    "id": "y67-q39",
+    "year": 67,
+    "questionNum": 39,
+    "topicId": "stoichiometry",
+    "text": "กลูโคส (C₆H₁₂O₆) ถูกเปลี่ยนเป็น CO₂ และ CH₄ ถ้าปลวกผลิตกลูโคสได้วันละ 27 mg ในเวลา 1 ปี (365 วัน) จะเกิด CO₂ จากปลวก 1 ตัวกี่โมล (กลูโคส=180; C₆H₁₂O₆ → 3CO₂ + 3CH₄)",
+    "choices": [
+      "0.16",
+      "0.055",
+      "4.5×10⁻⁴",
+      "1.5×10⁻⁴"
+    ],
+    "correctIndex": 0,
+    "explanation": "กลูโคสทั้งปี = 27×365 = 9855 mg = 9.855 g → 9.855/180 = 0.0548 mol. CO₂ = 3×0.0548 = 0.164 ≈ 0.16 mol → ข้อ ก"
+  },
+  {
+    "id": "y67-q40",
+    "year": 67,
+    "questionNum": 40,
+    "topicId": "stoichiometry",
+    "text": "Cu₃FeS₃ + O₂ → 3Cu + FeO + 3SO₂ ถ้าใช้บอร์ไนต์ 34.25 kg ทำปฏิกิริยากับ O₂ มากเกินพอ และสูญเสีย SO₂ ร้อยละ 10 ปริมาตร SO₂ ที่สูญเสียเป็นกี่ลิตรที่ STP (Cu₃FeS₃=342.5)",
+    "choices": [
+      "6.72×10³",
+      "2.24×10³",
+      "672",
+      "224"
+    ],
+    "correctIndex": 2,
+    "explanation": "บอร์ไนต์ = 34250/342.5 = 100 mol → SO₂ = 300 mol. สูญเสีย 10% = 30 mol → 30×22.4 = 672 L → ข้อ ค"
+  },
+  {
+    "id": "y67-q41",
+    "year": 67,
+    "questionNum": 41,
+    "topicId": "stoichiometry",
+    "text": "C(s) + SiO₂(s) → SiC(s) + 2CO(g) ถ้าให้คาร์บอน 2 mol ทำปฏิกิริยากับ SiO₂ 6 mol จะเกิด SiC กี่กรัม (SiC=40)",
+    "choices": [
+      "27",
+      "40",
+      "80",
+      "240"
+    ],
+    "correctIndex": 2,
+    "explanation": "อัตราส่วน C:SiO₂ = 1:1; C 2 mol ต้องการ SiO₂ 2 mol (มี 6 เหลือ) → C เป็นตัวกำหนด → SiC = 2 mol = 2×40 = 80 g → ข้อ ค"
+  },
+  {
+    "id": "y67-q42",
+    "year": 67,
+    "questionNum": 42,
+    "topicId": "analytical-chemistry",
+    "text": "พ่นอากาศ 20 m³ ที่มี SO₂ ลงในน้ำ สารละลายทำปฏิกิริยาพอดีกับ KMnO₄ 0.00400 M 8.00 mL (5SO₂ + 2KMnO₄ + 2H₂O → ...) อากาศนี้มี SO₂ กี่ไมโครกรัมต่อลูกบาศก์เมตร (SO₂=64)",
+    "choices": [
+      "41.0",
+      "102",
+      "256",
+      "5120"
+    ],
+    "correctIndex": 2,
+    "explanation": "KMnO₄ = 0.00400×0.008 = 3.2×10⁻⁵ mol → SO₂ = 5/2 × 3.2×10⁻⁵ = 8×10⁻⁵ mol = 5.12×10⁻³ g = 5120 µg. ÷20 m³ = 256 µg/m³ → ข้อ ค"
+  },
+  {
+    "id": "y67-q43",
+    "year": 67,
+    "questionNum": 43,
+    "topicId": "stoichiometry",
+    "text": "ผ่าน NH₃ บน CuO ที่อุณหภูมิสูง ได้ N₂ + Cu + H₂O (2NH₃ + 3CuO → N₂ + 3Cu + 3H₂O) ใช้ NH₃ 51 g กับ CuO 159 g ข้อใดถูก (NH₃=17, CuO=79.5, Cu=63.5)",
+    "choices": [
+      "เกิด N₂ 56 g และ Cu 286 g",
+      "เหลือ NH₃ 28 g และเกิด N₂ 42 g",
+      "NH₃ เป็นสารกำหนดปริมาณ เกิด Cu 127 g",
+      "CuO เป็นสารกำหนดปริมาณ และเกิด Cu 127 g"
+    ],
+    "correctIndex": 3,
+    "explanation": "NH₃ = 3 mol, CuO = 2 mol. NH₃ ต้องการ CuO = 4.5 > 2 → CuO เป็นตัวกำหนด. Cu = 2 mol = 127 g → ข้อ ง"
+  },
+  {
+    "id": "y67-q44",
+    "year": 67,
+    "questionNum": 44,
+    "topicId": "stoichiometry",
+    "text": "A+2B→C (50%); 2C+D→4E (50%); 2E+3F→G (80%) ต้องการ G 1.5 kg ต้องใช้ A กี่กิโลกรัม (B,D,F มากเกินพอ; A=100, G=150 g/mol)",
+    "choices": [
+      "0.20",
+      "1.0",
+      "1.5",
+      "5.0"
+    ],
+    "correctIndex": 3,
+    "explanation": "G = 1500/150 = 10 mol. ย้อน: E = 10×2/0.80 = 25; C = 25/4×2/0.50 = 25; A = 25/0.50 = 50 mol → 50×100 = 5000 g = 5.0 kg → ข้อ ง"
   },
   {
     "id": "y67-q45",
@@ -2142,6 +2277,51 @@ export const pastExamQuestions: PastExamQuestion[] = [
     "explanation": "มวล Ar=20g, mol Ar=0.5mol, มวลแก๊สตัวอย่าง=32g, MW=32/0.5=64 → SO2(MW=64)"
   },
   {
+    "id": "y68-q32",
+    "year": 68,
+    "questionNum": 32,
+    "topicId": "stoichiometry",
+    "text": "อัตราส่วนโดยมวลของธาตุออกซิเจนใน Fe₂O₃ ต่อ Fe₂(SO₄)₃ ที่มีมวลเท่ากัน มีค่าเท่าใด (Fe₂O₃=160, Fe₂(SO₄)₃=400)",
+    "choices": [
+      "0.25",
+      "0.48",
+      "0.62",
+      "1.6"
+    ],
+    "correctIndex": 2,
+    "explanation": "สัดส่วนมวล O: ใน Fe₂O₃ = 48/160 = 0.30 ; ใน Fe₂(SO₄)₃ = 192/400 = 0.48. อัตราส่วน = 0.30/0.48 = 0.62 → ข้อ ค"
+  },
+  {
+    "id": "y68-q33",
+    "year": 68,
+    "questionNum": 33,
+    "topicId": "stoichiometry",
+    "text": "ข้อใดผิด (CH₂Cl₂=85, (NH₄)₃PO₄=149)",
+    "choices": [
+      "CH₂Cl₂ 1 โมเลกุลมีมวล 1.4×10⁻²² g",
+      "N₂ มีความหนาแน่น 1.25 g/L ที่ STP",
+      "(NH₄)₃PO₄ 3.0 mol มีแอมโมเนียมไอออน 5.4×10²⁴ ไอออน",
+      "H₂ 0.20 g มีจำนวน 1.3×10²² โมเลกุล"
+    ],
+    "correctIndex": 3,
+    "explanation": "ก) 85/6.02×10²³ = 1.4×10⁻²² ✓; ข) 28/22.4 = 1.25 ✓; ค) 3×3×6.02×10²³ = 5.4×10²⁴ ✓; ง) H₂ 0.20/2 = 0.1 mol = 6.0×10²² ไม่ใช่ 1.3×10²² → ข้อ ง ผิด"
+  },
+  {
+    "id": "y68-q34",
+    "year": 68,
+    "questionNum": 34,
+    "topicId": "stoichiometry",
+    "text": "เปรียบเทียบร้อยละโดยมวลของไนโตรเจนในปุ๋ย: ยูเรีย CO(NH₂)₂(60), NH₄NO₃(80), NaNO₃(85), (NH₄)₂HPO₄(132) ข้อใดถูก",
+    "choices": [
+      "CO(NH₂)₂ > NH₄NO₃ > (NH₄)₂HPO₄ > NaNO₃",
+      "NaNO₃ > (NH₄)₂HPO₄ > NH₄NO₃ > CO(NH₂)₂",
+      "CO(NH₂)₂ > NH₄NO₃ > NaNO₃ > (NH₄)₂HPO₄",
+      "NH₄NO₃ > CO(NH₂)₂ > (NH₄)₂HPO₄ > NaNO₃"
+    ],
+    "correctIndex": 0,
+    "explanation": "%N: ยูเรีย 28/60=46.7, NH₄NO₃ 28/80=35, (NH₄)₂HPO₄ 28/132=21.2, NaNO₃ 14/85=16.5. ลำดับ: ยูเรีย > NH₄NO₃ > (NH₄)₂HPO₄ > NaNO₃ → ข้อ ก"
+  },
+  {
     "id": "y68-q35",
     "year": 68,
     "questionNum": 35,
@@ -2155,6 +2335,96 @@ export const pastExamQuestions: PastExamQuestion[] = [
     ],
     "correctIndex": 1,
     "explanation": "น้ำสูญเสีย=0.18g=0.01mol H2O, BaCl2=1.04g=0.005mol → H2O:BaCl2=2 → BaCl2·2H2O"
+  },
+  {
+    "id": "y68-q37",
+    "year": 68,
+    "questionNum": 37,
+    "topicId": "stoichiometry",
+    "text": "เผาไหม้สมบูรณ์ของโพรเพน (C₃H₈) 11 g ความบริสุทธิ์ 80% โดยมวล (สิ่งเจือปนไม่ทำปฏิกิริยา): I) ใช้ O₂ 1.2 mol II) เกิดไอน้ำ 14 g III) เกิด CO₂ 13 L ที่ STP ข้อใดถูก",
+    "choices": [
+      "I และ II",
+      "II และ III",
+      "I และ III",
+      "II เท่านั้น"
+    ],
+    "correctIndex": 1,
+    "explanation": "C₃H₈ = 11×0.80/44 = 0.2 mol. C₃H₈+5O₂→3CO₂+4H₂O. I) O₂=1.0 mol (ไม่ใช่ 1.2) ผิด; II) H₂O=0.8 mol=14.4≈14 g ✓; III) CO₂=0.6 mol=13.4≈13 L ✓ → ข้อ ข"
+  },
+  {
+    "id": "y68-q38",
+    "year": 68,
+    "questionNum": 38,
+    "topicId": "stoichiometry",
+    "text": "รถวิ่ง 20 km/น้ำมัน 1 L น้ำมันมีคาร์บอน 75% โดยมวล ความหนาแน่น 0.80 g/mL วิ่ง 8.0 km ปล่อย CO₂ กี่กิโลกรัม (C=12, CO₂=44)",
+    "choices": [
+      "0.24",
+      "0.88",
+      "1.2",
+      "1.4"
+    ],
+    "correctIndex": 1,
+    "explanation": "วิ่ง 8 km ใช้น้ำมัน 0.4 L = 320 g → C = 240 g = 20 mol → CO₂ = 20 mol = 880 g = 0.88 kg → ข้อ ข"
+  },
+  {
+    "id": "y68-q40",
+    "year": 68,
+    "questionNum": 40,
+    "topicId": "stoichiometry",
+    "text": "แก๊สผสม O₃ และ O₂ ปริมาตรรวม 44.8 L ที่ STP เมื่อให้ความร้อนจน O₃ กลายเป็น O₂ ทั้งหมด (2O₃→3O₂) ปริมาตรเพิ่มขึ้น 0.25 เท่า ร้อยละโดยปริมาตรของ O₃ เป็นเท่าใด",
+    "choices": [
+      "50.0",
+      "40.0",
+      "25.0",
+      "20.0"
+    ],
+    "correctIndex": 0,
+    "explanation": "ให้ O₃ = x: 2O₃→3O₂ ทำให้ปริมาตรเพิ่ม 0.5x = 0.25×44.8 → x = 22.4 L → %O₃ = 22.4/44.8 = 50% → ข้อ ก"
+  },
+  {
+    "id": "y68-q41",
+    "year": 68,
+    "questionNum": 41,
+    "topicId": "stoichiometry",
+    "text": "เผาของผสม MgCO₃ และ MgO 504 g ได้ CO₂ 33.6 L ที่ STP (MgCO₃→MgO+CO₂) อัตราส่วนโดยมวลของ MgCO₃ ต่อ MgO ในของผสมเป็นเท่าใด (MgCO₃=84)",
+    "choices": [
+      "1 : 3",
+      "3 : 1",
+      "1 : 7.4",
+      "7.4 : 1"
+    ],
+    "correctIndex": 0,
+    "explanation": "CO₂ = 33.6/22.4 = 1.5 mol → MgCO₃ = 1.5 mol = 126 g. MgO = 504−126 = 378 g. อัตราส่วน 126:378 = 1:3 → ข้อ ก"
+  },
+  {
+    "id": "y68-q42",
+    "year": 68,
+    "questionNum": 42,
+    "topicId": "stoichiometry",
+    "text": "KCN + Na₂S₂O₃ → KSCN + Na₂SO₃ เติม Na₂S₂O₃ 2.37 g ลงในสารละลายที่มี KCN 1.30 g ข้อใดถูก (KCN=65, KSCN=97, Na₂SO₃=126, Na₂S₂O₃=158)",
+    "choices": [
+      "เกิด KSCN 1.89 g",
+      "เกิด Na₂SO₃ 1.46 g",
+      "หลังปฏิกิริยาเหลือสารตั้งต้น 0.98 g",
+      "เติม Na₂S₂O₃ เพิ่มอีก 0.79 g จึงกำจัด KCN หมด"
+    ],
+    "correctIndex": 3,
+    "explanation": "KCN = 0.02 mol, Na₂S₂O₃ = 0.015 mol (เป็นตัวกำหนด). KCN เหลือ = 0.005 mol → ต้องเติม Na₂S₂O₃ อีก 0.005×158 = 0.79 g → ข้อ ง"
+  },
+  {
+    "id": "y68-q43",
+    "year": 68,
+    "questionNum": 43,
+    "topicId": "stoichiometry",
+    "text": "ต้องใช้ออกตะซัลเฟอร์ (S₈) กี่กรัมทำปฏิกิริยากับ P₄ มากเกินพอ ให้เกิด P₄S₁₀ 11.1 g ถ้าผลได้ร้อยละ 50 (4P₄ + 5S₈ → 4P₄S₁₀; S₈=256, P₄S₁₀=444)",
+    "choices": [
+      "8.00",
+      "10.2",
+      "16.0",
+      "32.0"
+    ],
+    "correctIndex": 2,
+    "explanation": "P₄S₁₀ จริง = 11.1/444 = 0.025 mol → ทางทฤษฎี (50%) = 0.05 mol. S₈ = 0.05×5/4 = 0.0625 mol = 0.0625×256 = 16.0 g → ข้อ ค"
   },
   {
     "id": "y68-q44",
