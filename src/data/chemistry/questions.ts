@@ -257,6 +257,100 @@ export const practiceQuestions: Question[] = [
       'Alkene CₙH₂ₙ: C₄H₈ ✓ (1 พันธะคู่)\nAlkane CₙH₂ₙ₊₂: C₄H₁₀\nAlkyne CₙH₂ₙ₋₂: C₄H₆\nDiene 2 พันธะคู่: C₄H₆ (แต่มีสูตรแตกต่างกับ alkyne)',
     difficulty: 'easy',
   },
+
+  // --- Chemical Bonding ---
+  {
+    id: 'cb-1',
+    topicId: 'chemical-bonding',
+    text: 'โมเลกุลใดมีรูปร่างเป็นเส้นตรง (linear)?',
+    choices: ['H₂O', 'NH₃', 'CO₂', 'SO₂'],
+    correctIndex: 2,
+    explanation:
+      'CO₂ เป็น AX₂ ไม่มีคู่โดดเดี่ยวที่อะตอมกลาง → เส้นตรง 180°\nH₂O (AX₂E₂) และ SO₂ (AX₂E) มุมงอ, NH₃ (AX₃E) พีระมิดฐานสามเหลี่ยม',
+    difficulty: 'easy',
+  },
+  {
+    id: 'cb-2',
+    topicId: 'chemical-bonding',
+    text: 'สารใดมีพันธะไฮโดรเจนระหว่างโมเลกุล?',
+    choices: ['CH₄', 'PH₃', 'HF', 'H₂S'],
+    correctIndex: 2,
+    explanation:
+      'พันธะไฮโดรเจนเกิดเมื่อ H ต่อกับ N, O หรือ F โดยตรง → HF เท่านั้น\nCH₄, PH₃, H₂S ไม่มี (H ไม่ได้ต่อกับ N/O/F)',
+    difficulty: 'easy',
+  },
+  {
+    id: 'cb-3',
+    topicId: 'chemical-bonding',
+    text: 'โมเลกุลใดต่อไปนี้ไม่เป็นไปตามกฎออกเตต (อะตอมกลางมีอิเล็กตรอนเกิน 8)?',
+    choices: ['CH₄', 'NH₃', 'SF₆', 'H₂O'],
+    correctIndex: 2,
+    explanation:
+      'SF₆ มี 6 พันธะรอบ S = 12 อิเล็กตรอน (ขยายออกเตต ใช้ออร์บิทัล d ได้เพราะ S อยู่คาบ 3)\nCH₄, NH₃, H₂O เป็นไปตามกฎออกเตต',
+    difficulty: 'medium',
+  },
+  {
+    id: 'cb-4',
+    topicId: 'chemical-bonding',
+    text: 'XeF₄ มีรูปร่างโมเลกุลแบบใด',
+    choices: ['ทรงสี่หน้า', 'สี่เหลี่ยมแบนราบ', 'พีระมิดคู่ฐานสามเหลี่ยม', 'ทรงแปดหน้า'],
+    correctIndex: 1,
+    explanation:
+      'Xe มี 8 เวเลนซ์อิเล็กตรอน สร้างพันธะ 4 + คู่โดดเดี่ยว 2 = AX₄E₂ → สี่เหลี่ยมแบนราบ (square planar)',
+    difficulty: 'hard',
+  },
+  {
+    id: 'cb-5',
+    topicId: 'chemical-bonding',
+    text: 'เปรียบเทียบจุดเดือดของสาร ข้อใดถูกต้อง',
+    choices: ['HCl > HBr > HI > HF', 'HF > HCl > HBr > HI', 'HCl < HBr < HI < HF', 'HI < HBr < HCl < HF'],
+    correctIndex: 2,
+    explanation:
+      'HF มีพันธะไฮโดรเจน จุดเดือดสูงสุด ส่วน HCl < HBr < HI เพิ่มตามมวลโมเลกุล (แรงลอนดอน) → HCl < HBr < HI < HF',
+    difficulty: 'medium',
+  },
+
+  // --- Analytical Chemistry ---
+  {
+    id: 'an-1',
+    topicId: 'analytical-chemistry',
+    text: 'การทดสอบไอออน Cl⁻ ทำได้โดยเติมสารใด แล้วเกิดตะกอนขาว',
+    choices: ['BaCl₂', 'AgNO₃', 'NaOH', 'HCl'],
+    correctIndex: 1,
+    explanation:
+      'Cl⁻ + Ag⁺ → AgCl ตะกอนขาว (ละลายในแอมโมเนีย)\nใช้ AgNO₃ เป็นรีเอเจนต์ทดสอบเฮไลด์',
+    difficulty: 'easy',
+  },
+  {
+    id: 'an-2',
+    topicId: 'analytical-chemistry',
+    text: 'ไทเทรต HCl 25.0 mL ด้วย NaOH 0.100 M ถึงจุดสมมูลใช้ NaOH 20.0 mL ความเข้มข้นของ HCl เป็นเท่าใด',
+    choices: ['0.0625 M', '0.0800 M', '0.100 M', '0.125 M'],
+    correctIndex: 1,
+    explanation:
+      'ที่จุดสมมูล: mol HCl = mol NaOH = 0.100 × 0.0200 = 0.00200 mol\n[HCl] = 0.00200/0.0250 = 0.0800 M',
+    difficulty: 'medium',
+  },
+  {
+    id: 'an-3',
+    topicId: 'analytical-chemistry',
+    text: 'ในโครมาโทกราฟีกระดาษ สารเคลื่อนที่ได้ 4.0 cm ตัวทำละลายเคลื่อนที่ 8.0 cm ค่า Rf ของสารเป็นเท่าใด',
+    choices: ['0.25', '0.50', '2.0', '4.0'],
+    correctIndex: 1,
+    explanation:
+      'Rf = ระยะที่สารเคลื่อนที่ / ระยะที่ตัวทำละลายเคลื่อนที่ = 4.0/8.0 = 0.50',
+    difficulty: 'easy',
+  },
+  {
+    id: 'an-4',
+    topicId: 'analytical-chemistry',
+    text: 'การทดสอบเปลวไฟ (flame test) ของธาตุใดให้เปลวสีเหลือง',
+    choices: ['K', 'Ca', 'Na', 'Cu'],
+    correctIndex: 2,
+    explanation:
+      'Na ให้เปลวสีเหลืองเข้ม, K ม่วง, Ca แดงอิฐ/ส้ม, Cu เขียว',
+    difficulty: 'easy',
+  },
 ]
 
 export function getQuestionsByTopic(topicId: string): Question[] {
