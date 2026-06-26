@@ -7,20 +7,29 @@ interface Props {
 }
 
 export default function LoginModal({ onClose }: Props) {
-  const { loginWithGoogle, loginWithFacebook } = useAuth()
-  const [loading, setLoading] = useState<'google' | 'facebook' | null>(null)
+  const { loginWithGoogle } = useAuth()
+  const [loading, setLoading] = useState<'google' | null>(null)
   const [error, setError] = useState('')
 
-  async function handleLogin(provider: 'google' | 'facebook') {
-    setLoading(provider)
+  async function handleLogin() {
+    setLoading('google')
     setError('')
     try {
-      if (provider === 'google') await loginWithGoogle()
-      else await loginWithFacebook()
+      await loginWithGoogle()
       onClose()
     } catch (e: unknown) {
-      const msg = e instanceof Error ? e.message : 'เข้าสู่ระบบไม่สำเร็จ'
-      setError(msg.includes('popup-closed') ? 'ปิด popup ก่อน กรุณาลองใหม่' : 'เกิดข้อผิดพลาด กรุณาลองใหม่')
+      const code = (e as { code?: string })?.code ?? ''
+      const msg = e instanceof Error ? e.message : ''
+      if (code === 'auth/popup-closed-by-user' || code === 'auth/cancelled-popup-request') {
+        setError('ปิด popup ก่อน กรุณาลองใหม่')
+      } else if (code === 'auth/popup-blocked') {
+        setError('Browser บล็อก popup — กรุณาอนุญาต popup แล้วลองใหม่')
+      } else if (code === 'auth/unauthorized-domain') {
+        setError('Domain ไม่ได้รับอนุญาต — ต้องเพิ่ม localhost ใน Firebase Console')
+      } else {
+        setError(code || msg || 'เกิดข้อผิดพลาด')
+      }
+      console.error('[Auth error]', code, msg)
     } finally {
       setLoading(null)
     }
@@ -50,7 +59,7 @@ export default function LoginModal({ onClose }: Props) {
 
             {/* Google */}
             <button
-              onClick={() => handleLogin('google')}
+              onClick={() => handleLogin()}
               disabled={loading !== null}
               className="w-full flex items-center gap-3 px-4 py-3 rounded-xl border-2 border-slate-200 hover:border-blue-300 hover:bg-blue-50 transition-all font-medium text-slate-700 disabled:opacity-50 disabled:cursor-not-allowed"
             >
@@ -62,21 +71,7 @@ export default function LoginModal({ onClose }: Props) {
               <span>เข้าสู่ระบบด้วย Google</span>
             </button>
 
-            {/* Facebook */}
-            <button
-              onClick={() => handleLogin('facebook')}
-              disabled={loading !== null}
-              className="w-full flex items-center gap-3 px-4 py-3 rounded-xl border-2 border-slate-200 hover:border-blue-600 hover:bg-[#f0f2ff] transition-all font-medium text-slate-700 disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {loading === 'facebook' ? (
-                <Loader2 size={20} className="animate-spin text-[#1877f2] shrink-0" />
-              ) : (
-                <FacebookIcon />
-              )}
-              <span>เข้าสู่ระบบด้วย Facebook</span>
-            </button>
-
-            {error && (
+{error && (
               <p className="text-red-500 text-sm text-center pt-1">{error}</p>
             )}
           </div>
@@ -101,10 +96,3 @@ function GoogleIcon() {
   )
 }
 
-function FacebookIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" className="shrink-0">
-      <path fill="#1877F2" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-    </svg>
-  )
-}

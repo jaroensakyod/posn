@@ -5,7 +5,7 @@ import {
   signOut as firebaseSignOut,
   User,
 } from 'firebase/auth'
-import { auth, googleProvider, facebookProvider } from '../lib/firebase'
+import { auth, googleProvider } from '../lib/firebase'
 import { syncProgressToFirestore, loadProgressFromFirestore } from '../lib/firestore'
 import { useProgressStore } from '../store/progressStore'
 
@@ -13,7 +13,6 @@ interface AuthContextValue {
   user: User | null
   loading: boolean
   loginWithGoogle: () => Promise<void>
-  loginWithFacebook: () => Promise<void>
   logout: () => Promise<void>
 }
 
@@ -38,11 +37,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await signInWithPopup(auth, googleProvider)
   }
 
-  async function loginWithFacebook() {
-    await signInWithPopup(auth, facebookProvider)
-  }
-
-  async function logout() {
+async function logout() {
     const { topicProgress, userStats, quizResults } = useProgressStore.getState()
     if (user) {
       await syncProgressToFirestore(user.uid, { topicProgress, userStats, quizResults })
@@ -52,7 +47,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   return (
-    <AuthContext.Provider value={{ user, loading, loginWithGoogle, loginWithFacebook, logout }}>
+    <AuthContext.Provider value={{ user, loading, loginWithGoogle, logout }}>
       {children}
     </AuthContext.Provider>
   )
