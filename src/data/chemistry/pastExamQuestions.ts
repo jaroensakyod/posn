@@ -41,7 +41,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "การจัดอิเล็กตรอนในสถานะพื้น มีอิเล็กตรอนเดี่ยว 1 อิเล็กตรอน"
     ],
     "correctIndex": 2,
-    "explanation": "Ts อยู่หมู่ VIIA คาบ 7 เหมือน At ควรมีหลายเลขออกซิเดชัน ไม่ใช่แค่ -1"
+    "explanation": "Ts อยู่หมู่ VIIA คาบ 7 เหมือน At ควรมีหลายเลขออกซิเดชัน ไม่ใช่แค่ -1",
+    "imageUrl": "/exam-images/y60-q2.png"
   },
   {
     "id": "y60-q3",
@@ -56,7 +57,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "6"
     ],
     "correctIndex": 3,
-    "explanation": "97 nm ตรงกับ n=1 ไป n=4 เส้นสเปกตรัมที่เกิดได้ = C(4,2) = 6 เส้น"
+    "explanation": "97 nm ตรงกับ n=1 ไป n=4 เส้นสเปกตรัมที่เกิดได้ = C(4,2) = 6 เส้น",
+    "imageUrl": "/exam-images/y60-q3.png"
   },
   {
     "id": "y60-q4",
@@ -71,7 +73,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "A 25 15"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q4.png"
   },
   {
     "id": "y60-q5",
@@ -86,7 +89,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "ไอออนของ A มีขนาดเล็กกว่าไอออนของ E"
     ],
     "correctIndex": 2,
-    "explanation": "A=Mg(หมู่2), E=P(หมู่15), J=As(หมู่15) ความเป็นโลหะ: As<P<Mg ดังนั้น J<E<A ถูกต้อง"
+    "explanation": "A=Mg(หมู่2), E=P(หมู่15), J=As(หมู่15) ความเป็นโลหะ: As<P<Mg ดังนั้น J<E<A ถูกต้อง",
+    "imageUrl": "/exam-images/y60-q5.png"
   },
   {
     "id": "y60-q6",
@@ -101,7 +105,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "1s2 2s2 2p6 3s2 3p3 3d10 4s1"
     ],
     "correctIndex": 2,
-    "explanation": "Co3+ (เสีย 3e-) มีการจัดเรียงอิเล็กตรอน [Ar]3d6 = 1s2 2s2 2p6 3s2 3p6 3d6"
+    "explanation": "Co3+ (เสีย 3e-) มีการจัดเรียงอิเล็กตรอน [Ar]3d6 = 1s2 2s2 2p6 3s2 3p6 3d6",
+    "imageUrl": "/exam-images/y60-q6.png"
   },
   {
     "id": "y60-q7",
@@ -116,7 +121,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "As3+ และ Cu"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q7.png"
   },
   {
     "id": "y60-q8",
@@ -131,7 +137,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "ไอออน A2+ มีการจัดเรียงอิเล็กตรอนเหมือนแก๊สมีตระกูล"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q8.png"
   },
   {
     "id": "y60-q9",
@@ -146,7 +153,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "+6 +7 +1"
     ],
     "correctIndex": 2,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q9.png"
   },
   {
     "id": "y60-q10",
@@ -161,7 +169,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "แบบ D เป็นของอะตอมที่เสถียรและมีค่าพลังงานไอออไนเซชันล าดับที่ 1 มากที่สุด"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q10.png"
   },
   {
     "id": "y60-q11",
@@ -176,7 +185,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "E > G > A G > A > E"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q11.png"
   },
   {
     "id": "y60-q12",
@@ -191,7 +201,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "X: หมู่4 คาบ3, Y: หมู่2 คาบ2"
     ],
     "correctIndex": 1,
-    "explanation": "X2+ มี 18e- → X มี 20e- = Ca(หมู่2,คาบ4); Y- มี 18e- → Y มี 17e- = Cl(หมู่7,คาบ3)"
+    "explanation": "X2+ มี 18e- → X มี 20e- = Ca(หมู่2,คาบ4); Y- มี 18e- → Y มี 17e- = Cl(หมู่7,คาบ3)",
+    "imageUrl": "/exam-images/y60-q12.png"
   },
   {
     "id": "y60-q13",
@@ -206,7 +217,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "Cl2O7 และ Na2O"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q13.png"
   },
   {
     "id": "y60-q14",
@@ -221,7 +233,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "MgHPO4, BaSO4, BaHPO4"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q14.png"
   },
   {
     "id": "y60-q15",
@@ -236,7 +249,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "ข้อ ก และ ข ถูกต้อง"
     ],
     "correctIndex": 2,
-    "explanation": "ต้องดูตารางข้อมูลธาตุ X, Y, Z จากรูปในข้อสอบ เพื่อเปรียบเทียบ IE₁, EN และขนาดอะตอม"
+    "explanation": "ต้องดูตารางข้อมูลธาตุ X, Y, Z จากรูปในข้อสอบ เพื่อเปรียบเทียบ IE₁, EN และขนาดอะตอม",
+    "imageUrl": "/exam-images/y60-q15.png"
   },
   {
     "id": "y60-q16",
@@ -251,7 +265,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "รังสีบีตา รังสีแอลฟา และ Fr 224 87"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q16.png"
   },
   {
     "id": "y60-q17",
@@ -266,7 +281,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "ในธรรมชาติอยู่ในรูปโมเลกุลอะตอมคู่"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q17.png"
   },
   {
     "id": "y60-q18",
@@ -281,7 +297,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "HBr < HI < HCl < HF"
     ],
     "correctIndex": 0,
-    "explanation": "HF มีพันธะไฮโดรเจนแข็งแรงมาก จึงมีจุดเดือดสูงสุด ส่วน HCl<HBr<HI เรียงตามมวลโมเลกุล"
+    "explanation": "HF มีพันธะไฮโดรเจนแข็งแรงมาก จึงมีจุดเดือดสูงสุด ส่วน HCl<HBr<HI เรียงตามมวลโมเลกุล",
+    "imageUrl": "/exam-images/y60-q18.png"
   },
   {
     "id": "y60-q19",
@@ -296,7 +313,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "Pb2+(aq) + NO3-(aq) + K+(aq) + SO42-(aq) → PbSO4(s) + NO3-(aq)"
     ],
     "correctIndex": 1,
-    "explanation": "PbSO4 ไม่ละลายน้ำ สมการไอออนิกสุทธิ: Pb2+ + SO42- → PbSO4(s)"
+    "explanation": "PbSO4 ไม่ละลายน้ำ สมการไอออนิกสุทธิ: Pb2+ + SO42- → PbSO4(s)",
+    "imageUrl": "/exam-images/y60-q19.png"
   },
   {
     "id": "y60-q20",
@@ -311,7 +329,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "D, E และ C"
     ],
     "correctIndex": 3,
-    "explanation": "จากตาราง: A (Tm=1455°C, Tb=2837°C, นำไฟฟ้าได้ทั้งของแข็งและของเหลว) = โลหะ | B (Tm=-56°C ไม่นำไฟฟ้า) = สารโคเวเลนต์ | C (Tm=685°C นำไฟฟ้าเมื่อหลอมเหลว) = ไอออนิก | D, E = สารโคเวเลนต์ → ไอออนิก=C, โคเวเลนต์=D, โลหะ=A → ข้อ ค (C, D, A)... แต่เฉลยคือ ง"
+    "explanation": "จากตาราง: A (Tm=1455°C, Tb=2837°C, นำไฟฟ้าได้ทั้งของแข็งและของเหลว) = โลหะ | B (Tm=-56°C ไม่นำไฟฟ้า) = สารโคเวเลนต์ | C (Tm=685°C นำไฟฟ้าเมื่อหลอมเหลว) = ไอออนิก | D, E = สารโคเวเลนต์ → ไอออนิก=C, โคเวเลนต์=D, โลหะ=A → ข้อ ค (C, D, A)... แต่เฉลยคือ ง",
+    "imageUrl": "/exam-images/y60-q20.png"
   },
   {
     "id": "y60-q21",
@@ -326,7 +345,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "NO₃⁻"
     ],
     "correctIndex": 0,
-    "explanation": "NO⁺: พันธะสาม (triple bond N≡O⁺) สั้นที่สุด | NO₂⁻: พันธะ 1.5 | NO₂⁺: พันธะ 2 | NO₃⁻: พันธะ 1.33 → NO⁺ มีพันธะสามสั้นที่สุด → ข้อ ก"
+    "explanation": "NO⁺: พันธะสาม (triple bond N≡O⁺) สั้นที่สุด | NO₂⁻: พันธะ 1.5 | NO₂⁺: พันธะ 2 | NO₃⁻: พันธะ 1.33 → NO⁺ มีพันธะสามสั้นที่สุด → ข้อ ก",
+    "imageUrl": "/exam-images/y60-q21.png"
   },
   {
     "id": "y60-q22",
@@ -341,7 +361,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "BF4  และ POCl3"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q22.png"
   },
   {
     "id": "y60-q23",
@@ -356,7 +377,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "OCl2"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q23.png"
   },
   {
     "id": "y60-q24",
@@ -371,7 +393,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "SO₃²⁻"
     ],
     "correctIndex": 2,
-    "explanation": "NH₃: N มี 1 LP | XeF₂: Xe มี 3 LP (เส้นตรง 2 พันธะ + 3 LP) | NO₂⁻: N มี 1 LP | SO₃²⁻: S มี 1 LP → XeF₂ มีมากที่สุด (3 LP) → ข้อ ข"
+    "explanation": "NH₃: N มี 1 LP | XeF₂: Xe มี 3 LP (เส้นตรง 2 พันธะ + 3 LP) | NO₂⁻: N มี 1 LP | SO₃²⁻: S มี 1 LP → XeF₂ มีมากที่สุด (3 LP) → ข้อ ข",
+    "imageUrl": "/exam-images/y60-q24.png"
   },
   {
     "id": "y60-q25",
@@ -386,7 +409,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "PF₅"
     ],
     "correctIndex": 3,
-    "explanation": "SF₄: seesaw มีขั้ว | SCl₂: bent มีขั้ว | PCl₃: pyramidal มีขั้ว | PF₅: trigonal bipyramidal สมมาตร ไม่มีขั้ว → ข้อ ง"
+    "explanation": "SF₄: seesaw มีขั้ว | SCl₂: bent มีขั้ว | PCl₃: pyramidal มีขั้ว | PF₅: trigonal bipyramidal สมมาตร ไม่มีขั้ว → ข้อ ง",
+    "imageUrl": "/exam-images/y60-q25.png"
   },
   {
     "id": "y60-q26",
@@ -401,7 +425,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "CaCO₃"
     ],
     "correctIndex": 3,
-    "explanation": "Na₂O: ionic ล้วน | COCl₂: covalent ล้วน | H₂SO₄: covalent ล้วน | CaCO₃: Ca²⁺ (ionic) + CO₃²⁻ ที่มีพันธะ covalent ภายใน → มีทั้งสองชนิด → ข้อ ง"
+    "explanation": "Na₂O: ionic ล้วน | COCl₂: covalent ล้วน | H₂SO₄: covalent ล้วน | CaCO₃: Ca²⁺ (ionic) + CO₃²⁻ ที่มีพันธะ covalent ภายใน → มีทั้งสองชนิด → ข้อ ง",
+    "imageUrl": "/exam-images/y60-q26.png"
   },
   {
     "id": "y60-q27",
@@ -416,7 +441,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "CH₂NH"
     ],
     "correctIndex": 1,
-    "explanation": "O₃: โอโซน O→O=O มีพันธะโคออร์ดิเนต (O ให้คู่อิเล็กตรอนแก่ O กลาง) → ข้อ ข"
+    "explanation": "O₃: โอโซน O→O=O มีพันธะโคออร์ดิเนต (O ให้คู่อิเล็กตรอนแก่ O กลาง) → ข้อ ข",
+    "imageUrl": "/exam-images/y60-q27.png"
   },
   {
     "id": "y60-q28",
@@ -431,7 +457,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "พีระมิดฐานสามเหลี่ยม"
     ],
     "correctIndex": 2,
-    "explanation": "Kr มี 4 พันธะ (2 ต่อ O + 2 ต่อ F) + 1 LP = 5 electron pairs → seesaw (ทรงสี่หน้าบิดเบี้ยว) → ข้อ ค"
+    "explanation": "Kr มี 4 พันธะ (2 ต่อ O + 2 ต่อ F) + 1 LP = 5 electron pairs → seesaw (ทรงสี่หน้าบิดเบี้ยว) → ข้อ ค",
+    "imageUrl": "/exam-images/y60-q28.png"
   },
   {
     "id": "y60-q29",
@@ -446,7 +473,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "Ba(NO₂)₂ = แบเรียมไนไตรต์"
     ],
     "correctIndex": 3,
-    "explanation": "Hg₂Cl₂ มี Hg₂²⁺ (สองอะตอม Hg รวมกัน) ชื่อที่ถูกต้องควรเป็น \"ไดเมอร์คิวรี(I)คลอไรด์\" ไม่ใช่ \"เมอร์คิวรี(I)คลอไรด์\" ซึ่งหมายถึง HgCl → ข้อ ค ผิด"
+    "explanation": "Hg₂Cl₂ มี Hg₂²⁺ (สองอะตอม Hg รวมกัน) ชื่อที่ถูกต้องควรเป็น \"ไดเมอร์คิวรี(I)คลอไรด์\" ไม่ใช่ \"เมอร์คิวรี(I)คลอไรด์\" ซึ่งหมายถึง HgCl → ข้อ ค ผิด",
+    "imageUrl": "/exam-images/y60-q29.png"
   },
   {
     "id": "y60-q30",
@@ -461,7 +489,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "CH₂CHCH₃(g) → CH₂CHCH₂(g) + H(g)"
     ],
     "correctIndex": 2,
-    "explanation": "สลายพันธะ C=C ระหว่างคาร์บอน 1 กับ 2 → CH₂(g) + CHCH₃(g) → ข้อ ข"
+    "explanation": "สลายพันธะ C=C ระหว่างคาร์บอน 1 กับ 2 → CH₂(g) + CHCH₃(g) → ข้อ ข",
+    "imageUrl": "/exam-images/y60-q30.png"
   },
   {
     "id": "y60-q31",
@@ -476,7 +505,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "IF₄⁺"
     ],
     "correctIndex": 1,
-    "explanation": "IF₂⁺: I มีเพียง 4e รอบ (2 พันธะ ไม่มี LP บน I) = electron deficient ไม่ครบออกเตต → ข้อ ข"
+    "explanation": "IF₂⁺: I มีเพียง 4e รอบ (2 พันธะ ไม่มี LP บน I) = electron deficient ไม่ครบออกเตต → ข้อ ข",
+    "imageUrl": "/exam-images/y60-q31.png"
   },
   {
     "id": "y60-q32",
@@ -491,7 +521,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "SO3 และ PBr3"
     ],
     "correctIndex": 2,
-    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q32.png"
   },
   {
     "id": "y60-q33",
@@ -506,7 +537,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "อัตราส่วน Na⁺ : Cl⁻ = 1 : 2"
     ],
     "correctIndex": 0,
-    "explanation": "NaCl cubic structure: หน่วยเซลล์ (FCC) มี Na⁺ 4 ไอออน และ Cl⁻ 4 ไอออน (อัตราส่วน 1:1) แต่ละไอออนล้อมรอบด้วยไอออนตรงข้าม 6 ตัว (octahedral) → ข้อ ก ✓"
+    "explanation": "NaCl cubic structure: หน่วยเซลล์ (FCC) มี Na⁺ 4 ไอออน และ Cl⁻ 4 ไอออน (อัตราส่วน 1:1) แต่ละไอออนล้อมรอบด้วยไอออนตรงข้าม 6 ตัว (octahedral) → ข้อ ก ✓",
+    "imageUrl": "/exam-images/y60-q33.png"
   },
   {
     "id": "y60-q34",
@@ -521,7 +553,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "สาร A มีจุดเดือดต่ำกว่าน้ำ"
     ],
     "correctIndex": 2,
-    "explanation": "ต้องดูกราฟในข้อสอบเพื่อเปรียบเทียบสมบัติ"
+    "explanation": "ต้องดูกราฟในข้อสอบเพื่อเปรียบเทียบสมบัติ",
+    "imageUrl": "/exam-images/y60-q34.png"
   },
   {
     "id": "y60-q35",
@@ -536,7 +569,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "สาร A ที่สถานะของแข็งมีความหนาแน่นน้อยกว่าของเหลว"
     ],
     "correctIndex": 3,
-    "explanation": "ต้องดูแผนภูมิวัฏภาคในข้อสอบ"
+    "explanation": "ต้องดูแผนภูมิวัฏภาคในข้อสอบ",
+    "imageUrl": "/exam-images/y60-q35.png"
   },
   {
     "id": "y60-q36",
@@ -551,7 +585,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "200"
     ],
     "correctIndex": 1,
-    "explanation": "กฎชาร์ล: V1/T1=V2/T2 → 100/293=V2/283 → V2=96.6 cm3"
+    "explanation": "กฎชาร์ล: V1/T1=V2/T2 → 100/293=V2/283 → V2=96.6 cm3",
+    "imageUrl": "/exam-images/y60-q36.png"
   },
   {
     "id": "y60-q37",
@@ -566,7 +601,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "750 K และ 6 atm"
     ],
     "correctIndex": 2,
-    "explanation": "แก๊สอุดมคติที่สุดเมื่ออุณหภูมิสูงและความดันต่ำ → 750K และ 150 mmHg"
+    "explanation": "แก๊สอุดมคติที่สุดเมื่ออุณหภูมิสูงและความดันต่ำ → 750K และ 150 mmHg",
+    "imageUrl": "/exam-images/y60-q37.png"
   },
   {
     "id": "y60-q38",
@@ -581,7 +617,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "1.20"
     ],
     "correctIndex": 0,
-    "explanation": "T1=546K, T2=273K, P1=2atm, P2=1atm → V2=0.40×(2/1)×(273/546)=0.20 L"
+    "explanation": "T1=546K, T2=273K, P1=2atm, P2=1atm → V2=0.40×(2/1)×(273/546)=0.20 L",
+    "imageUrl": "/exam-images/y60-q38.png"
   },
   {
     "id": "y60-q39",
@@ -596,7 +633,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "ผิด เพราะความดันขึ้นกับจำนวนโมล"
     ],
     "correctIndex": 1,
-    "explanation": "25°C=298K, 50°C=323K อัตราส่วน 323/298 ≈ 1.08 ≠ 2 ดังนั้นความดันไม่ได้เพิ่ม 2 เท่า"
+    "explanation": "25°C=298K, 50°C=323K อัตราส่วน 323/298 ≈ 1.08 ≠ 2 ดังนั้นความดันไม่ได้เพิ่ม 2 เท่า",
+    "imageUrl": "/exam-images/y60-q39.png"
   },
   {
     "id": "y60-q40",
@@ -611,7 +649,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "280"
     ],
     "correctIndex": 1,
-    "explanation": "MW = 1.25×22.4 = 28 g/mol, 5 mol = 140 g"
+    "explanation": "MW = 1.25×22.4 = 28 g/mol, 5 mol = 140 g",
+    "imageUrl": "/exam-images/y60-q40.png"
   },
   {
     "id": "y60-q41",
@@ -626,7 +665,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "48"
     ],
     "correctIndex": 3,
-    "explanation": "กฎเกรแฮม: t(O2)/t(H2) = sqrt(32/2) = 4 → t(O2) = 12×4 = 48 วินาที"
+    "explanation": "กฎเกรแฮม: t(O2)/t(H2) = sqrt(32/2) = 4 → t(O2) = 12×4 = 48 วินาที",
+    "imageUrl": "/exam-images/y60-q41.png"
   },
   {
     "id": "y60-q42",
@@ -641,7 +681,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "กราฟ T₁ และ T₂ มีพื้นที่ใต้กราฟเท่ากัน"
     ],
     "correctIndex": 1,
-    "explanation": "กราฟ Maxwell-Boltzmann: ที่อุณหภูมิสูงกว่า กราฟจะแบนและเตี้ยกว่า พื้นที่ใต้กราฟเท่ากันเสมอ (จำนวนโมเลกุลเท่ากัน) → ข้อ ข"
+    "explanation": "กราฟ Maxwell-Boltzmann: ที่อุณหภูมิสูงกว่า กราฟจะแบนและเตี้ยกว่า พื้นที่ใต้กราฟเท่ากันเสมอ (จำนวนโมเลกุลเท่ากัน) → ข้อ ข",
+    "imageUrl": "/exam-images/y60-q42.png"
   },
   {
     "id": "y60-q43",
@@ -656,7 +697,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "สาร A ที่สถานะของเหลวสามารถอยู่ที่อุณหภูมิสูงกว่า 100°C"
     ],
     "correctIndex": 2,
-    "explanation": "ต้องดูแผนภาพวัฏภาคในข้อสอบ → ข้อ ค"
+    "explanation": "ต้องดูแผนภาพวัฏภาคในข้อสอบ → ข้อ ค",
+    "imageUrl": "/exam-images/y60-q43.png"
   },
   {
     "id": "y60-q44",
@@ -671,7 +713,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "410"
     ],
     "correctIndex": 2,
-    "explanation": "LiOH 240g = 10mol → CO2 = 5mol, V = 5×0.082×500/1.00 = 205 L"
+    "explanation": "LiOH 240g = 10mol → CO2 = 5mol, V = 5×0.082×500/1.00 = 205 L",
+    "imageUrl": "/exam-images/y60-q44.png"
   },
   {
     "id": "y60-q45",
@@ -686,7 +729,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "BaCO3"
     ],
     "correctIndex": 3,
-    "explanation": "HCl=0.04mol, CO2=0.02mol → คาร์บอเนต=0.02mol, MW=3.94/0.02=197 → BaCO3 (MW=197)"
+    "explanation": "HCl=0.04mol, CO2=0.02mol → คาร์บอเนต=0.02mol, MW=3.94/0.02=197 → BaCO3 (MW=197)",
+    "imageUrl": "/exam-images/y60-q45.png"
   },
   {
     "id": "y60-q46",
@@ -701,7 +745,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "1040"
     ],
     "correctIndex": 0,
-    "explanation": "CO=12.5mol, H2=32.5mol → CO จำกัด (ต้อง H2 25mol แต่มี 32.5), CH3OH = 12.5×32 = 400 g"
+    "explanation": "CO=12.5mol, H2=32.5mol → CO จำกัด (ต้อง H2 25mol แต่มี 32.5), CH3OH = 12.5×32 = 400 g",
+    "imageUrl": "/exam-images/y60-q46.png"
   },
   {
     "id": "y60-q47",
@@ -716,7 +761,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "KNO₃ ละลายได้น้อยกว่า NaCl ที่ทุกอุณหภูมิ"
     ],
     "correctIndex": 0,
-    "explanation": "กราฟการละลาย: NaCl มี solubility แทบคงที่ตามอุณหภูมิ | KNO₃ เพิ่มมากเมื่อร้อน | Ce₂(SO₄)₃ ลดลงเมื่อร้อน → ข้อ ข"
+    "explanation": "กราฟการละลาย: NaCl มี solubility แทบคงที่ตามอุณหภูมิ | KNO₃ เพิ่มมากเมื่อร้อน | Ce₂(SO₄)₃ ลดลงเมื่อร้อน → ข้อ ข",
+    "imageUrl": "/exam-images/y60-q47.png"
   },
   {
     "id": "y60-q48",
@@ -731,7 +777,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "สารละลายกลูโคส 0.1 m"
     ],
     "correctIndex": 3,
-    "explanation": "CaCl₂ → Ca²⁺ + 2Cl⁻ = 3 particles (i=3) → ΔP มากที่สุด → ความดันไอต่ำที่สุด → ข้อ ง"
+    "explanation": "CaCl₂ → Ca²⁺ + 2Cl⁻ = 3 particles (i=3) → ΔP มากที่สุด → ความดันไอต่ำที่สุด → ข้อ ง",
+    "imageUrl": "/exam-images/y60-q48.png"
   },
   {
     "id": "y60-q49",
@@ -746,7 +793,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "Y มีมวลโมเลกุลมากกว่า X"
     ],
     "correctIndex": 1,
-    "explanation": "m(A) = 0.372/1.86 = 0.2 mol/kg | m(B) = 0.744/1.86 = 0.4 mol/kg → ความเข้มข้นของ B เป็น 2 เท่าของ A → ข้อ ข"
+    "explanation": "m(A) = 0.372/1.86 = 0.2 mol/kg | m(B) = 0.744/1.86 = 0.4 mol/kg → ความเข้มข้นของ B เป็น 2 เท่าของ A → ข้อ ข",
+    "imageUrl": "/exam-images/y60-q49.png"
   },
   {
     "id": "y60-q50",
@@ -761,7 +809,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "M เป็นสารอิเล็กโทรไลต์แก่"
     ],
     "correctIndex": 2,
-    "explanation": "ΔTb = 0.52°C → m = 0.52/0.512 = 1.016 mol/kg → mol M = 1.016 × 0.25 kg = 0.254 mol ≈ ถูกต้อง → ข้อ ค"
+    "explanation": "ΔTb = 0.52°C → m = 0.52/0.512 = 1.016 mol/kg → mol M = 1.016 × 0.25 kg = 0.254 mol ≈ ถูกต้อง → ข้อ ค",
+    "imageUrl": "/exam-images/y60-q50.png"
   },
   {
     "id": "y60-q51",
@@ -776,7 +825,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "1.21 mol/L"
     ],
     "correctIndex": 0,
-    "explanation": "π = MRT → M = π/RT = 3.70/(0.082×298) = 3.70/24.44 = 0.151 mol/L → ข้อ ก"
+    "explanation": "π = MRT → M = π/RT = 3.70/(0.082×298) = 3.70/24.44 = 0.151 mol/L → ข้อ ก",
+    "imageUrl": "/exam-images/y60-q51.png"
   },
   {
     "id": "y60-q52",
@@ -791,7 +841,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "84"
     ],
     "correctIndex": 1,
-    "explanation": "A=0.4mol, B=2.516mol → A จำกัด, C=4×0.4=1.6mol, MW(C)=70.4/1.6=44"
+    "explanation": "A=0.4mol, B=2.516mol → A จำกัด, C=4×0.4=1.6mol, MW(C)=70.4/1.6=44",
+    "imageUrl": "/exam-images/y60-q52.png"
   },
   {
     "id": "y60-q53",
@@ -806,7 +857,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "0.150 mol/dm³"
     ],
     "correctIndex": 3,
-    "explanation": "n(NaOH) = 0.100 × 0.030 = 0.003 mol | n(HCl) = 0.003 mol | C(HCl) = 0.003/0.025 = 0.120 mol/dm³ → ข้อ ง... ตรวจ: 0.003/0.025 = 0.12 → ข้อ ค"
+    "explanation": "n(NaOH) = 0.100 × 0.030 = 0.003 mol | n(HCl) = 0.003 mol | C(HCl) = 0.003/0.025 = 0.120 mol/dm³ → ข้อ ง... ตรวจ: 0.003/0.025 = 0.12 → ข้อ ค",
+    "imageUrl": "/exam-images/y60-q53.png"
   },
   {
     "id": "y60-q54",
@@ -821,7 +873,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "250"
     ],
     "correctIndex": 1,
-    "explanation": "MgCl2·6H2O MW=203, mol=0.02 ใน 250mL → C(A)=0.08M, 0.08V1=0.01×500 → V1=62.5 mL"
+    "explanation": "MgCl2·6H2O MW=203, mol=0.02 ใน 250mL → C(A)=0.08M, 0.08V1=0.01×500 → V1=62.5 mL",
+    "imageUrl": "/exam-images/y60-q54.png"
   },
   {
     "id": "y60-q55",
@@ -836,7 +889,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "4.20"
     ],
     "correctIndex": 2,
-    "explanation": "H2SO4=3.50×98=343g ใน 1L, มวลน้ำ=1200-343=857g, m=3.50/0.857=4.08 mol/kg"
+    "explanation": "H2SO4=3.50×98=343g ใน 1L, มวลน้ำ=1200-343=857g, m=3.50/0.857=4.08 mol/kg",
+    "imageUrl": "/exam-images/y60-q55.png"
   },
   {
     "id": "y60-q56",
@@ -851,7 +905,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "KMnO₄ 0.505 g และ Pb(NO₃)₂ 0.828 g"
     ],
     "correctIndex": 1,
-    "explanation": "KMnO₄ (MW=158): 0.0500×0.100×158 = 0.790 g? ไม่ตรง... KMnO₄ = 0.005 mol × 158 = 0.79 g ≠ ตัวเลือก | Pb(NO₃)₂ (MW=331): 0.0025 mol × 331 = 0.828 g → ข้อ ข: 0.253 g และ 0.828 g"
+    "explanation": "KMnO₄ (MW=158): 0.0500×0.100×158 = 0.790 g? ไม่ตรง... KMnO₄ = 0.005 mol × 158 = 0.79 g ≠ ตัวเลือก | Pb(NO₃)₂ (MW=331): 0.0025 mol × 331 = 0.828 g → ข้อ ข: 0.253 g และ 0.828 g",
+    "imageUrl": "/exam-images/y60-q56.png"
   },
   {
     "id": "y60-q57",
@@ -866,7 +921,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "12 และ 36"
     ],
     "correctIndex": 2,
-    "explanation": "Cl⁻ = 2×CdCl₂ → CdCl₂ = 18 mmol | C×V=n → 3.0×X=0.018 → X=6 mL | ปริมาตรสุดท้าย: 1.0×V_total=0.018 → V_total=18 mL → Y=18-6=12 mL → ข้อ ค"
+    "explanation": "Cl⁻ = 2×CdCl₂ → CdCl₂ = 18 mmol | C×V=n → 3.0×X=0.018 → X=6 mL | ปริมาตรสุดท้าย: 1.0×V_total=0.018 → V_total=18 mL → Y=18-6=12 mL → ข้อ ค",
+    "imageUrl": "/exam-images/y60-q57.png"
   },
   {
     "id": "y60-q58",
@@ -881,7 +937,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "0.800 mol/dm³"
     ],
     "correctIndex": 0,
-    "explanation": "CaCl₂ รวม = (1.00×20 + 0.200×60)/1000 = (20+12)/1000 = 0.032 mol | Cl⁻ = 2×0.032 = 0.064 mol ใน 100 mL = 0.640 mol/dm³ → ข้อ ก: ตาม correctIndex=0"
+    "explanation": "CaCl₂ รวม = (1.00×20 + 0.200×60)/1000 = (20+12)/1000 = 0.032 mol | Cl⁻ = 2×0.032 = 0.064 mol ใน 100 mL = 0.640 mol/dm³ → ข้อ ก: ตาม correctIndex=0",
+    "imageUrl": "/exam-images/y60-q58.png"
   },
   {
     "id": "y60-q59",
@@ -896,7 +953,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "CaCl2 35.5 g/dm3"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 60"
+    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 60",
+    "imageUrl": "/exam-images/y60-q59.png"
   },
   {
     "id": "y60-q60",
@@ -911,7 +969,8 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "B มีจุดเยือกแข็งต่ำกว่า A อยู่ 0.245°C"
     ],
     "correctIndex": 3,
-    "explanation": "dTf(A)=5.50-5.01=0.49°C, m(A)=0.1mol/kg, ใน A+B(0.1kg): m(B)=0.05m, dTf(B)=0.245°C → B ต่ำกว่า A อีก 0.245°C"
+    "explanation": "dTf(A)=5.50-5.01=0.49°C, m(A)=0.1mol/kg, ใน A+B(0.1kg): m(B)=0.05m, dTf(B)=0.245°C → B ต่ำกว่า A อีก 0.245°C",
+    "imageUrl": "/exam-images/y60-q60.png"
   },
   {
     "id": "y61-q1",
