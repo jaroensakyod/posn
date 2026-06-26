@@ -11,6 +11,8 @@ import { acidBase } from './lessons/acid-base'
 import { electrochemistry } from './lessons/electrochemistry'
 import { organicChemistry } from './lessons/organic-chemistry'
 import { analyticalChemistry } from './lessons/analytical-chemistry'
+import { representativeElements } from './lessons/representative-elements'
+import { nuclearChemistry } from './lessons/nuclear-chemistry'
 
 export type { Lesson, LessonSection, ContentBlock }
 
@@ -29,4 +31,6 @@ export const chemistryLessons: Record<string, Lesson> = {
   'electrochemistry': electrochemistry,
   'organic-chemistry': organicChemistry,
   'analytical-chemistry': analyticalChemistry,
+  'representative-elements': representativeElements,
+  'nuclear-chemistry': nuclearChemistry,
 }

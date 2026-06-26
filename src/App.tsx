@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { AuthProvider } from './contexts/AuthContext'
 
 const Home = lazy(() => import('./pages/Home'))
 const ChemistryDashboard = lazy(() => import('./pages/chemistry/ChemistryDashboard'))
@@ -20,6 +21,7 @@ function PageLoader() {
 export default function App() {
   return (
     <BrowserRouter>
+      <AuthProvider>
       <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -32,6 +34,7 @@ export default function App() {
           <Route path="/chemistry/analytics" element={<Analytics />} />
         </Routes>
       </Suspense>
+      </AuthProvider>
     </BrowserRouter>
   )
 }

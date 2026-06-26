@@ -1,5 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
+import { auth } from '../lib/firebase'
+import { pushProgress } from '../lib/firestore'
 
 export interface QuizAttempt {
   score: number
@@ -130,6 +132,7 @@ export const useProgressStore = create<ProgressState>()(
             totalLessonsRead: s.userStats.totalLessonsRead + 1,
           },
         }))
+        if (auth.currentUser) pushProgress(auth.currentUser.uid).catch(() => {})
         return XP_LESSON + streakBonus
       },
 
@@ -171,6 +174,7 @@ export const useProgressStore = create<ProgressState>()(
             totalQuizzes: s.userStats.totalQuizzes + 1,
           },
         }))
+        if (auth.currentUser) pushProgress(auth.currentUser.uid).catch(() => {})
         return xpGained
       },
 
