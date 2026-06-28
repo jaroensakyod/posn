@@ -78,14 +78,19 @@ export default function WrittenQuizView({ questions, onFinish }: Props) {
         </div>
 
         {/* Context */}
-        {q.contextText && (
+        {(q.contextText || q.imageUrl) && (
           <div className="px-4 py-3 bg-slate-50 border-b border-slate-100">
             <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-1">
               ข้อมูลที่กำหนด
             </p>
-            <p className="text-sm text-slate-700 leading-relaxed whitespace-pre-line">
-              {q.contextText}
-            </p>
+            {q.imageUrl && (
+              <img src={q.imageUrl} alt="โจทย์" className="mb-2 rounded-lg border border-slate-200 max-w-full" />
+            )}
+            {q.contextText && (
+              <p className="text-sm text-slate-700 leading-relaxed whitespace-pre-line">
+                {q.contextText}
+              </p>
+            )}
           </div>
         )}
 

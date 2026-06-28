@@ -26,13 +26,14 @@ except ImportError:
 # ===== Paths =====
 BASE_DIR = Path(__file__).parent
 QUESTIONS_FILE = BASE_DIR / "src/data/chemistry/pastExamQuestions.ts"
+WRITTEN_FILE = BASE_DIR / "src/data/chemistry/writtenExamQuestions.ts"
 IMAGES_DIR = BASE_DIR / "public/exam-images"
 MAPPING_FILE = BASE_DIR / "crop_mapping.json"
 
 YEARS = [60, 61, 62, 64, 65, 66, 67, 68]
 
-def parse_questions():
-    text = QUESTIONS_FILE.read_text(encoding="utf-8")
+def _parse_ts_array(filepath: Path) -> list:
+    text = filepath.read_text(encoding="utf-8")
     start = text.find("= [") + 2
     depth = 0; end = start
     for i, ch in enumerate(text[start:], start):
@@ -41,6 +42,28 @@ def parse_questions():
             depth -= 1
             if depth == 0: end = i; break
     return json.loads(text[start:end+1])
+
+def parse_written_questions():
+    text = WRITTEN_FILE.read_text(encoding="utf-8")
+    pat = re.compile(r"id:\s*'(y\d+-w\d+)',\s*year:\s*(\d+),\s*questionNum:\s*(\d+)")
+    ctx_pat = re.compile(r"contextText:\s*'([^']*)'")
+    results = []
+    for m in pat.finditer(text):
+        qid, year, qnum = m.group(1), int(m.group(2)), int(m.group(3))
+        # find nearest contextText after this match
+        cm = ctx_pat.search(text, m.end())
+        ctx = cm.group(1)[:120] if cm else ""
+        results.append({
+            "id": qid, "year": year, "questionNum": qnum,
+            "contextText": ctx, "text": ctx,
+            "choices": [], "correctIndex": -1, "_written": True,
+        })
+    return results
+
+def parse_questions():
+    mc = _parse_ts_array(QUESTIONS_FILE)
+    written = parse_written_questions()
+    return mc + written
 
 def load_mapping():
     if MAPPING_FILE.exists():
@@ -336,8 +359,10 @@ class CropTool:
                 status = " [ok]" if v else " [--]"
             if undone_only and qid in self.mapping:
                 continue
-            text_preview = q["text"][:40]
-            row = f"Q{q['questionNum']:>3}{status}  {text_preview}"
+            is_written = q.get("_written", False)
+            prefix = "W" if is_written else "Q"
+            preview = q.get("contextText", q.get("text", ""))[:40]
+            row = f"{prefix}{q['questionNum']:>3}{status}  {preview}"
             if keyword and keyword not in row.lower():
                 continue
             self.q_listbox.insert(tk.END, row)
@@ -356,7 +381,11 @@ class CropTool:
 
         self.txt_q.config(state=tk.NORMAL)
         self.txt_q.delete("1.0", tk.END)
-        self.txt_q.insert(tk.END, f"ข้อ {q['questionNum']}: {q['text'][:400]}")
+        if q.get("_written"):
+            preview = f"[ข้อเขียน] ข้อ {q['questionNum']}\n{q.get('contextText','')[:300]}"
+        else:
+            preview = f"ข้อ {q['questionNum']}: {q.get('text','')[:400]}"
+        self.txt_q.insert(tk.END, preview)
         self.txt_q.config(state=tk.DISABLED)
 
         qid = q["id"]

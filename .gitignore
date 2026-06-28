@@ -2,3 +2,7 @@ node_modules/
 dist/
 *.tsbuildinfo
 .DS_Store
+
+# secrets
+pons-1e627-firebase-adminsdk-fbsvc-60cabddc6c.json
+*-firebase-adminsdk-*.json
