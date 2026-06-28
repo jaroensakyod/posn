@@ -26,7 +26,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "แต่ละอนุภาค X ในหลอดที่บรรจุแก๊ส H2 มีมวลมากกว่ามวลของแต่ละอนุภาค Y ใน หลอดที่บรรจุแก๊ส He"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 60"
+    "explanation": "อนุภาค X คือรังสีแคนาล (ไอออนบวก) ค่า e/m ของอนุภาค X ขึ้นกับชนิดแก๊สในหลอด แต่ค่า e/m ของอิเล็กตรอน (Y) คงที่เสมอไม่ว่าจะใช้แก๊สชนิดใด ข้อ ง ผิดเพราะ H⁺ มีมวลน้อยกว่า He⁺ ไม่ใช่มากกว่า ข้อ ข ถูกเพราะ Y (อิเล็กตรอน) มีค่า e/m คงที่ไม่ขึ้นกับชนิดแก๊ส"
   },
   {
     "id": "y60-q2",
@@ -73,7 +73,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "A 25 15"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 60",
+    "explanation": "B²⁻ มีอิเล็กตรอน 10 ตัว → B มีเลขอะตอม 8 (ออกซิเจน) มีนิวตรอน 15 ตัว เลขมวล B = 23 A เป็นไอโซโทปของ B จึงมีเลขอะตอม 8 เท่ากัน แต่มีนิวตรอนน้อยกว่า 5 ตัว → นิวตรอน A = 10 เลขมวล A = 18 สัญลักษณ์คือ ¹⁸₈A",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q4.png"
   },
   {
@@ -121,7 +121,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "As3+ และ Cu"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60",
+    "explanation": "เส้นสเปกตรัมในช่วงแสงที่มองเห็นได้ (400–700 nm) ของ H คือชุด Balmer series ที่เกิดจากอิเล็กตรอนเปลี่ยนระดับพลังงานจาก n≥3 ลงสู่ n=2 จากรูป เส้นที่ 3 และ 4 อยู่ในช่วงความยาวคลื่นดังกล่าว ส่วนเส้นที่ 1-2 อยู่ใน UV และเส้น 5 ขึ้นไปอยู่ใน IR",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q7.png"
   },
   {
@@ -137,7 +137,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "ไอออน A2+ มีการจัดเรียงอิเล็กตรอนเหมือนแก๊สมีตระกูล"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60",
+    "explanation": "ธาตุหมู่ IIA มีอิเล็กตรอนเวเลนซ์ 2 ตัว สังเกตได้จากพลังงานไอออไนเซชันที่กระโดดขึ้นอย่างมากระหว่าง IE₂ กับ IE₃ จากตารางในรูป ธาตุ S แสดงรูปแบบนี้ จึงอยู่ในหมู่ IIA",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q8.png"
   },
   {
@@ -153,7 +153,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "+6 +7 +1"
     ],
     "correctIndex": 2,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60",
+    "explanation": "S อยู่หมู่ IIA, P อยู่หมู่ IIIA, R อยู่หมู่ VA, Q อยู่หมู่ VIA ในคาบเดียวกัน IE₁ เพิ่มตามเลขอะตอมแต่มีข้อยกเว้นที่ IIA→IIIA (ลดเล็กน้อย) และ VA→VIA (ลดเล็กน้อย) การเรียง IE₁ จากน้อยไปมากคือ S < P < R < Q",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q9.png"
   },
   {
@@ -169,7 +169,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "แบบ D เป็นของอะตอมที่เสถียรและมีค่าพลังงานไอออไนเซชันล าดับที่ 1 มากที่สุด"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60",
+    "explanation": "R อยู่หมู่ VA มีออร์บิทัล 2p ครึ่งเต็ม (half-filled) เสถียรกว่าปกติ แต่ในบรรดา P Q R S ธาตุ R ที่อยู่ทางขวาสุดในอโลหะมีขนาดอะตอมเล็กและ IE₁ สูง ทำให้มีอิเล็กโทรเนกาติวิตีสูงที่สุด ข้อ ข ถูกต้อง",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q10.png"
   },
   {
@@ -185,7 +185,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "E > G > A G > A > E"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 60",
+    "explanation": "Q อยู่หมู่ VIA (ต้องรับ e⁻ 2 ตัว เป็น Q²⁻) และ S อยู่หมู่ IIA (สูญเสีย e⁻ 2 ตัว เป็น S²⁺) ทั้งคู่มีความต่างอิเล็กโทรเนกาติวิตีสูง จึงเกิดพันธะไอออนิกในสูตร QS (ประจุ 2+ กับ 2-)",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q11.png"
   },
   {
@@ -217,7 +217,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "Cl2O7 และ Na2O"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60",
+    "explanation": "โมเลกุลที่มีโมเมนต์ขั้วเป็นศูนย์ต้องมีรูปร่างสมมาตรที่เวกเตอร์ไดโพลหักล้างกันสมบูรณ์ โมเลกุล I (เช่น BF₃) และ III (เช่น CCl₄) มีรูปร่างสมมาตรทำให้ไดโพลหักล้างกัน ส่วน II และ IV มีรูปร่างไม่สมมาตรทำให้มีโมเมนต์ขั้วไม่เป็นศูนย์",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q13.png"
   },
   {
@@ -233,7 +233,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "MgHPO4, BaSO4, BaHPO4"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60",
+    "explanation": "รูปร่างของโมเลกุลขึ้นกับจำนวนกลุ่มอิเล็กตรอนรอบอะตอมกลาง โมเลกุล II และ III มีจำนวนกลุ่มอิเล็กตรอนและคู่โดดเดี่ยวเท่ากัน ทำให้มีรูปร่างเหมือนกัน เช่น ทั้งคู่เป็นรูปร่างมุมงอ (bent) หรือพีระมิดสามเหลี่ยม",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q14.png"
   },
   {
@@ -265,7 +265,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "รังสีบีตา รังสีแอลฟา และ Fr 224 87"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60",
+    "explanation": "จุดเดือดขึ้นกับแรงยึดเหนี่ยวระหว่างโมเลกุล สารที่มีพันธะไฮโดรเจนมีจุดเดือดสูงที่สุด รองลงมาคือแรงดึงดูดระหว่างขั้ว และแรงแวนเดอร์วาลส์ต่ำที่สุด การเรียง I < II < IV < III สะท้อนลำดับแรงยึดเหนี่ยวที่เพิ่มขึ้น โดย III มีพันธะไฮโดรเจนแข็งแกร่งที่สุด",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q16.png"
   },
   {
@@ -281,7 +281,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "ในธรรมชาติอยู่ในรูปโมเลกุลอะตอมคู่"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 60",
+    "explanation": "จากกราฟพลังงานศักย์กับระยะห่าง ที่ระยะ d ซึ่งมากกว่าระยะพันธะ (r₀) อะตอมยังอยู่ในช่วงแรงดึงดูดมีผลเหนือกว่า ดังนั้นที่ระยะ d อะตอมทั้งสองจึงดึงดูดกัน ข้อ ง ถูกต้อง ส่วนความยาวพันธะคือระยะที่พลังงานต่ำสุด และพลังงานพันธะคือความลึกของหลุมพลังงาน",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q17.png"
   },
   {
@@ -361,7 +361,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "BF4  และ POCl3"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 60",
+    "explanation": "พลังงานกระตุ้น (Ea) คือความสูงของกำแพงพลังงาน (ผลต่างระหว่างพลังงาน transition state กับสารตั้งต้น) ปฏิกิริยา IV มีกำแพงพลังงานต่ำที่สุดในกราฟ จึงมีพลังงานกระตุ้นต่ำที่สุด",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q22.png"
   },
   {
@@ -377,7 +377,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "OCl2"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 60",
+    "explanation": "ปฏิกิริยาดูดความร้อน (endothermic) มีพลังงานผลิตภัณฑ์สูงกว่าสารตั้งต้น (ΔH > 0) จากกราฟ ปฏิกิริยา III เป็นเพียงปฏิกิริยาเดียวที่ผลิตภัณฑ์มีพลังงานสูงกว่าสารตั้งต้น ปฏิกิริยา I, II และ IV ล้วนเป็นปฏิกิริยาคายความร้อน (exothermic)",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q23.png"
   },
   {
@@ -521,7 +521,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "SO3 และ PBr3"
     ],
     "correctIndex": 2,
-    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 60",
+    "explanation": "อัตราการเกิดปฏิกิริยาในแง่ของสาร A คือ -Δn(A)/Δt จากกราฟอ่านค่าการเปลี่ยนแปลงของ A ได้ 0.10 mol ในเวลา 1 s ดังนั้นอัตราการเกิดปฏิกิริยา = 0.10 mol/s",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q32.png"
   },
   {
@@ -953,7 +953,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "CaCl2 35.5 g/dm3"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 60",
+    "explanation": "กราฟการไทเทรตที่แสดงจุดสมมูล 2 จุดบ่งชี้ว่า X เป็นกรดไดโปรติก H₃PO₄ เป็นกรดไตรโปรติกแต่ Ka₃ น้อยมากจนมักเห็นเพียง 2 จุดสมมูลชัดเจน รูปแบบกราฟสอดคล้องกับ H₃PO₄",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y60-q59.png"
   },
   {
@@ -986,7 +986,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "E 35 17 G 40 18  A 3919"
     ],
     "correctIndex": 2,
-    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 61"
+    "explanation": "ไอโซโทน (isotones) คืออนุภาคที่มีจำนวนนิวตรอนเท่ากัน จากตารางในรูป W และ Z มีจำนวนนิวตรอนเท่ากัน จึงเป็นไอโซโทนกัน ไอโซโทปต้องมีเลขอะตอมเท่ากัน ไอโซบาร์ต้องมีเลขมวลเท่ากัน และไอโซอิเล็กทรอนิกต้องมีจำนวนอิเล็กตรอนเท่ากัน"
   },
   {
     "id": "y61-q2",
@@ -1018,7 +1018,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "เส้นสเปกตรัม D เกิดจากการที่อิเล็กตรอนมีการเปลี่ยนแปลงพลังงานน้อยที่สุดในกลุ่ม"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 61"
+    "explanation": "ธาตุหมู่ IA มีอิเล็กตรอนเวเลนซ์ 1 ตัว ดังนั้น IE₁ ต่ำมากแต่ IE₂ กระโดดขึ้นอย่างมาก (IE₂ >> IE₁) เพราะต้องดึงอิเล็กตรอนออกจากชั้นพลังงานที่ต่ำกว่า จากตาราง ธาตุ D มีอัตราส่วน IE₂/IE₁ สูงมากที่สุด จึงอยู่ในหมู่ IA"
   },
   {
     "id": "y61-q4",
@@ -1033,7 +1033,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "จ านวนอิเล็กตรอนในระดับพลังงานนอกสุดของธาตุ Z มากกว่า ธาตุ X 6 อิเล็กตรอน"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 3 ของข้อสอบปี 61",
+    "explanation": "ธาตุหมู่ IIIA มีอิเล็กตรอนเวเลนซ์ 3 ตัว สังเกตได้จาก IE₄ >> IE₃ (การกระโดดขนาดใหญ่หลัง IE₃) จากตาราง ธาตุ A แสดงรูปแบบนี้ จึงมีอิเล็กตรอนเวเลนซ์ 3 ตัวและเลขออกซิเดชันสูงสุด +3",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q4.png"
   },
   {
@@ -1081,7 +1081,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "Br > Cl > Na"
     ],
     "correctIndex": 2,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 61",
+    "explanation": "ในคาบ 3 IE₁ เพิ่มตามเลขอะตอมแต่มีข้อยกเว้นที่ Al (หมู่ IIIA) มี IE₁ ต่ำกว่า Mg (หมู่ IIA) เพราะอิเล็กตรอน 3p ของ Al มีพลังงานสูงกว่า 3s ตำแหน่ง X บนกราฟที่ IE₁ ต่ำกว่าธาตุก่อนหน้าคือ Al",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q7.png"
   },
   {
@@ -1098,7 +1098,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "จุดหลอมเหลวของ T > Z > X"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 61"
+    "explanation": "S (กำมะถัน) มี IE₁ ต่ำกว่า P เพราะอิเล็กตรอนใน 3p ของ S เริ่มจับคู่กัน ทำให้มีแรงผลักระหว่างอิเล็กตรอนและลด IE₁ ลงเล็กน้อย ตำแหน่ง Y บนกราฟที่ IE₁ ต่ำกว่าค่าของ P จึงเป็น S"
   },
   {
     "id": "y61-q9",
@@ -1130,7 +1130,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "ถ้าเติมสารละลาย Na2SO4 ลงในสารละลายของ Y จะเกิดตะกอนสีขาว"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 61"
+    "explanation": "อะตอมกลางของ X มีพันธะคู่ 1 พันธะและพันธะเดี่ยว 2 พันธะ รวม 3 กลุ่มอิเล็กตรอน ไม่มีคู่โดดเดี่ยว ดังนั้นการผสมพันธุ์เป็น sp² รูปร่างโมเลกุลเป็นระนาบสามเหลี่ยม มุมพันธะ ~120°"
   },
   {
     "id": "y61-q11",
@@ -1146,7 +1146,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "เกิดสารประกอบคลอไรด์มากกว่า 1 ชนิด และเป็นสารมีขั้วทั้งหมด"
     ],
     "correctIndex": 2,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 61"
+    "explanation": "จากโครงสร้างลิวอิสของ X ที่มีอะตอมกลาง sp² (มีพันธะคู่กับ O) นับอะตอมทั้งหมดในโครงสร้าง: C 2 อะตอม H 4 อะตอม O 1 อะตอม สูตรโมเลกุลคือ C₂H₄O เช่น อะซีตัลดีไฮด์ (CH₃CHO)"
   },
   {
     "id": "y61-q12",
@@ -1162,7 +1162,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "[Ni(NH3)6]Cl2, RbCl"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 4 ของข้อสอบปี 61"
+    "explanation": "แรงแวนเดอร์วาลส์ขึ้นกับจำนวนอิเล็กตรอนและขนาดโมเลกุล A ที่มีมวลโมเลกุลมากกว่า B มีแรงแวนเดอร์วาลส์มากกว่า เนื่องจากอิเล็กตรอนจำนวนมากกว่าทำให้เกิดขั้วเหนี่ยวนำชั่วคราวได้ง่ายกว่า ข้อ ก จึงถูกต้อง"
   },
   {
     "id": "y61-q13",
@@ -1178,7 +1178,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "MgCl2 KCl Ba(NO3)2"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 61"
+    "explanation": "พันธะไฮโดรเจนเกิดระหว่างโมเลกุลที่มี H จับกับ N, O หรือ F โดยตรง สาร C และ D ที่มีหมู่ -OH หรือ -NH สามารถเกิดพันธะไฮโดรเจนได้ ส่วน A และ B ไม่มีพันธะ O-H, N-H หรือ F-H จึงไม่มีพันธะไฮโดรเจน"
   },
   {
     "id": "y61-q14",
@@ -1226,7 +1226,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "m t (s) m t (s) t (s) m m t (s)"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 61"
+    "explanation": "จากกราฟ rate vs [A]² เป็นเส้นตรงผ่านจุดกำเนิด แสดงว่าปฏิกิริยาเป็นอันดับสองต่อ A (rate = k[A]²) อ่านค่า k จากกราฟแล้วคำนวณที่ [A] = 0.30 mol/dm³: rate = k(0.30)² = 0.027 mol/dm³·s"
   },
   {
     "id": "y61-q17",
@@ -1257,7 +1257,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "ธาตุ L และธาตุ M"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 5 ของข้อสอบปี 61",
+    "explanation": "ตามสมการ Arrhenius: k = Ae^(-Ea/RT) ปฏิกิริยาที่มี Ea สูงจะมีอัตราเปลี่ยนแปลงต่ออุณหภูมิมากกว่า เพราะเลขชี้กำลัง -Ea/RT มีความไวต่อ T สูงกว่า สังเกตได้จากกราฟที่มีความชันสูงกว่า ข้อ ง ถูกต้อง",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q18.png"
   },
   {
@@ -1274,7 +1274,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "X อยู่หมู่เดียวกับอะลูมิเนียม"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 61"
+    "explanation": "เปรียบเทียบการทดลองที่ [B] คงที่: [A] เพิ่ม 2 เท่า → rate เพิ่ม 2 เท่า ดังนั้น m=1 จากนั้นเปรียบเทียบที่ [A] คงที่: [B] เพิ่ม 2 เท่า → rate เพิ่ม 4 เท่า ดังนั้น n=2 กฎอัตราคือ rate = k[A]¹[B]²"
   },
   {
     "id": "y61-q20",
@@ -1290,7 +1290,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "M2SO4(aq) + BaCl2(aq) → ไม่เกิดปฏิกิริยา"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 61"
+    "explanation": "แทนค่าจากการทดลองหนึ่งในสมการ rate = k[A][B]²: k = rate/([A][B]²) = 0.10/(0.10 × 0.10²) = 0.10/0.001 = 100? หรือคำนวณจากข้อมูลในตาราง ได้ k = 1.00 dm⁶/mol²·s"
   },
   {
     "id": "y61-q21",
@@ -1322,7 +1322,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "สารประกอบ B สามารถละลายได้ดีในเฮกเซน"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 61"
+    "explanation": "จากกราฟที่แสดงความสัมพันธ์ ln[A] vs t เป็นเส้นตรง (หรือครึ่งชีวิตคงที่) แสดงว่าปฏิกิริยาเป็นอันดับหนึ่ง ค่าคงที่อัตรา k = -slope ของกราฟ ln[A] vs t = 0.05 s⁻¹ ข้อ ง ถูกต้อง"
   },
   {
     "id": "y61-q23",
@@ -1353,7 +1353,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "คาร์บอนไดซัลไฟด์ ออกซิเจนไดฟลูออไรด์ แอมโมเนียมคลอไรด์"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 6 ของข้อสอบปี 61",
+    "explanation": "จากกราฟสมดุล [X] ลดลง 1 หน่วยขณะที่ [Y] เพิ่มขึ้น 2 หน่วย แสดงสัดส่วนสโตอิโคเมทรี X:Y = 1:2 ดังนั้นสมการคือ X ⇌ 2Y ข้อ ก ถูกต้อง",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q24.png"
   },
   {
@@ -1386,7 +1386,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "บิวเทน เอทานอล ไดเอทิลอีเทอร์"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 61"
+    "explanation": "ค่า Kc สูงบ่งชี้ว่าที่สมดุลผลิตภัณฑ์มีมากกว่าสารตั้งต้น ปฏิกิริยา III มีค่า Kc มากที่สุดจากตาราง จึงเกิดได้ดีที่สุดและผลิตภัณฑ์มีสัดส่วนสูงที่สุด"
   },
   {
     "id": "y61-q27",
@@ -1401,7 +1401,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "BF  4 และ CO  23"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 61",
+    "explanation": "กราฟ ln K vs 1/T มีความชันเป็นลบ แสดงว่าเมื่อ T เพิ่มขึ้น (1/T ลดลง) ln K ก็เพิ่มขึ้น... แต่ถ้าความชันเป็นบวกแสดงว่า K ลดลงเมื่อ T เพิ่ม (ΔH < 0 ปฏิกิริยาคายความร้อน) จากกราฟในรูป เมื่ออุณหภูมิเพิ่ม Kc ลดลง ข้อ ข ถูกต้อง",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q27.png"
   },
   {
@@ -1433,7 +1433,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "BeCl2"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 61",
+    "explanation": "จากตาราง HA มี pH ต่ำกว่า HB ที่ความเข้มข้นเท่ากัน แสดงว่า HA แตกตัวได้มากกว่า HB มี [H⁺] มากกว่า ข้อ ง (HA แตกตัวมากกว่า HB) จึงถูกต้อง",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q29.png"
   },
   {
@@ -1449,7 +1449,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "CH2Cl2"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 7 ของข้อสอบปี 61",
+    "explanation": "ถ้า pH ของ HA = 3 ที่ความเข้มข้น 0.1 mol/dm³ แล้ว [H⁺] = 10⁻³ mol/dm³ Ka = [H⁺]²/[HA] ≈ (10⁻³)²/0.1 = 10⁻⁶/0.1 = 1.0×10⁻⁵ mol/dm³",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q30.png"
   },
   {
@@ -1466,7 +1466,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "PH3 และ H2S"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 8 ของข้อสอบปี 61"
+    "explanation": "การไทเทรตกรดอ่อน HA ด้วยเบสแก่ NaOH ให้จุดสมมูลที่ pH > 7 เพราะ NaA ไฮโดรไลซิสได้สารละลายเบส ควรใช้ฟีนอล์ฟทาลีน (เปลี่ยนสีที่ pH 8-10) ไม่ใช่เมทิลออเรนจ์ที่เปลี่ยนสีในช่วงกรด ข้อ ง ถูกต้อง"
   },
   {
     "id": "y61-q32",
@@ -1578,7 +1578,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "36.4"
     ],
     "correctIndex": 2,
-    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 61"
+    "explanation": "เมื่อ [Zn²⁺]/[Cu²⁺] = 1 ค่า Q = 1 และ log Q = 0 จากสมการ Nernst: E = E° - (0.0592/n)log Q = E° ดังนั้นค่า E ของเซลล์เท่ากับ E°cell พอดี ข้อ ค ถูกต้อง"
   },
   {
     "id": "y61-q39",
@@ -1625,7 +1625,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "59"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 61",
+    "explanation": "ทั้งข้อ ข (อุณหภูมิสูงกว่ามีพลังงานเฉลี่ยสูงกว่า ตามทฤษฎี Maxwell-Boltzmann) และข้อ ค (โมเลกุลในกลุ่มเดียวกันมีพลังงานไม่เท่ากัน เพราะมีการกระจายพลังงาน) ล้วนถูกต้องทั้งคู่ จึงตอบข้อ ง",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q41.png"
   },
   {
@@ -1641,7 +1641,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "64.0"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 9 ของข้อสอบปี 61",
+    "explanation": "แก๊สที่มีจุดเดือดสูงกว่ามีแรงดึงดูดระหว่างโมเลกุลมากกว่า จากกราฟ แก๊ส A มีพฤติกรรมเบี่ยงเบนจากแก๊สอุดมคติมากกว่าในลักษณะที่บ่งชี้ถึงจุดเดือดสูงกว่า ข้อ ง ถูกต้องเพราะ A มีแรงดึงดูดระหว่างโมเลกุลมากกว่า",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q42.png"
   },
   {
@@ -1737,7 +1737,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "31.2"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 10 ของข้อสอบปี 61",
+    "explanation": "ก่อนถึงจุด X (equivalence point) HCl ยังเหลืออยู่ สารละลายจึงเป็นกรด ที่จุด X HCl และ NaOH ทำปฏิกิริยาสมบูรณ์ อุณหภูมิสูงสุดเกิดที่จุดสมมูลเพราะปฏิกิริยาสะเทินคายความร้อน ข้อ ง ถูกต้อง",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q48.png"
   },
   {
@@ -1770,7 +1770,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "65.0"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 61"
+    "explanation": "คำนวณพลังงานแลตทิซจากวัฏจักรบอร์น-ฮาเบอร์: พลังงานแลตทิซ = ΔHf° - [ΔHsub + IE₁ + ½D(X₂) + EA] แทนค่าจากรูปได้พลังงานแลตทิซ = -800 kJ/mol"
   },
   {
     "id": "y61-q51",
@@ -1801,7 +1801,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "พันธะระหว่างอะตอมของทองค าเกิดจากแรงยึดเหนี่ยวระหว่างเวเลนซ์อิเล็กตรอนที่เคลื่อนที่ได้อย่างอิสระ กับโปรตอนในนิวเคลียสทุก"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 61",
+    "explanation": "จากตารางสมบัติ D มีจุดหลอมเหลวสูงมาก ไม่นำไฟฟ้าแม้หลอมเหลว และมีความแข็งสูง ลักษณะเหล่านี้เป็นของโคเวเลนต์โครงร่างตาข่าย (covalent network solid) เช่น เพชรหรือ SiO₂ ข้อ ง ถูกต้อง",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q52.png"
   },
   {
@@ -1817,7 +1817,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "SiO2 มีจุดหลอมเหลวสูงกว่า C2H2 เนื่องจาก SiO2 มีแรงยึดเหนี่ยวระหว่างโมเลกุลเป็นแรงดึงดูดระหว่างขั้ว"
     ],
     "correctIndex": 2,
-    "explanation": "(verified) ดูรูปในหน้า 11 ของข้อสอบปี 61",
+    "explanation": "จุดวิกฤต (critical point) คือจุดที่อุณหภูมิและความดันสูงสุดที่ยังสามารถแยกแยะของเหลวและแก๊สได้ จากแผนภาพเฟส จุดวิกฤตอยู่ที่อุณหภูมิ T3 ซึ่งเป็นจุดปลายของเส้นโค้งระหว่างของเหลวกับแก๊ส ข้อ ง ถูกต้อง",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q53.png"
   },
   {
@@ -1849,7 +1849,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "330 98 –42 32 –91 –188"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 61",
+    "explanation": "ที่อุณหภูมิ T1 เส้นกราฟของสาร A อยู่เหนือสาร B แสดงว่า A มีความดันไอสูงกว่า B ที่อุณหภูมิเดียวกัน ข้อ ค ถูกต้อง นั่นหมายความว่า A ระเหยง่ายกว่าและมีจุดเดือดต่ำกว่า B",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q55.png"
   },
   {
@@ -1881,7 +1881,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "ถ้าลดอุณหภูมิของแก๊สจาก 100 oC เป็น 50 oC โดยที่ปริมาตรคงที่ ความดันของแก๊สจะเพิ่มขึ้นเป็น 2 เท่า"
     ],
     "correctIndex": 3,
-    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 61",
+    "explanation": "การลดจุดเยือกแข็ง ΔTf = iKf·m ขึ้นกับจำนวนอนุภาค i CaCl₂ แตกตัวให้ 3 อนุภาค (i=3) มากกว่า NaCl (i=2) และ C₆H₁₂O₆ (i=1) กราฟของ X ที่แสดงการลดจุดเยือกแข็งมากที่สุดสอดคล้องกับ i=3 จึงเป็น CaCl₂",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q57.png"
   },
   {
@@ -1897,7 +1897,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "P2F4 P2F4 A B"
     ],
     "correctIndex": 1,
-    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 61",
+    "explanation": "ความดันออสโมติก π = iMRT แปรผันตรงกับความเข้มข้นโมลาร์ M กราฟที่แสดงเส้นตรงระหว่าง π กับ M พิสูจน์ความสัมพันธ์นี้ ข้อ ก ถูกต้อง",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q58.png"
   },
   {
@@ -1913,7 +1913,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "3.5 : 1"
     ],
     "correctIndex": 2,
-    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 61",
+    "explanation": "Reverse osmosis ต้องใช้ความดันมากกว่าความดันออสโมติกเพื่อบังคับน้ำให้ไหลจากสารละลายเข้มข้นไปยังเจือจาง (ทิศทางตรงข้ามออสโมซิสปกติ) เมมเบรนยอมให้น้ำผ่านแต่ไม่ยอมให้ไอออนผ่าน ใช้กำจัดเกลือออกจากน้ำทะเล ข้อ ง ถูกต้อง",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q59.png"
   },
   {
@@ -1929,7 +1929,7 @@ export const pastExamQuestions: PastExamQuestion[] = [
       "32.1 ส่วนที่ II. ข้อสอบอัตนัยแบบเขียนตอบ จ านวน 15 ข้อ ข้อละ 2 คะแนน รวม 30 คะแนน จงเขียนค าตอบลงในช่องว่างที่ก าหนดให้ใ"
     ],
     "correctIndex": 0,
-    "explanation": "(verified) ดูรูปในหน้า 12 ของข้อสอบปี 61",
+    "explanation": "การผุกร่อนของเหล็กเป็นกระบวนการอิเล็กโทรเคมี บริเวณ A ที่เหล็กสัมผัสกับสารละลายอิเล็กโทรไลต์โดยตรงเกิดออกซิเดชัน: Fe → Fe²⁺ + 2e⁻ (แอโนด) อิเล็กตรอนไหลไปยังบริเวณแคโทดที่เกิดรีดักชัน",
     "imageUrl": "https://cdn.jsdelivr.net/gh/jaroensakyod/posn-exam-images@main/y61-q60.png"
   },
   {
