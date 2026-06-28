@@ -311,10 +311,10 @@ export const practiceQuestions: Question[] = [
     difficulty: 'medium',
   },
 
-  // --- Analytical Chemistry ---
+  // --- Analytical (ย้ายเข้า topic ที่เหมาะสม) ---
   {
     id: 'an-1',
-    topicId: 'analytical-chemistry',
+    topicId: 'solutions',
     text: 'การทดสอบไอออน Cl⁻ ทำได้โดยเติมสารใด แล้วเกิดตะกอนขาว',
     choices: ['BaCl₂', 'AgNO₃', 'NaOH', 'HCl'],
     correctIndex: 1,
@@ -324,7 +324,7 @@ export const practiceQuestions: Question[] = [
   },
   {
     id: 'an-2',
-    topicId: 'analytical-chemistry',
+    topicId: 'acid-base',
     text: 'ไทเทรต HCl 25.0 mL ด้วย NaOH 0.100 M ถึงจุดสมมูลใช้ NaOH 20.0 mL ความเข้มข้นของ HCl เป็นเท่าใด',
     choices: ['0.0625 M', '0.0800 M', '0.100 M', '0.125 M'],
     correctIndex: 1,
@@ -334,7 +334,7 @@ export const practiceQuestions: Question[] = [
   },
   {
     id: 'an-3',
-    topicId: 'analytical-chemistry',
+    topicId: 'solutions',
     text: 'ในโครมาโทกราฟีกระดาษ สารเคลื่อนที่ได้ 4.0 cm ตัวทำละลายเคลื่อนที่ 8.0 cm ค่า Rf ของสารเป็นเท่าใด',
     choices: ['0.25', '0.50', '2.0', '4.0'],
     correctIndex: 1,
@@ -344,7 +344,7 @@ export const practiceQuestions: Question[] = [
   },
   {
     id: 'an-4',
-    topicId: 'analytical-chemistry',
+    topicId: 'atomic-structure',
     text: 'การทดสอบเปลวไฟ (flame test) ของธาตุใดให้เปลวสีเหลือง',
     choices: ['K', 'Ca', 'Na', 'Cu'],
     correctIndex: 2,
@@ -355,7 +355,7 @@ export const practiceQuestions: Question[] = [
   // --- Representative Elements (สมบัติของธาตุหมู่หลัก) ---
   {
     id: 're-1',
-    topicId: 'representative-elements',
+    topicId: 'atomic-structure',
     text: 'ธาตุใดในหมู่ 1 ทำปฏิกิริยากับน้ำรุนแรงที่สุด',
     choices: ['Li', 'Na', 'K', 'Cs'],
     correctIndex: 3,
@@ -364,7 +364,7 @@ export const practiceQuestions: Question[] = [
   },
   {
     id: 're-2',
-    topicId: 'representative-elements',
+    topicId: 'atomic-structure',
     text: 'ออกไซด์ใดเป็น amphoteric oxide',
     choices: ['Na₂O', 'SO₃', 'Al₂O₃', 'CaO'],
     correctIndex: 2,
@@ -373,7 +373,7 @@ export const practiceQuestions: Question[] = [
   },
   {
     id: 're-3',
-    topicId: 'representative-elements',
+    topicId: 'atomic-structure',
     text: 'ข้อใดถูกต้องเกี่ยวกับปฏิกิริยาการแทนที่ฮาโลเจน (halogen displacement)',
     choices: ['I₂ แทน Cl⁻ ออกจากสารละลายได้', 'Br₂ แทน F⁻ ได้', 'Cl₂ แทน Br⁻ ได้', 'F₂ ไม่ทำปฏิกิริยากับสารละลาย halide'],
     correctIndex: 2,
@@ -382,7 +382,7 @@ export const practiceQuestions: Question[] = [
   },
   {
     id: 're-4',
-    topicId: 'representative-elements',
+    topicId: 'atomic-structure',
     text: 'ธาตุ A (หมู่ 2 คาบ 3) ทำปฏิกิริยากับธาตุ B (หมู่ 17 คาบ 3) สูตรสารประกอบคือข้อใด',
     choices: ['AB', 'A₂B', 'AB₂', 'A₂B₃'],
     correctIndex: 2,
@@ -391,7 +391,7 @@ export const practiceQuestions: Question[] = [
   },
   {
     id: 're-5',
-    topicId: 'representative-elements',
+    topicId: 'atomic-structure',
     text: 'ข้อใดถูกต้องเกี่ยวกับ BeO และ MgO',
     choices: [
       'ทั้งคู่ละลายน้ำได้ดี',

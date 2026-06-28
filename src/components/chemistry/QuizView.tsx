@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react'
-import { CheckCircle, XCircle, ArrowRight, Trophy } from 'lucide-react'
+import { CheckCircle, XCircle, ArrowRight, Trophy, ChevronLeft, SkipForward } from 'lucide-react'
 import { Question } from '../../data/chemistry/questions'
 
 function shuffleArray<T>(arr: T[]): T[] {
@@ -32,45 +32,76 @@ export default function QuizView({
   }, [])
 
   const [current, setCurrent] = useState(0)
-  const [selected, setSelected] = useState<number | null>(null)
-  const [showAnswer, setShowAnswer] = useState(false)
+  // answers: null = ยังไม่ตอบ/ข้าม, number = ตัวเลือกที่เลือก
   const [answers, setAnswers] = useState<(number | null)[]>(Array(shuffled.length).fill(null))
+  const [showAnswer, setShowAnswer] = useState(false)
 
   const q = shuffled[current]
+  const selected = answers[current]
+  const isAnswered = selected !== null
   const isLast = current === shuffled.length - 1
+  const skippedCount = answers.filter((a) => a === null).length
 
   function choose(idx: number) {
-    if (showAnswer) return
-    setSelected(idx)
-    setShowAnswer(true)
+    if (showAnswer || isAnswered) return
     const newAnswers = [...answers]
     newAnswers[current] = idx
     setAnswers(newAnswers)
+    setShowAnswer(true)
+  }
+
+  function goTo(idx: number) {
+    setCurrent(idx)
+    setShowAnswer(answers[idx] !== null)
   }
 
   function next() {
     if (isLast) {
-      const score = shuffled.reduce((s, q, i) => s + (answers[i] === q.correctIndex ? 1 : 0), 0)
-      onFinish(score)
+      // ถ้ายังมีข้อที่ข้ามค้างไว้ ให้วนกลับไปข้อแรกที่ยังไม่ตอบ
+      const firstSkipped = answers.findIndex((a) => a === null)
+      if (firstSkipped !== -1) {
+        goTo(firstSkipped)
+      } else {
+        const score = shuffled.reduce((s, q, i) => s + (answers[i] === q.correctIndex ? 1 : 0), 0)
+        onFinish(score)
+      }
     } else {
-      setCurrent((c) => c + 1)
-      setSelected(null)
-      setShowAnswer(false)
+      goTo(current + 1)
     }
   }
 
-  const correctCount = answers.slice(0, current + (showAnswer ? 1 : 0)).filter(
-    (a, i) => a === shuffled[i].correctIndex
-  ).length
+  function skip() {
+    if (isLast) {
+      const firstSkipped = answers.findIndex((a, i) => a === null && i !== current)
+      if (firstSkipped !== -1) {
+        goTo(firstSkipped)
+      } else {
+        // ข้อสุดท้ายที่ยังไม่ตอบ — จบเลย
+        const score = shuffled.reduce((s, q, i) => s + (answers[i] === q.correctIndex ? 1 : 0), 0)
+        onFinish(score)
+      }
+    } else {
+      goTo(current + 1)
+    }
+  }
+
+  function prev() {
+    if (current > 0) goTo(current - 1)
+  }
+
+  const correctCount = answers.filter((a, i) => a === shuffled[i].correctIndex).length
+
+  // dot nav: แสดงสถานะแต่ละข้อ
+  const allAnswered = answers.every((a) => a !== null)
 
   return (
     <div className="space-y-5">
-      {/* Progress bar */}
+      {/* Progress bar + counter */}
       <div className="flex items-center gap-3">
         <div className="flex-1 bg-slate-100 rounded-full h-2 overflow-hidden">
           <div
             className="h-2 bg-blue-500 rounded-full transition-all duration-300"
-            style={{ width: `${((current + (showAnswer ? 1 : 0)) / questions.length) * 100}%` }}
+            style={{ width: `${(answers.filter(a => a !== null).length / questions.length) * 100}%` }}
           />
         </div>
         <span className="text-sm text-slate-500 shrink-0">
@@ -79,6 +110,27 @@ export default function QuizView({
         <span className="text-sm text-green-600 font-medium shrink-0">
           ✓ {correctCount}
         </span>
+      </div>
+
+      {/* Dot navigator */}
+      <div className="flex flex-wrap gap-1.5">
+        {shuffled.map((_, i) => {
+          const ans = answers[i]
+          const isCorrect = ans === shuffled[i].correctIndex
+          let bg = 'bg-slate-200'
+          if (ans !== null) bg = isCorrect ? 'bg-green-400' : 'bg-red-400'
+          if (i === current) bg = ans !== null ? (isCorrect ? 'bg-green-500 ring-2 ring-green-300' : 'bg-red-500 ring-2 ring-red-300') : 'bg-blue-500 ring-2 ring-blue-300'
+          return (
+            <button
+              key={i}
+              onClick={() => goTo(i)}
+              className={`w-6 h-6 rounded-full text-xs font-bold text-white transition-all ${bg}`}
+              title={`ข้อ ${i + 1}`}
+            >
+              {i + 1}
+            </button>
+          )
+        })}
       </div>
 
       {/* Question */}
@@ -104,7 +156,7 @@ export default function QuizView({
         <div className="space-y-2.5">
           {q.choices.map((choice, idx) => {
             let style = 'border-slate-200 text-slate-700 hover:border-blue-300 hover:bg-blue-50'
-            if (showAnswer) {
+            if (showAnswer && isAnswered) {
               if (idx === q.correctIndex) style = 'border-green-400 bg-green-50 text-green-800'
               else if (idx === selected) style = 'border-red-400 bg-red-50 text-red-800'
               else style = 'border-slate-200 text-slate-400'
@@ -119,10 +171,10 @@ export default function QuizView({
                   {String.fromCharCode(65 + idx)}
                 </span>
                 <span className="leading-relaxed">{choice}</span>
-                {showAnswer && idx === q.correctIndex && (
+                {showAnswer && isAnswered && idx === q.correctIndex && (
                   <CheckCircle size={16} className="ml-auto text-green-500 shrink-0" />
                 )}
-                {showAnswer && idx === selected && idx !== q.correctIndex && (
+                {showAnswer && isAnswered && idx === selected && idx !== q.correctIndex && (
                   <XCircle size={16} className="ml-auto text-red-500 shrink-0" />
                 )}
               </button>
@@ -132,7 +184,7 @@ export default function QuizView({
       </div>
 
       {/* Explanation */}
-      {showAnswer && q.explanation && (
+      {showAnswer && isAnswered && q.explanation && (
         <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 space-y-2">
           <div className="flex items-center gap-2 font-semibold text-slate-700 text-sm">
             {selected === q.correctIndex ? (
@@ -147,19 +199,45 @@ export default function QuizView({
         </div>
       )}
 
-      {/* Next button */}
-      {showAnswer && (
+      {/* Navigation buttons */}
+      <div className="flex items-center gap-2">
+        {/* ย้อนกลับ */}
         <button
-          onClick={next}
-          className="w-full flex items-center justify-center gap-2 py-3 bg-blue-600 text-white rounded-xl font-medium hover:bg-blue-700 transition-colors"
+          onClick={prev}
+          disabled={current === 0}
+          className="flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium border border-slate-200 rounded-xl text-slate-600 hover:bg-slate-50 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
         >
-          {isLast ? (
-            <><Trophy size={18} /> ดูผลลัพธ์</>
-          ) : (
-            <>ข้อถัดไป <ArrowRight size={18} /></>
-          )}
+          <ChevronLeft size={16} /> ย้อนกลับ
         </button>
-      )}
+
+        <div className="flex-1" />
+
+        {/* ข้าม (แสดงเฉพาะตอนที่ยังไม่ตอบ) */}
+        {!isAnswered && (
+          <button
+            onClick={skip}
+            className="flex items-center gap-1.5 px-4 py-2.5 text-sm font-medium border border-amber-300 text-amber-600 rounded-xl hover:bg-amber-50 transition-colors"
+          >
+            ข้าม <SkipForward size={16} />
+          </button>
+        )}
+
+        {/* ถัดไป / ดูผลลัพธ์ */}
+        {isAnswered && (
+          <button
+            onClick={next}
+            className="flex items-center gap-1.5 px-5 py-2.5 text-sm font-medium bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors"
+          >
+            {isLast && allAnswered ? (
+              <><Trophy size={18} /> ดูผลลัพธ์</>
+            ) : isLast && skippedCount > 0 ? (
+              <>ไปข้อที่ข้าม ({skippedCount}) <ArrowRight size={18} /></>
+            ) : (
+              <>ข้อถัดไป <ArrowRight size={18} /></>
+            )}
+          </button>
+        )}
+      </div>
     </div>
   )
 }
