@@ -138,13 +138,15 @@ export const useProgressStore = create<ProgressState>()(
 
       recordQuizAttempt: (topicId, score, total) => {
         const state = get()
-        const xpGained = calcXP(score, total)
+        const pct = total > 0 ? Math.round((score / total) * 100) : 0
+        const existing = state.topicProgress[topicId]
+        const prevBest = existing?.bestScore ?? 0
+        // ให้ XP เฉพาะครั้งที่ทำคะแนนดีขึ้นกว่า bestScore เดิม
+        const xpGained = pct > prevBest ? calcXP(score, total) : 0
         const { streak, lastStudyDate } = updateStreak(
           state.userStats.lastStudyDate,
           state.userStats.streak
         )
-        const pct = total > 0 ? Math.round((score / total) * 100) : 0
-        const existing = state.topicProgress[topicId]
         const newAttempt: QuizAttempt = { score, total, date: new Date().toISOString() }
         const allAttempts = [...(existing?.attempts ?? []), newAttempt]
         const newXP = state.userStats.xp + xpGained

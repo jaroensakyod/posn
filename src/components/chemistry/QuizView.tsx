@@ -1,6 +1,15 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { CheckCircle, XCircle, ArrowRight, Trophy } from 'lucide-react'
 import { Question } from '../../data/chemistry/questions'
+
+function shuffleArray<T>(arr: T[]): T[] {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
 
 // Shared quiz runner used by both the Practice page (by topic) and the Exams page (by year).
 export default function QuizView({
@@ -10,13 +19,25 @@ export default function QuizView({
   questions: Question[]
   onFinish: (score: number) => void
 }) {
+  // shuffle questions and choices once per mount
+  const shuffled = useMemo(() => {
+    return shuffleArray(questions).map((q) => {
+      const choiceOrder = shuffleArray(q.choices.map((_, i) => i))
+      return {
+        ...q,
+        choices: choiceOrder.map((i) => q.choices[i]),
+        correctIndex: choiceOrder.indexOf(q.correctIndex),
+      }
+    })
+  }, [])
+
   const [current, setCurrent] = useState(0)
   const [selected, setSelected] = useState<number | null>(null)
   const [showAnswer, setShowAnswer] = useState(false)
-  const [answers, setAnswers] = useState<(number | null)[]>(Array(questions.length).fill(null))
+  const [answers, setAnswers] = useState<(number | null)[]>(Array(shuffled.length).fill(null))
 
-  const q = questions[current]
-  const isLast = current === questions.length - 1
+  const q = shuffled[current]
+  const isLast = current === shuffled.length - 1
 
   function choose(idx: number) {
     if (showAnswer) return
@@ -29,7 +50,7 @@ export default function QuizView({
 
   function next() {
     if (isLast) {
-      const score = questions.reduce((s, q, i) => s + (answers[i] === q.correctIndex ? 1 : 0), 0)
+      const score = shuffled.reduce((s, q, i) => s + (answers[i] === q.correctIndex ? 1 : 0), 0)
       onFinish(score)
     } else {
       setCurrent((c) => c + 1)
@@ -39,7 +60,7 @@ export default function QuizView({
   }
 
   const correctCount = answers.slice(0, current + (showAnswer ? 1 : 0)).filter(
-    (a, i) => a === questions[i].correctIndex
+    (a, i) => a === shuffled[i].correctIndex
   ).length
 
   return (
